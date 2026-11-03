@@ -215,8 +215,9 @@ test("AT5.3 a suite must say where its cases come from", () => {
 // ---------- §6 provenance ----------
 
 test("AT6.1 a GitHub Actions run identifies itself; anywhere else the mode is local", () => {
-  assert.deepEqual(executedBy(), { mode: "local" });
   const keep = { ...process.env };
+  delete process.env.GITHUB_ACTIONS; // this test may itself be running in Actions
+  assert.deepEqual(executedBy(), { mode: "local" });
   Object.assign(process.env, { GITHUB_ACTIONS: "true", GITHUB_REPOSITORY: "acme/robot", GITHUB_SHA: "abc1234", GITHUB_WORKFLOW_REF: "acme/robot/.github/workflows/ossilic.yml@refs/heads/main", GITHUB_RUN_ID: "42", GITHUB_SERVER_URL: "https://github.com" });
   try { assert.deepEqual(executedBy(), { mode: "ci", ci: { provider: "github-actions", repository: "acme/robot", commit: "abc1234", workflow: "acme/robot/.github/workflows/ossilic.yml@refs/heads/main", runUrl: "https://github.com/acme/robot/actions/runs/42" } }); }
   finally { for (const k of ["GITHUB_ACTIONS", "GITHUB_REPOSITORY", "GITHUB_SHA", "GITHUB_WORKFLOW_REF", "GITHUB_RUN_ID", "GITHUB_SERVER_URL"]) if (keep[k] === undefined) delete process.env[k]; else process.env[k] = keep[k]; }
@@ -256,4 +257,27 @@ test("the real rover: a slowed brain is meaningfully worse and the release check
   const c = compare(await run(rover, s), await run(slow, s));
   assert.equal(c.gate.pass, false, c.reason);
   assert.equal(await digest(c.changes), await digest([{ kind: "param", path: "goto.cruise", from: goto.cruise, to: 0.2 }]));
+});
+
+// ---------- cross-platform determinism ----------
+// Recorded on darwin-arm64. CI runs on linux-x64: any differing bit fails here, before it can
+// turn a reproduction into "did not reproduce".
+
+test("AT1.5 deterministic math gives the same bits on every platform", async () => {
+  const { dmath } = await import("@ossilic/runtime");
+  const bits = (x: number) => { const b = new DataView(new ArrayBuffer(8)); b.setFloat64(0, x); return b.getBigUint64(0).toString(16).padStart(16, "0"); };
+  const golden: Array<[keyof typeof dmath, number[], string]> = [
+    ["sin", [0.7], "3fe49d6e694619b8"], ["sin", [-2.9], "bfce9fb8d64830e2"], ["cos", [1.3], "3fd11eb3682a4c5f"], ["cos", [47.1], "bfeffda995120bfd"],
+    ["atan2", [0.31, -0.97], "4006a879ef160d19"], ["exp", [-3.3], "3fa2e259bb85be85"], ["log", [0.0371], "c00a5a652f99ea80"], ["tanh", [0.42], "3fd9674ee60feef4"],
+  ];
+  for (const [f, args, want] of golden) assert.equal(bits((dmath[f] as (...a: number[]) => number)(...args)), want, `${f}(${args})`);
+});
+
+test("AT1.6 the reference machines produce the same fingerprints on every platform", async () => {
+  const golden: Record<string, string[]> = { rover: ["766b8d7b515be017", "ca052fbe8b334fec", "32fb476250f8be48"], "rover-learned": ["e845aa111f7f980a", "5bc23e188151cc6c", "155d96a0b9c7dd6a"] };
+  for (const [dir, want] of Object.entries(golden)) {
+    const m = load(`${dir}/machine.json`);
+    const e = await run(m, { ...defaultSuite(m, "navigate", "sim"), episodes: 3 }, dir);
+    assert.deepEqual(e.episodes.map((x) => x.fingerprint!.slice(0, 16)), want, dir);
+  }
 });

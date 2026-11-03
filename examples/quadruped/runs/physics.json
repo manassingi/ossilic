@@ -12,12 +12,12 @@
   "tickHz": 50,
   "ticks": 500,
   "duration": 10,
-  "startedAt": "2026-11-03T02:40:51.631Z",
+  "startedAt": "2026-11-03T12:43:50.701Z",
   "scorecard": {
-    "height": 0.28184614178455597,
+    "height": 0.28184614178450973,
     "upright": true,
     "collisions": 0,
-    "distance": 10.952624293699884
+    "distance": 10.952624293700007
   },
   "trajectory": {
     "every": 5,

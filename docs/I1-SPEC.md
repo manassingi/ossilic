@@ -10,6 +10,10 @@ Each requirement (R) has the acceptance tests that prove it. A requirement is do
 - **AT1.1** A brain with one lidar read per tick and the same brain with two reads per tick receive identical lidar values at every tick, in sim2d and in MuJoCo.
 - **AT1.2** The same brain on the same suite produces identical fingerprints on two runs, in sim2d and in MuJoCo on one platform.
 
+**R1.3 The same bits on every platform** (added during I1, after CI on Linux disagreed with a Mac in 59 of 200 worlds). World-shaping and scoring code uses deterministic math built from IEEE-exact operations, never JavaScript's platform-compiled transcendental functions.
+- **AT1.5** Golden bit patterns of the deterministic functions match on every platform CI runs on.
+- **AT1.6** The reference machines' fingerprints match golden values on every platform.
+
 **R1.2 Each episode records the world it actually started in.** The realized world (the randomized target configuration, including the start pose, obstacles, friction, mass and noise level) is stored with the episode, together with its hash `worldHash`.
 - **AT1.3** Two episodes pair only if their `worldHash` values match. A mismatch makes the comparison "not comparable", naming the seeds.
 - **AT1.4** Changing the randomization code changes `worldHash`, so old and new evidence never pair silently.

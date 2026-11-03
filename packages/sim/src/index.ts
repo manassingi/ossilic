@@ -8,7 +8,7 @@
  * same Driver interface.
  */
 import type { MachineManifest } from "@ossilic/spec";
-import { InvalidWorldError, keyOf, noise, type Driver, type Pose, type Scan, type Twist } from "@ossilic/runtime";
+import { dmath, InvalidWorldError, keyOf, noise, type Driver, type Pose, type Scan, type Twist } from "@ossilic/runtime";
 
 export interface Obstacle { x: number; y: number; r: number }
 export interface Sim2DConfig {
@@ -93,12 +93,12 @@ export class Sim2DDriver implements Driver {
     this.#tick++;
     const { v, w } = this.#cmd;
     const next: Pose = {
-      x: this.pose.x + v * Math.cos(this.pose.theta) * dt,
-      y: this.pose.y + v * Math.sin(this.pose.theta) * dt,
-      theta: Math.atan2(Math.sin(this.pose.theta + w * dt), Math.cos(this.pose.theta + w * dt)),
+      x: this.pose.x + v * dmath.cos(this.pose.theta) * dt,
+      y: this.pose.y + v * dmath.sin(this.pose.theta) * dt,
+      theta: dmath.atan2(dmath.sin(this.pose.theta + w * dt), dmath.cos(this.pose.theta + w * dt)),
     };
     if (this.#collides(next)) { this.collisions++; this.pose.theta = next.theta; return; } // blocked: rotate only
-    this.distanceTravelled += Math.hypot(next.x - this.pose.x, next.y - this.pose.y);
+    this.distanceTravelled += dmath.hypot(next.x - this.pose.x, next.y - this.pose.y);
     this.pose = next;
   }
 
@@ -109,7 +109,7 @@ export class Sim2DDriver implements Driver {
   #collides(p: Pose): boolean {
     const r = this.cfg.robotRadius;
     if (p.x < r || p.y < r || p.x > this.cfg.bounds.w - r || p.y > this.cfg.bounds.h - r) return true;
-    return this.cfg.obstacles.some((o) => Math.hypot(o.x - p.x, o.y - p.y) < o.r + r);
+    return this.cfg.obstacles.some((o) => dmath.hypot(o.x - p.x, o.y - p.y) < o.r + r);
   }
 
   #scan(l: LidarDef): Scan {
@@ -124,7 +124,7 @@ export class Sim2DDriver implements Driver {
   }
 
   #raycast(theta: number, max: number): number {
-    const px = this.pose.x, py = this.pose.y, dx = Math.cos(theta), dy = Math.sin(theta);
+    const px = this.pose.x, py = this.pose.y, dx = dmath.cos(theta), dy = dmath.sin(theta);
     let best = max;
     // walls
     for (const [t] of [[dx > 0 ? (this.cfg.bounds.w - px) / dx : dx < 0 ? -px / dx : Infinity], [dy > 0 ? (this.cfg.bounds.h - py) / dy : dy < 0 ? -py / dy : Infinity]]) {

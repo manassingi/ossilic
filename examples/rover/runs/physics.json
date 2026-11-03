@@ -12,14 +12,14 @@
   "tickHz": 20,
   "ticks": 425,
   "duration": 21.25,
-  "startedAt": "2026-11-03T02:40:50.920Z",
+  "startedAt": "2026-11-03T12:43:49.528Z",
   "scorecard": {
     "height": 0.06298238987340689,
     "upright": true,
     "collisions": 0,
-    "distance": 8.636380309371258,
+    "distance": 8.636380309371264,
     "goto.reached": true,
-    "goto.distance": 0.14267780006542352
+    "goto.distance": 0.14267780006542277
   },
   "trajectory": {
     "every": 5,

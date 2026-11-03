@@ -186,9 +186,9 @@
         "collisions": 0,
         "distance": 7.256157161638457,
         "goto.reached": true,
-        "goto.distance": 0.14434166824208725
+        "goto.distance": 0.14434166824208727
       },
-      "fingerprint": "f36b1349a31a0d8b54a6d13f8489121161593d419dc05073145361728778d0e1"
+      "fingerprint": "766b8d7b515be01707542147e227f82caa377387a7ad31ad865832a7ce80da7f"
     },
     {
       "seed": 1001,
@@ -282,11 +282,11 @@
       "score": 135.175,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.973585997152197,
+        "distance": 6.973585997152196,
         "goto.reached": true,
-        "goto.distance": 0.14528091281152053
+        "goto.distance": 0.1452809128115213
       },
-      "fingerprint": "ea14ded7f742f0124f3c1f9627588e0d7c37c9990480295e2c165b94bfdaa0cb"
+      "fingerprint": "32fb476250f8be488b64a10c0fb2f75fef5d5cca919a8b8ae1bf123307cfb884"
     },
     {
       "seed": 1003,
@@ -331,11 +331,11 @@
       "score": -9.35,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.351380257954284,
+        "distance": 12.351380257954286,
         "goto.reached": false,
-        "goto.distance": 1.1688062996724682
+        "goto.distance": 1.1688062996724689
       },
-      "fingerprint": "364808ef0297ae401734dba7b5a3dc7536ab3cb9b521bc438929fa0035525760"
+      "fingerprint": "283773050cbbd0f4449ae133b9beef0ae086fefc38244ce43331e301cd39a0d5"
     },
     {
       "seed": 1004,
@@ -380,11 +380,11 @@
       "score": 127.3,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.257279701740998,
+        "distance": 8.257279701741,
         "goto.reached": true,
-        "goto.distance": 0.14747495148018616
+        "goto.distance": 0.14747495148018583
       },
-      "fingerprint": "06b2499ebc0307760979113985188ebd1891e67a5c8d39a6d71738a1ea9390ce"
+      "fingerprint": "a81e28e6e86841409221de229246b354f4c5c46986bec8532bb7e67e8cfd3549"
     },
     {
       "seed": 1005,
@@ -478,11 +478,11 @@
       "score": 134.5,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.072534834427273,
+        "distance": 7.072534834427275,
         "goto.reached": true,
-        "goto.distance": 0.14982530479826628
+        "goto.distance": 0.14982530479826625
       },
-      "fingerprint": "e64bb5e95d9112db5d01e9bb08e83ed3ea50ce3fc7058a04444a89d48155ec3a"
+      "fingerprint": "6ec5ec0f8ff69ca675c15b157cabed0ec5e2249e9d7050f140fc505ba67ae506"
     },
     {
       "seed": 1007,
@@ -529,9 +529,9 @@
         "collisions": 0,
         "distance": 8.06723855804193,
         "goto.reached": true,
-        "goto.distance": 0.14486118836056827
+        "goto.distance": 0.1448611883605683
       },
-      "fingerprint": "8d033e22c131a05e36a509f28a026a612a7799dde3538a83f655f087c71089c8"
+      "fingerprint": "33aedfd00c32a5ec19b894c7c3e9bedf85039fa2adcae9ec877bac920b47f04d"
     },
     {
       "seed": 1008,
@@ -578,9 +578,9 @@
         "collisions": 0,
         "distance": 11.512301176587052,
         "goto.reached": true,
-        "goto.distance": 0.1436092520917825
+        "goto.distance": 0.14360925209178144
       },
-      "fingerprint": "bdadc183accbab306f0ff6d7ea464a859ddd70229d4e4c66e3904e8cce645d5d"
+      "fingerprint": "fc650631cea4e9eb31666468106801eb18f13ad2f460f5eceda3bd095ac55b18"
     },
     {
       "seed": 1009,
@@ -625,11 +625,11 @@
       "score": 134.875,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.042432957560332,
+        "distance": 7.042432957560334,
         "goto.reached": true,
-        "goto.distance": 0.144545376370469
+        "goto.distance": 0.14454537637046924
       },
-      "fingerprint": "a197b6fcf4836b8c11aecedc499f7870b93115db4222cfe3874c8a29381e6ba3"
+      "fingerprint": "22702b3168014fb6f1d4b56ee588e0bd0cc3eff797dc6b4847f58752eaf8f746"
     },
     {
       "seed": 1010,
@@ -674,11 +674,11 @@
       "score": 129.475,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.912389258916963,
+        "distance": 7.91238925891696,
         "goto.reached": true,
-        "goto.distance": 0.14358946749695636
+        "goto.distance": 0.14358946749695653
       },
-      "fingerprint": "7102175cff5dfe73ca278cbf50b545edd80a755f8843a91f0afcf0870e22b66a"
+      "fingerprint": "93a7ee5a3e147f1e688985c27e3995c92b26812914abb8103ac32734d356f75a"
     },
     {
       "seed": 1011,
@@ -723,11 +723,11 @@
       "score": 134.65,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.1282238695451925,
+        "distance": 7.128223869545192,
         "goto.reached": true,
-        "goto.distance": 0.14186709864059496
+        "goto.distance": 0.141867098640595
       },
-      "fingerprint": "fdf913bcad6b6cbf136b64b41d90082a684871ab9b5cc18a8d970663dce6b166"
+      "fingerprint": "d4862c57c9ed0e472e26a0194a42af8fa1de24995299ad93dfd06aaea5b6c66d"
     },
     {
       "seed": 1012,
@@ -772,11 +772,11 @@
       "score": 135.025,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.967984083393667,
+        "distance": 6.967984083393668,
         "goto.reached": true,
         "goto.distance": 0.14240983640889174
       },
-      "fingerprint": "b48a4e81de78458800e93bfdd52b0e32c3dbcc2487fb3f976b3aadb03426441c"
+      "fingerprint": "c4e130c03b9ad3d6de416665364f48987c09c97bc8daf44ee87bded04c5f16f3"
     },
     {
       "seed": 1013,
@@ -821,11 +821,11 @@
       "score": -7.615,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.443332477210967,
+        "distance": 12.443332477210966,
         "goto.reached": false,
         "goto.distance": 0.9519180809253288
       },
-      "fingerprint": "9cef1c269028dfef8c3b6f02279a02ec4fa2a3f685065768c9f46cdad72ad980"
+      "fingerprint": "936e84d6c20a26f3dbb6f0d6fa6e30999e04005bd40a5860e25de67759c53220"
     },
     {
       "seed": 1014,
@@ -872,9 +872,9 @@
         "collisions": 0,
         "distance": 11.841913812825645,
         "goto.reached": false,
-        "goto.distance": 1.401212745063966
+        "goto.distance": 1.4012127450639678
       },
-      "fingerprint": "2b8c4a9c27f6e95be38f3574680ef5639c5b731b6c725eb5d8cb95f966e9034d"
+      "fingerprint": "1f5393cdef529481d4cc5bc28e1134600718e58e0e3fabe5fbe008b73aaf16d6"
     },
     {
       "seed": 1015,
@@ -970,9 +970,9 @@
         "collisions": 0,
         "distance": 11.428196023701261,
         "goto.reached": false,
-        "goto.distance": 2.7681494290562987
+        "goto.distance": 2.7681494290562974
       },
-      "fingerprint": "a6c58989dd6cc27f311ce31acb9e61eac53bc37976d50b4023196e981cc36e48"
+      "fingerprint": "d285ae15f97f46ec6a84978fba94720572ea76cf3d86331e9c4c1511a3c861e2"
     },
     {
       "seed": 1017,
@@ -1017,11 +1017,11 @@
       "score": 124.3,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.89721059304817,
+        "distance": 8.897210593048172,
         "goto.reached": true,
-        "goto.distance": 0.14348989469548717
+        "goto.distance": 0.1434898946954872
       },
-      "fingerprint": "464c41f8606da49866c2c716bd4b67f5af2c7133676a7ee123e977c50ac92a62"
+      "fingerprint": "f3fbcf81f0fcf8d7f811000bf917e430a1af3443f8362de32c859f464a89c83e"
     },
     {
       "seed": 1018,
@@ -1066,11 +1066,11 @@
       "score": 129.775,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.161726948643254,
+        "distance": 8.161726948643253,
         "goto.reached": true,
-        "goto.distance": 0.14934591789033902
+        "goto.distance": 0.14934591789033813
       },
-      "fingerprint": "af383f805ad4eda157f322b0f6a0b0d5b4db0726cfbd4d8d4e41c83e2266031e"
+      "fingerprint": "a30830ed87e98141a67f5a4c81a39785d949a39689285709d7b1dce4e123ae31"
     },
     {
       "seed": 1019,
@@ -1117,9 +1117,9 @@
         "collisions": 0,
         "distance": 9.379967395213795,
         "goto.reached": true,
-        "goto.distance": 0.1490135628292865
+        "goto.distance": 0.14901356282928646
       },
-      "fingerprint": "e90d462c791acb2b9738207933d5042402012d3644cd954f4c361e49eeaf4f1e"
+      "fingerprint": "e9213fbde289cae2ee998742f6ae9eba458442ef423e84d6712edf42b79a5292"
     },
     {
       "seed": 1020,
@@ -1164,11 +1164,11 @@
       "score": -9.99,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.003237509647503,
+        "distance": 12.003237509647507,
         "goto.reached": false,
-        "goto.distance": 1.2487504261048845
+        "goto.distance": 1.248750426104881
       },
-      "fingerprint": "bded5f865d0ffe1cf7962db3dfbc1a776920e164e61f09229336ea49a513c4b7"
+      "fingerprint": "d593ff19ed2df6cd5782fffc47a47f5ae45b52dbf1707064a87a0eaf58321217"
     },
     {
       "seed": 1021,
@@ -1262,11 +1262,11 @@
       "score": -9.731,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.187983114809308,
+        "distance": 12.187983114809304,
         "goto.reached": false,
-        "goto.distance": 1.2163864428568545
+        "goto.distance": 1.2163864428568534
       },
-      "fingerprint": "f56064a2e204b00356b631be922c60411a7e4af83fb559864ee93cd9ce64eb5b"
+      "fingerprint": "a5de701cadcc02c640ba849f5163e2de52d1ffbb5de042aa7c7f83e9d8b97f97"
     },
     {
       "seed": 1023,
@@ -1311,11 +1311,11 @@
       "score": 117.1,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.063421307301404,
+        "distance": 9.063421307301402,
         "goto.reached": true,
         "goto.distance": 0.14957136365021867
       },
-      "fingerprint": "a52da070bdf8084e9e4046fdb37ca95c3334293d360354e93e6aa6d5f78d0b92"
+      "fingerprint": "21abf9a4d60f774551c113fb5b11d741abb432c06cb397bb38e156850726cc87"
     },
     {
       "seed": 1024,
@@ -1360,11 +1360,11 @@
       "score": 105.025,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.222310958741556,
+        "distance": 11.22231095874155,
         "goto.reached": true,
-        "goto.distance": 0.14309318067960525
+        "goto.distance": 0.14309318067960522
       },
-      "fingerprint": "6dcecd60e49ad0b5ef033a58575d83c46bf4c23b5050863defe192dece257123"
+      "fingerprint": "e346fb7bca5c8193aa21b7a6d4905f7762bf67568ab69273c279722d108ea251"
     },
     {
       "seed": 1025,
@@ -1409,11 +1409,11 @@
       "score": 133.975,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.343143314140196,
+        "distance": 7.343143314140194,
         "goto.reached": true,
-        "goto.distance": 0.14967941785132569
+        "goto.distance": 0.14967941785132655
       },
-      "fingerprint": "35e40244834d8a5b73830195b215ad59a27a8770c5a37d4fec6b05bdccc0e9b9"
+      "fingerprint": "79b25dbab9eec6577f275eb35c209f84e895156d83a12cba3fb83eed4d2503c2"
     },
     {
       "seed": 1026,
@@ -1458,11 +1458,11 @@
       "score": 127.9,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.266379383939023,
+        "distance": 8.266379383939025,
         "goto.reached": true,
         "goto.distance": 0.14217952700030762
       },
-      "fingerprint": "4ab076885ceab702258e326d5ee6154688a67ce8cef1d09db22b1de735a04e00"
+      "fingerprint": "a57d95f25fb9b5ececbfd818c4edc06a54f8ef27cf1dbf44bf5263bc28b4356b"
     },
     {
       "seed": 1027,
@@ -1556,11 +1556,11 @@
       "score": 135.25,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.064804735430759,
+        "distance": 7.0648047354307595,
         "goto.reached": true,
-        "goto.distance": 0.1499496635663913
+        "goto.distance": 0.14994966356639128
       },
-      "fingerprint": "ba800b6023479e7722aeccc6eda379fbb314e1d6f550934e5e2fa2d8d6461880"
+      "fingerprint": "28dc746248d2bf7dc9114e7ffdacd5b450de1dc3d4cc3dc5933c1bfde1e5480e"
     },
     {
       "seed": 1029,
@@ -1605,11 +1605,11 @@
       "score": -12.364,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.08994333665055,
+        "distance": 11.089943336650554,
         "goto.reached": false,
         "goto.distance": 1.5455437573142052
       },
-      "fingerprint": "cd194bb0a1f41401d255d5a663339c8e3d3d590032d6eec896440ac4003acc7b"
+      "fingerprint": "bef6a84815ecd7f484a4248f2da5274a1fec2130a3c1edee7196757d9bad8dad"
     },
     {
       "seed": 1030,
@@ -1656,9 +1656,9 @@
         "collisions": 0,
         "distance": 6.764899113238872,
         "goto.reached": true,
-        "goto.distance": 0.14962057859400052
+        "goto.distance": 0.14962057859400055
       },
-      "fingerprint": "58f918ae19a2cc823bda602c78b94f57f97752bb10ec5f0da8ffee614d4c9d79"
+      "fingerprint": "67940883e411ac2972ac7eb0b69344f851f28fb508464c1b8e06f4f5a21b5d64"
     },
     {
       "seed": 1031,
@@ -1752,11 +1752,11 @@
       "score": 118.525,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.86983288810907,
+        "distance": 9.869832888109071,
         "goto.reached": true,
-        "goto.distance": 0.14665965042208695
+        "goto.distance": 0.14665965042208606
       },
-      "fingerprint": "258f90d90a290283f27a907d1a94bc88ec6e2c0fdb2e40c16ea95b6540f48971"
+      "fingerprint": "0765b68fc682537133379a4eaecaac5eed9ef1593a896ee7fa366d11518beccd"
     },
     {
       "seed": 1033,
@@ -1801,11 +1801,11 @@
       "score": 122.275,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.230588411811665,
+        "distance": 9.230588411811667,
         "goto.reached": true,
-        "goto.distance": 0.14558447483624895
+        "goto.distance": 0.1455844748362494
       },
-      "fingerprint": "5df6c84455db01d956247284ac4567abf0040414cdba550410dda6ee3bdb725a"
+      "fingerprint": "c902221d196dd534fd1d9b5f6425975bf0e77d0b70ba5707fe98506da647b532"
     },
     {
       "seed": 1034,
@@ -1850,11 +1850,11 @@
       "score": 125.2,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.598480961726713,
+        "distance": 8.598480961726715,
         "goto.reached": true,
-        "goto.distance": 0.14486494505998174
+        "goto.distance": 0.14486494505998176
       },
-      "fingerprint": "4fc535f768ba87f97c9b593242c2935d972828b34649de48796d5c8812d7aadc"
+      "fingerprint": "5ace1a171cda91b5ad86d83d5dc528691efc35be18699ac368658d29d2198baa"
     },
     {
       "seed": 1035,
@@ -1899,11 +1899,11 @@
       "score": 124.825,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.797197421750349,
+        "distance": 8.797197421750347,
         "goto.reached": true,
-        "goto.distance": 0.1430293675493598
+        "goto.distance": 0.14302936754935894
       },
-      "fingerprint": "f7d1a310ed1f5d468f87bc69c72d756054b5b912ab2b731a0aa38a57c6f5ebfb"
+      "fingerprint": "e6e319ea29d5111bcbda0a8eb4f0f73e0a886b34e6fe7f7b70b269d8651f3604"
     },
     {
       "seed": 1036,
@@ -1948,11 +1948,11 @@
       "score": 133.225,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.492645605588092,
+        "distance": 7.492645605588093,
         "goto.reached": true,
-        "goto.distance": 0.14443368716169894
+        "goto.distance": 0.14443368716169896
       },
-      "fingerprint": "1582a1586f5c9027c20dff2544bfc8808e87f442c74c158aafd0ccdd24d45e14"
+      "fingerprint": "15c487a5680184c1f772a2ae314e1ab03891810ae2659996ac5670def8d31894"
     },
     {
       "seed": 1037,
@@ -1999,9 +1999,9 @@
         "collisions": 0,
         "distance": 9.649939842431035,
         "goto.reached": true,
-        "goto.distance": 0.14384572153493877
+        "goto.distance": 0.1438457215349388
       },
-      "fingerprint": "d15068e2e8ee2bea33197347a760131ddab5bc9733c27342e2c8aa381884bbc1"
+      "fingerprint": "b46a952fec066f05f7d7efae1ec27eadb78e282e199c64559f46ef153744f30f"
     },
     {
       "seed": 1038,
@@ -2046,11 +2046,11 @@
       "score": -16.024,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.175769212650895,
+        "distance": 12.175769212650897,
         "goto.reached": false,
         "goto.distance": 2.0029605780258657
       },
-      "fingerprint": "e5d2df77b766b1cae09686a168c1ac61c7456e512617fd8116742dc1ce236325"
+      "fingerprint": "16eb9ee76d6aaca21ac8965c6ea32a99ab64b4749355381c2f435721c3a175ac"
     },
     {
       "seed": 1039,
@@ -2097,9 +2097,9 @@
         "collisions": 0,
         "distance": 11.566377527802707,
         "goto.reached": false,
-        "goto.distance": 1.3602805570952012
+        "goto.distance": 1.3602805570952003
       },
-      "fingerprint": "4d586faff1c6ec883e1a7e68e7a76dddf6cfa28d0ac109527e162d680f462372"
+      "fingerprint": "c13da311fa63779a5428e7b0f62dd2db60515c877af71e5e9bfcf2e3eff1bdba"
     },
     {
       "seed": 1040,
@@ -2144,11 +2144,11 @@
       "score": 109.9,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.767571734557116,
+        "distance": 10.767571734557114,
         "goto.reached": true,
-        "goto.distance": 0.1438354465285568
+        "goto.distance": 0.14383544652855826
       },
-      "fingerprint": "4a2a926856b2d2f8493a3df2a98df11074aa42d5d50f15159fab2caf4c537bf2"
+      "fingerprint": "ba30cfcca59ab758572320376894514b368dd7323ce8ce34e10ec5ac270bbc68"
     },
     {
       "seed": 1041,
@@ -2193,11 +2193,11 @@
       "score": 121.225,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.338015472747736,
+        "distance": 9.338015472747738,
         "goto.reached": true,
         "goto.distance": 0.14450280982780486
       },
-      "fingerprint": "977669b0cb00a92670896a4e36b2b4ef2e7f14e680c9798c568e249617f6f02a"
+      "fingerprint": "b89f10eb82a11d240976015cd39708281f71b4ee4fe9a108fb32e149fbd98ccd"
     },
     {
       "seed": 1042,
@@ -2242,11 +2242,11 @@
       "score": -9.856,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.90767169743587,
+        "distance": 11.907671697435868,
         "goto.reached": false,
-        "goto.distance": 1.232052898735898
+        "goto.distance": 1.2320528987359012
       },
-      "fingerprint": "1e1ab4683a9b5d285a2107f5e3adc138f2dfb86c20c49b6fe0d9937f957b7673"
+      "fingerprint": "6deaebbc1de2c4db2a3c24bd4f0e21fc92af98cee6831f0f37ab392f95f9d7f3"
     },
     {
       "seed": 1043,
@@ -2293,9 +2293,9 @@
         "collisions": 0,
         "distance": 8.528013373714947,
         "goto.reached": true,
-        "goto.distance": 0.1432850641590414
+        "goto.distance": 0.14328506415904105
       },
-      "fingerprint": "1becf0ad343552dc2d9fde04894f26e29f3919683d88465fa8b5706fb1de1b83"
+      "fingerprint": "e523c4a727241f0cf8440518b9cef779314b706a1e2770a0ea5f2daa0e2a30e0"
     },
     {
       "seed": 1044,
@@ -2342,9 +2342,9 @@
         "collisions": 0,
         "distance": 10.46497540387226,
         "goto.reached": false,
-        "goto.distance": 1.9159589473195824
+        "goto.distance": 1.915958947319582
       },
-      "fingerprint": "ae694ef90ccc9a71d483f7f48169abdf4d3cc1b730bd6a048a2099baad76eb9b"
+      "fingerprint": "4e1f8eeb734cda1b7b7eba49d58d02a3daad5224deb885e149439037c4bb4ff7"
     },
     {
       "seed": 1045,
@@ -2389,11 +2389,11 @@
       "score": 131.125,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.614422229515776,
+        "distance": 7.614422229515774,
         "goto.reached": true,
-        "goto.distance": 0.14305955692323222
+        "goto.distance": 0.14305955692323233
       },
-      "fingerprint": "965191175edee226b9190c35b91555edd4e4f226d2186419ba7a6c32f7f46ada"
+      "fingerprint": "ee1be37be40cd67d0ffe5c902eb85755f65bf73a144edfc4065f2976c3d00d67"
     },
     {
       "seed": 1046,
@@ -2438,11 +2438,11 @@
       "score": 115.15,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.073201431503824,
+        "distance": 10.07320143150382,
         "goto.reached": true,
-        "goto.distance": 0.1424963748091426
+        "goto.distance": 0.14249637480914232
       },
-      "fingerprint": "df7a49de61ba12b6a365b47de30266979d97d3d3cdc414a09cae1f27e0bec2af"
+      "fingerprint": "fa4f612c416b0956daefc00882db04cbc4d81dca34324703af83846ff0aea750"
     },
     {
       "seed": 1047,
@@ -2487,11 +2487,11 @@
       "score": 135.625,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.012863775550402,
+        "distance": 7.012863775550401,
         "goto.reached": true,
         "goto.distance": 0.1434899239396542
       },
-      "fingerprint": "392e484677ccf9fa8a3155eb101ef52412d1f2a4a26fc2d58012adfbdbecff09"
+      "fingerprint": "bfead4a73c527e36f8ed726a0febfae243fbebcc4cbd984db425bd6397e04667"
     },
     {
       "seed": 1048,
@@ -2536,11 +2536,11 @@
       "score": 129.475,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.542992240817018,
+        "distance": 7.542992240817021,
         "goto.reached": true,
-        "goto.distance": 0.1448358712252764
+        "goto.distance": 0.14483587122527639
       },
-      "fingerprint": "5c29250d4b9b6cf15a0664eb70697d9b29dedc9bf532560d94759454e8798503"
+      "fingerprint": "7350b548b1b8e2c1d84abc61bf5964e849cddb1ac0c4c45f36d31cf1950ce644"
     },
     {
       "seed": 1049,
@@ -2587,9 +2587,9 @@
         "collisions": 0,
         "distance": 9.1715768049753,
         "goto.reached": true,
-        "goto.distance": 0.1431310366308778
+        "goto.distance": 0.14313103663087853
       },
-      "fingerprint": "d4dfd6476b66c633b89e0a111f33f03a60777325c0ef58c0bd41b9f12667a361"
+      "fingerprint": "1908f2356e1740c645453fdcfb8038c40ec406a10f9bd37c853bd72811104aa0"
     },
     {
       "seed": 1050,
@@ -2634,11 +2634,11 @@
       "score": -8.726,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.127453678107505,
+        "distance": 12.127453678107509,
         "goto.reached": false,
-        "goto.distance": 1.0907020275696055
+        "goto.distance": 1.0907020275696044
       },
-      "fingerprint": "673dc2b7180c1590e699e427088eedaa049f3e81b536f7e17fc425f601254e63"
+      "fingerprint": "1d35087b6723ed5a9210e46ffa2a9f75d5259fb03476231fd1abb02bc2cc96c1"
     },
     {
       "seed": 1051,
@@ -2685,9 +2685,9 @@
         "collisions": 0,
         "distance": 12.528449667111376,
         "goto.reached": true,
-        "goto.distance": 0.14754324208071687
+        "goto.distance": 0.14754324208071684
       },
-      "fingerprint": "516475abbfc0b7aa654b74bc9c2297c73d2b804cfd6eadcc36ed654a751118bc"
+      "fingerprint": "c7750a5ced19e209cf7882890fbb3e0fa0323eb5212d5fbf529d05e3b24ccf32"
     },
     {
       "seed": 1052,
@@ -2783,9 +2783,9 @@
         "collisions": 0,
         "distance": 8.225902679484578,
         "goto.reached": true,
-        "goto.distance": 0.14593968903288165
+        "goto.distance": 0.14593968903288168
       },
-      "fingerprint": "1bf054880962c2f36f0c04a55ecf5a1c3d37d53a8478f300da19fb43050994cb"
+      "fingerprint": "3041b424630cf39feab112e6f58138975218ce72ee9b023026e451e4e1af9e31"
     },
     {
       "seed": 1054,
@@ -2830,11 +2830,11 @@
       "score": 129.775,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.832106967457199,
+        "distance": 7.8321069674571975,
         "goto.reached": true,
-        "goto.distance": 0.14514401373204777
+        "goto.distance": 0.14514401373204738
       },
-      "fingerprint": "d2e914017ad8357be6c1d7ecf330908f0ccba80fdaa7cdd1153018136dd319c6"
+      "fingerprint": "5a335cb22a230c3ba083cb875ee48e4b76058d7401f15ba35267c589c57dc69f"
     },
     {
       "seed": 1055,
@@ -2979,9 +2979,9 @@
         "collisions": 0,
         "distance": 9.31983083908463,
         "goto.reached": true,
-        "goto.distance": 0.14547648236503022
+        "goto.distance": 0.1454764823650302
       },
-      "fingerprint": "def3c5e29c5a32b1b2c29acef29d36c9644cae9eae21faa8828bbcd8b78c77b1"
+      "fingerprint": "73a2274007940d5ff9b1287fada2b6a5cf3dafcc3211b04d2db5d2fd737e787f"
     },
     {
       "seed": 1058,
@@ -3026,11 +3026,11 @@
       "score": 100.45,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.708559807238418,
+        "distance": 12.70855980723842,
         "goto.reached": true,
-        "goto.distance": 0.1473300666558363
+        "goto.distance": 0.14733006665583565
       },
-      "fingerprint": "bef4138e217c0b2c73bf42657766b26ebcc96b7f2859f7124e2e47d63fbe705c"
+      "fingerprint": "5b613d6fa51c2b47e80a62d5b689b509384d37a80b9b4686d90a6c7e81e070e0"
     },
     {
       "seed": 1059,
@@ -3124,11 +3124,11 @@
       "score": -1.973,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.625413990024018,
+        "distance": 12.625413990024017,
         "goto.reached": false,
-        "goto.distance": 0.2465898234324386
+        "goto.distance": 0.24658982343243738
       },
-      "fingerprint": "0b0dc8ca7f861c0d3d938674effbb6917302b56c5bece93e4da62cff07c357bd"
+      "fingerprint": "bff60728b80d4a8b8ee3ebe5aca1777fde342c0ccd11b35e8d343e70e9aace53"
     },
     {
       "seed": 1061,
@@ -3224,9 +3224,9 @@
         "collisions": 0,
         "distance": 10.856165048823213,
         "goto.reached": false,
-        "goto.distance": 1.6347982382744954
+        "goto.distance": 1.6347982382744952
       },
-      "fingerprint": "1442ef3adee469e4130b48b3564b0ce28e36bfd8f4ee4ed711ebae1585050604"
+      "fingerprint": "cea8695830119c776b31052a4bbf639c4f41ec585fd34e90f9aa18e2c52feb67"
     },
     {
       "seed": 1063,
@@ -3271,11 +3271,11 @@
       "score": 116.125,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.140356596410921,
+        "distance": 10.140356596410923,
         "goto.reached": true,
-        "goto.distance": 0.14672014396335353
+        "goto.distance": 0.14672014396335314
       },
-      "fingerprint": "63bc4b8a9c179da6c534c360892100d52886f0e5e67d83452895df62cccd6347"
+      "fingerprint": "5e95b88ee2e435739dd6c4bc1d2e7a35a57b7595903d985d7ad51ad4bf23ec83"
     },
     {
       "seed": 1064,
@@ -3369,11 +3369,11 @@
       "score": 113.125,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.073573040078525,
+        "distance": 10.073573040078527,
         "goto.reached": true,
-        "goto.distance": 0.14962468501576934
+        "goto.distance": 0.14962468501576978
       },
-      "fingerprint": "b2674c2974141d8c8fd6282599f318e0033be382f5c3559853b8786d0bb812be"
+      "fingerprint": "5453a96b7e392d94f3538c60630febf68edb61dd02ba2642a63d960243314789"
     },
     {
       "seed": 1066,
@@ -3418,11 +3418,11 @@
       "score": -15.422,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.894795964255216,
+        "distance": 10.89479596425522,
         "goto.reached": false,
-        "goto.distance": 1.9276910780934222
+        "goto.distance": 1.9276910780934198
       },
-      "fingerprint": "7419abe228ce882f985df8aa762a97617dc2b7d568a7f0eca531b53d32ea5a38"
+      "fingerprint": "37782c1da8b02aad178595149d267d551b0c864597f571a9ae2bd05491f2637a"
     },
     {
       "seed": 1067,
@@ -3469,9 +3469,9 @@
         "collisions": 0,
         "distance": 12.194448731523115,
         "goto.reached": false,
-        "goto.distance": 1.2900798315846012
+        "goto.distance": 1.2900798315846045
       },
-      "fingerprint": "df08e74e0eafc808a38f0cdc7b92b845ef7412efda5bc9bdb10f9d163f35cd99"
+      "fingerprint": "d312641246804bbdfc613e5581354583654625702f533fcd5a5c68bf5e1cc381"
     },
     {
       "seed": 1068,
@@ -3516,11 +3516,11 @@
       "score": -7.725,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.14653445813364,
+        "distance": 12.146534458133639,
         "goto.reached": false,
-        "goto.distance": 0.9656547868665456
+        "goto.distance": 0.9656547868665438
       },
-      "fingerprint": "4178f45f0dbbb47ed3fbda5306ea1aa4b5a2917766c665dc58777c059bdd214a"
+      "fingerprint": "d5caaa3533f657dc061a74c68ee39f5ef7c1109a17419f9ce483e828734342ca"
     },
     {
       "seed": 1069,
@@ -3614,11 +3614,11 @@
       "score": 136,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.881908565333052,
+        "distance": 6.8819085653330525,
         "goto.reached": true,
-        "goto.distance": 0.14835226307502208
+        "goto.distance": 0.1483522630750221
       },
-      "fingerprint": "1bff3c76731652d493061d50b3a8584f8b54afbba9dcf9b10b22e1c902ec7ce1"
+      "fingerprint": "393d80619b4f4bbbf63b08c8d078d6884af6d061c78bb1aa65e487bb5ccd83e5"
     },
     {
       "seed": 1071,
@@ -3663,11 +3663,11 @@
       "score": -15.037,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.911668708345,
+        "distance": 11.911668708345003,
         "goto.reached": false,
-        "goto.distance": 1.8796010831191632
+        "goto.distance": 1.8796010831191627
       },
-      "fingerprint": "88463db3321e2b2f6556791712833a671735799edb4b83bede678138b4e17e2f"
+      "fingerprint": "bd9ff92f6dcf96fbbd82b3b0d8538006f89c29fe6f78d7f673d9008db442f84f"
     },
     {
       "seed": 1072,
@@ -3812,9 +3812,9 @@
         "collisions": 0,
         "distance": 8.10880780726173,
         "goto.reached": true,
-        "goto.distance": 0.14172355444278217
+        "goto.distance": 0.14172355444278065
       },
-      "fingerprint": "ff4849591fab584e06ea3ce7d0ab3af19f8565b29aa19e8526e8df004a073806"
+      "fingerprint": "c68d9ebb4faa08f83f73743b3bdfbe3e5a9d2b1b1b9293ae66f5f23c06c8219a"
     },
     {
       "seed": 1075,
@@ -3859,11 +3859,11 @@
       "score": 136.45,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.796751630422731,
+        "distance": 6.7967516304227305,
         "goto.reached": true,
-        "goto.distance": 0.14799543369568516
+        "goto.distance": 0.14799543369568588
       },
-      "fingerprint": "1992217816d2d7a2ab5a3771ec50e7a566d8b61b4f9d601d9eb5c4e7a6396895"
+      "fingerprint": "67a14bdd67994f08eb90fa1ef51926bea2bfa36ed9c9093b88b0abc42572b39e"
     },
     {
       "seed": 1076,
@@ -3910,9 +3910,9 @@
         "collisions": 0,
         "distance": 11.338573032619431,
         "goto.reached": false,
-        "goto.distance": 1.6442208875890836
+        "goto.distance": 1.6442208875890871
       },
-      "fingerprint": "183baf802f1948dddd082d43f980a35d2607c89a8075bceecfd0ac31675aa50c"
+      "fingerprint": "2796cd859395468139f82b7949230bbfa963da42dd6a6ad010aab251288574ba"
     },
     {
       "seed": 1077,
@@ -3959,9 +3959,9 @@
         "collisions": 0,
         "distance": 12.319020900003002,
         "goto.reached": false,
-        "goto.distance": 1.2161640883573608
+        "goto.distance": 1.2161640883573641
       },
-      "fingerprint": "821c08332b955b74a43a1e70694b18dc8ea55ddb15ec0362e37f86e8c5bb3a51"
+      "fingerprint": "38cca892b062f997dcd051a12ee04c7ff85abfb1ad5e245e49b78a00f76dd07d"
     },
     {
       "seed": 1078,
@@ -4055,11 +4055,11 @@
       "score": -9.66,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.46455132990328,
+        "distance": 12.464551329903276,
         "goto.reached": false,
         "goto.distance": 1.2075551420456763
       },
-      "fingerprint": "6b2dd0d3c2ef50dce39daecc4dba12c32d38f075aecfa6e5598cb15a64584724"
+      "fingerprint": "88db7a0351293db0b295c16d0f4c45474fb3676ca34a38bb9a4d04bfc44e3acd"
     },
     {
       "seed": 1080,
@@ -4104,11 +4104,11 @@
       "score": 129.1,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.953774978496409,
+        "distance": 7.9537749784964085,
         "goto.reached": true,
-        "goto.distance": 0.1477463920409467
+        "goto.distance": 0.14774639204094667
       },
-      "fingerprint": "6494c29f10341f62e2784143e4a02989a92eac1cf4ac103a022eee3d196a46c3"
+      "fingerprint": "d0a903910d7dd6c656fe628366350cebac78c55c8333b6995804bd9d3aacf4d4"
     },
     {
       "seed": 1081,
@@ -4153,11 +4153,11 @@
       "score": 134.875,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.997842154343178,
+        "distance": 6.997842154343177,
         "goto.reached": true,
-        "goto.distance": 0.14329600193089376
+        "goto.distance": 0.14329600193089453
       },
-      "fingerprint": "1bde2516415a9a4bb88330d0c2fd77d4cac0e11ac69232944a22f2072123b9f7"
+      "fingerprint": "36c9803b67eca5628ecd52e9b7ac0f5968ee5e2a1e34aa97c84e94f7d74b727e"
     },
     {
       "seed": 1082,
@@ -4349,11 +4349,11 @@
       "score": 104.65,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.948138381704105,
+        "distance": 11.948138381704107,
         "goto.reached": true,
         "goto.distance": 0.1489207544996555
       },
-      "fingerprint": "6cfaf95464e879a8b2f70a4562913ce89e976b4c5a0bd4e0eecc31ed66bf8c18"
+      "fingerprint": "4f651a3b67b7a25d86b63fbac5bd444713094aa9421872e05e1cde1cfdd6309c"
     },
     {
       "seed": 1086,
@@ -4398,11 +4398,11 @@
       "score": 135.85,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.87501107137274,
+        "distance": 6.875011071372739,
         "goto.reached": true,
         "goto.distance": 0.1493300609178641
       },
-      "fingerprint": "2d6aa3d068537b7c789fdadc8453fdafdf97dff38ea9ee078ce0b41e40c6377a"
+      "fingerprint": "8103b137bc8578de9c1716bd73a48de8f8ea4e178ca2b4c4d88d71422568007a"
     },
     {
       "seed": 1087,
@@ -4449,9 +4449,9 @@
         "collisions": 0,
         "distance": 10.842742121526307,
         "goto.reached": false,
-        "goto.distance": 1.753504984946854
+        "goto.distance": 1.7535049849468545
       },
-      "fingerprint": "507252fac125696f5edcef233c84bf616c4e4dfcb5a199ab2c4ec5c047b89e45"
+      "fingerprint": "3ecaaf5e311e85592447e11845ac8ea370eae8b6d267952b8c8da1941380283e"
     },
     {
       "seed": 1088,
@@ -4547,9 +4547,9 @@
         "collisions": 0,
         "distance": 12.001302602701017,
         "goto.reached": false,
-        "goto.distance": 1.4061590672208528
+        "goto.distance": 1.4061590672208517
       },
-      "fingerprint": "d240f241b4caac36ed0eafd5b28d69d4e43c69562fae3c46d61a8439f5b29f45"
+      "fingerprint": "841c3d4c2ff651f5755c21f5e9cff1027f38d5ca1be13c2f33c763d22bf9b931"
     },
     {
       "seed": 1090,
@@ -4596,9 +4596,9 @@
         "collisions": 0,
         "distance": 12.217952870654049,
         "goto.reached": false,
-        "goto.distance": 1.5662226226698672
+        "goto.distance": 1.5662226226698646
       },
-      "fingerprint": "8d29ff6048bea922c005d7f6f359a616419114ef98ed7a3efb3dc1297b282ea8"
+      "fingerprint": "e47eba2a01e39a490dc41206a492132f3edb972db62bc5ed87afb3140edaba0c"
     },
     {
       "seed": 1091,
@@ -4643,11 +4643,11 @@
       "score": 121.975,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.357447581141077,
+        "distance": 9.357447581141075,
         "goto.reached": true,
-        "goto.distance": 0.14620041511309212
+        "goto.distance": 0.14620041511309312
       },
-      "fingerprint": "7e875256ef959b1b4bd3080d2687b959ea1ee251bd537079595dd55cc3f20703"
+      "fingerprint": "22443d21bb28b349d537dc5218fe13fa1efc5c7750dcaa7c2769d48e176ac01c"
     },
     {
       "seed": 1092,
@@ -4692,11 +4692,11 @@
       "score": 102.025,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.456886684629284,
+        "distance": 12.45688668462928,
         "goto.reached": true,
-        "goto.distance": 0.14465898599780758
+        "goto.distance": 0.1446589859978058
       },
-      "fingerprint": "cf945a20a5ffbf2f985603f2a7d1dbae1535777447d5591266e1e96d0680d19f"
+      "fingerprint": "87e15e903533dc4186bd415d2d635e120e303a177e2a836b5b5c8a279e3405d9"
     },
     {
       "seed": 1093,
@@ -4741,11 +4741,11 @@
       "score": -7.8,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.357804705227307,
+        "distance": 12.35780470522731,
         "goto.reached": false,
-        "goto.distance": 0.9749938780762991
+        "goto.distance": 0.9749938780762983
       },
-      "fingerprint": "d65a305bf901ceee9e36c57e9d860a8a5b90352366cc241aced88eae028f0c81"
+      "fingerprint": "d0c1e6742d3ab836f920294d88d17ca156cd71f714208e35f764b40a703b7584"
     },
     {
       "seed": 1094,
@@ -4839,11 +4839,11 @@
       "score": 131.575,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.593258714680126,
+        "distance": 7.593258714680123,
         "goto.reached": true,
-        "goto.distance": 0.14869143938610557
+        "goto.distance": 0.14869143938610607
       },
-      "fingerprint": "6ef9cdf495a3d331e27edae9e0867f2ed6a0ba4a82f64dde765bead552c3ebd6"
+      "fingerprint": "cf0486a312c347080b2ada4cac13687aee3fd42e6575583fbe226627a7ee05a4"
     },
     {
       "seed": 1096,
@@ -4888,11 +4888,11 @@
       "score": -6.443,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.448216910155786,
+        "distance": 12.448216910155784,
         "goto.reached": false,
-        "goto.distance": 0.8053187814910371
+        "goto.distance": 0.8053187814910362
       },
-      "fingerprint": "e0dbadca702aa253a5688912fe55b351a5e23aa15716b958a94cd202eeb23823"
+      "fingerprint": "51586655d03d910390d7843225892d8ab689e56cde437f05c3e2728c980a2414"
     },
     {
       "seed": 1097,
@@ -4986,11 +4986,11 @@
       "score": -4.877,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.498570193402845,
+        "distance": 12.498570193402847,
         "goto.reached": false,
-        "goto.distance": 0.6096724886142151
+        "goto.distance": 0.6096724886142116
       },
-      "fingerprint": "d8832daf2ba141815c3c4aed325d6d0609045cb38a78e955317537357c06a3e9"
+      "fingerprint": "cccb54d65b51e530ae47849ff83ab2f332fa2d059b7c70ea050c5dd5c39996df"
     },
     {
       "seed": 1099,
@@ -5035,11 +5035,11 @@
       "score": -15.424,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.45136490187102,
+        "distance": 10.451364901871019,
         "goto.reached": false,
-        "goto.distance": 1.9280192458102439
+        "goto.distance": 1.9280192458102445
       },
-      "fingerprint": "089d2330fae0041bfc38939ac0c3ea459c93ad356b6245eb02b21719b2c56b39"
+      "fingerprint": "70a733745242f020c7cd9153007aaed46d36c089e72369989d83f67d4abc2885"
     },
     {
       "seed": 1100,
@@ -5084,11 +5084,11 @@
       "score": 110.275,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.706510971249797,
+        "distance": 10.706510971249793,
         "goto.reached": true,
-        "goto.distance": 0.14896967444716958
+        "goto.distance": 0.14896967444716888
       },
-      "fingerprint": "a32f5e46f7f6e587efee5a8769579c586be550d5e769c26fd560b0c62efd7323"
+      "fingerprint": "80374b9a042e94cbb8ce308fa22c34651a903c1112502c595ebc0492c50ea6b9"
     },
     {
       "seed": 1101,
@@ -5133,11 +5133,11 @@
       "score": -10.414,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.753075031466155,
+        "distance": 11.753075031466153,
         "goto.reached": false,
-        "goto.distance": 1.3018080581403666
+        "goto.distance": 1.3018080581403673
       },
-      "fingerprint": "938f95d3ea6fdd8d26dada877de9e9eac95730845502b566a9897837d23ab949"
+      "fingerprint": "5fc6dc8897e6ae8ac6944c7c61d84d72e4389249533b5d88e23a0fd235b9036e"
     },
     {
       "seed": 1102,
@@ -5182,11 +5182,11 @@
       "score": 123.55,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.824382522309323,
+        "distance": 8.824382522309325,
         "goto.reached": true,
-        "goto.distance": 0.14672878219715887
+        "goto.distance": 0.14672878219715976
       },
-      "fingerprint": "61a059ab929fad8754d8ce4547655e7d7d12669e7bbbc7f0560626deb1754bd2"
+      "fingerprint": "0c648b546bc3e1ec8f2b105ac63cab2626b6e2bb79920d60a2fa9504feef27ce"
     },
     {
       "seed": 1103,
@@ -5280,11 +5280,11 @@
       "score": -1.223,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.506348254321846,
+        "distance": 12.506348254321844,
         "goto.reached": false,
-        "goto.distance": 0.1528813954818715
+        "goto.distance": 0.15288139548187146
       },
-      "fingerprint": "044775de07d5452c9e12d7e0c179f266a8ea400d481fa16704f30f584673f303"
+      "fingerprint": "dee16f69d62db50c026b64631a89d25c9d414d7bc819685049dc082054e85595"
     },
     {
       "seed": 1105,
@@ -5331,9 +5331,9 @@
         "collisions": 0,
         "distance": 11.310164504562804,
         "goto.reached": false,
-        "goto.distance": 1.5672167635664047
+        "goto.distance": 1.5672167635664052
       },
-      "fingerprint": "db85d2b94c29ea28a7082439e6f9322e74b34e358774d782ead7fb6ac8466016"
+      "fingerprint": "89b50337ec10d546fdeb8330783081bdc270238a87d511ea95f4cb4208be3e66"
     },
     {
       "seed": 1106,
@@ -5378,11 +5378,11 @@
       "score": 127.45,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.239646349411391,
+        "distance": 8.239646349411393,
         "goto.reached": true,
-        "goto.distance": 0.14166760420769778
+        "goto.distance": 0.1416676042076986
       },
-      "fingerprint": "52558409372bba778633957ee33a5cdcfc2c0f5ef825dd85611a7232642427fd"
+      "fingerprint": "1defd48065d5775573c44ac996172e101290d2a996c35048e3233247ce7b6cce"
     },
     {
       "seed": 1107,
@@ -5427,11 +5427,11 @@
       "score": 123.325,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.759091092880674,
+        "distance": 8.759091092880677,
         "goto.reached": true,
-        "goto.distance": 0.1433840702436272
+        "goto.distance": 0.14338407024362673
       },
-      "fingerprint": "2b394abd4d78080c167804c34ab5b156f709297206cb8396644a28d5c93bc353"
+      "fingerprint": "53b8f8c88cf909cebe7677425c215c2e74e87da1b753e9a76051a180fad29776"
     },
     {
       "seed": 1108,
@@ -5476,11 +5476,11 @@
       "score": -5.851,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.2609510102416,
+        "distance": 12.260951010241598,
         "goto.reached": false,
-        "goto.distance": 0.7314192561834182
+        "goto.distance": 0.7314192561834203
       },
-      "fingerprint": "02bb181838cacc614fb4fe07f3a62500f2a0baad86c01bded71d7884e8cd0cca"
+      "fingerprint": "8b58efc281358884938c9b16476f94eefce0dfd4c3a75b508d9928db4275f140"
     },
     {
       "seed": 1109,
@@ -5527,9 +5527,9 @@
         "collisions": 0,
         "distance": 11.95404170237632,
         "goto.reached": false,
-        "goto.distance": 1.3095779078106202
+        "goto.distance": 1.3095779078106184
       },
-      "fingerprint": "a9e347ee53dd5e368b88974677518cd79d4f89268b20763e8426a4facc44bffd"
+      "fingerprint": "f1bdb31aee457d8ed227ebc8183c616ae763da31a1090a45f8d49ecc8202eef4"
     },
     {
       "seed": 1110,
@@ -5576,9 +5576,9 @@
         "collisions": 0,
         "distance": 12.60201104484594,
         "goto.reached": false,
-        "goto.distance": 0.7728018555455662
+        "goto.distance": 0.7728018555455664
       },
-      "fingerprint": "11efcf1c1637c5a0244c1679c149994d06aecd3938e91fff17a97f62da5053d3"
+      "fingerprint": "f5a73f726ffb5efc1ce8837edf88864e5d8cb82a5189f2cb197356e3739fca0e"
     },
     {
       "seed": 1111,
@@ -5623,11 +5623,11 @@
       "score": 127.825,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.230893738567024,
+        "distance": 8.230893738567026,
         "goto.reached": true,
         "goto.distance": 0.14960702888742705
       },
-      "fingerprint": "56fc98d8a366a2e939ea04abaee7ab678d3b8e764b42c224540785f41318ed6d"
+      "fingerprint": "ea7f43bfe4e845aca53ec406d82dd1dd93abf15b3eaa214e3b97493b1ef752b2"
     },
     {
       "seed": 1112,
@@ -5674,9 +5674,9 @@
         "collisions": 0,
         "distance": 12.029083898770397,
         "goto.reached": false,
-        "goto.distance": 1.328422318294219
+        "goto.distance": 1.3284223182942174
       },
-      "fingerprint": "c4264c02ccddcaac5f4cbe8cb6e296655123067527343d128b62f1ad10bec496"
+      "fingerprint": "408c4cd63a9e97734a6f353bf593a40bc75cdf5477bb24cadf1c6753c23cd686"
     },
     {
       "seed": 1113,
@@ -5723,9 +5723,9 @@
         "collisions": 0,
         "distance": 10.621342525128052,
         "goto.reached": false,
-        "goto.distance": 3.04852386416117
+        "goto.distance": 3.0485238641611674
       },
-      "fingerprint": "060aa4c6765915097b84db8480cb9de8a7a928cb2eeb8ae5d3eccd6d2753a2c1"
+      "fingerprint": "c312181a018cafd5ec7ef56e8c742c3e99dea071ba53806f0b30e972958926ab"
     },
     {
       "seed": 1114,
@@ -5772,9 +5772,9 @@
         "collisions": 0,
         "distance": 7.898356726917615,
         "goto.reached": true,
-        "goto.distance": 0.14538279716395894
+        "goto.distance": 0.1453827971639585
       },
-      "fingerprint": "5d2c20a4806e8f01227b7866e8266a2b1f67b0315e74bc65c64afb4e3e86f147"
+      "fingerprint": "77200b58402e806bea8a38cfaa27e98656c445d25162e49179bcba23d8056f15"
     },
     {
       "seed": 1115,
@@ -5819,11 +5819,11 @@
       "score": 127.525,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.230833470469866,
+        "distance": 8.230833470469864,
         "goto.reached": true,
-        "goto.distance": 0.14164088640123698
+        "goto.distance": 0.14164088640123673
       },
-      "fingerprint": "96d503b048cc9a6f484bf371f2b714f6102af2ca508513fad3a485cfd7d48e14"
+      "fingerprint": "57d5dd2902db5d01d99f9e58f365af73bf46b781888affd508546e0e8bbfde3b"
     },
     {
       "seed": 1116,
@@ -5870,9 +5870,9 @@
         "collisions": 0,
         "distance": 6.94436306574734,
         "goto.reached": true,
-        "goto.distance": 0.14876720509363897
+        "goto.distance": 0.1487672050936388
       },
-      "fingerprint": "17c3a6eeee95c510fded7e5f78b6dc87a9532ffb581231b16fc846fb25fead03"
+      "fingerprint": "464a66edbf7004ef63828a7919f2e1a17b9adbd85903427bfe8adff8d691f320"
     },
     {
       "seed": 1117,
@@ -5966,11 +5966,11 @@
       "score": 126.4,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.47910893557319,
+        "distance": 8.479108935573192,
         "goto.reached": true,
-        "goto.distance": 0.1457957798718926
+        "goto.distance": 0.14579577987189174
       },
-      "fingerprint": "bc980995bfeb0750d191e4f8de9969c1a6c59490038c3a0971f51f82600cd39a"
+      "fingerprint": "35cebcc8f8eb7cf34879c54ead90decbe4663b21e1901b0ec2b51f3c3eace1cb"
     },
     {
       "seed": 1119,
@@ -6017,9 +6017,9 @@
         "collisions": 0,
         "distance": 7.1789909937264,
         "goto.reached": true,
-        "goto.distance": 0.14284886436908045
+        "goto.distance": 0.14284886436908042
       },
-      "fingerprint": "4b5fcf308a73164e84de27b043daef4edbcda65a05078bc51381af61e8942a7c"
+      "fingerprint": "83160648f756b502c83e8fb64c111ed71aa13dbf8509cd3a2f9a2e45f32263aa"
     },
     {
       "seed": 1120,
@@ -6064,11 +6064,11 @@
       "score": -24.472,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.119241766925443,
+        "distance": 11.119241766925446,
         "goto.reached": false,
-        "goto.distance": 3.058983979430237
+        "goto.distance": 3.0589839794302347
       },
-      "fingerprint": "3bec97e5590a4f5fd7a362138113e4129905e1f59fa66d48a627dda24ba6788c"
+      "fingerprint": "d7d78ed35383dc0ddc915c49e38a654a60e737e918af40e6ddaa02801b6e0dd8"
     },
     {
       "seed": 1121,
@@ -6113,11 +6113,11 @@
       "score": 136.3,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.905993896362842,
+        "distance": 6.9059938963628404,
         "goto.reached": true,
-        "goto.distance": 0.1420411581826558
+        "goto.distance": 0.1420411581826567
       },
-      "fingerprint": "d8bafa5643ff7c689271d26e116ce0bf54df7e0ce5ff15b28161f4536a51f162"
+      "fingerprint": "83307c35b5c5788ed915373ff41a3f4d89752d27285178f8ffb83cd44fa63367"
     },
     {
       "seed": 1122,
@@ -6162,11 +6162,11 @@
       "score": -11.25,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.818477630113223,
+        "distance": 11.818477630113225,
         "goto.reached": false,
-        "goto.distance": 1.4062276991073976
+        "goto.distance": 1.406227699107396
       },
-      "fingerprint": "370f945ef3181ff12c54046986dafd413737983e831806215b8f071240a0f9fb"
+      "fingerprint": "0400544e9f36a52811c84435786825a470c86d4fc5260f989e0de297415811da"
     },
     {
       "seed": 1123,
@@ -6213,9 +6213,9 @@
         "collisions": 0,
         "distance": 6.762820353125847,
         "goto.reached": true,
-        "goto.distance": 0.1482488410366053
+        "goto.distance": 0.14824884103660574
       },
-      "fingerprint": "15c0f004ba43efd2db8c0d244bb3f6c72deb81c1c450fe380aba5d511f835d1b"
+      "fingerprint": "d2d5426fd98d0a4627decb20d0b1b52de46d574ea3a24413731bfe6545c4acdd"
     },
     {
       "seed": 1124,
@@ -6260,11 +6260,11 @@
       "score": -6.632,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.310096839036506,
+        "distance": 12.31009683903651,
         "goto.reached": false,
         "goto.distance": 0.8290196924258847
       },
-      "fingerprint": "4ae901c5c0f9afd068f5f01277f5700dd8655c4779c38dd09eb0c1a0108599f6"
+      "fingerprint": "3f382b273082b550f001261580baa8dcc590383bf78ce41312478db52155f64e"
     },
     {
       "seed": 1125,
@@ -6309,11 +6309,11 @@
       "score": 129.7,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.845014391179398,
+        "distance": 7.845014391179397,
         "goto.reached": true,
-        "goto.distance": 0.14626271359357365
+        "goto.distance": 0.1462627135935728
       },
-      "fingerprint": "150721a126ecf5890f40baddca1147d0811b6b4ad99b5c55a034be58c194e724"
+      "fingerprint": "73bfa6a7b877872027e86e7d766051f18072f2c1552b3d45500da27da98bb3e0"
     },
     {
       "seed": 1126,
@@ -6360,9 +6360,9 @@
         "collisions": 0,
         "distance": 6.997526184525022,
         "goto.reached": true,
-        "goto.distance": 0.14801450538667385
+        "goto.distance": 0.14801450538667424
       },
-      "fingerprint": "c050d232ea92b3512af477ffece2eead0147f86b54a37e51a08426ab5eed9f6e"
+      "fingerprint": "d452eedd1a73eb86415b02957ee2e797d9a2e206c86fa4bab7a8ac9aa8002c09"
     },
     {
       "seed": 1127,
@@ -6407,11 +6407,11 @@
       "score": 135.025,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.999988617274867,
+        "distance": 6.999988617274866,
         "goto.reached": true,
-        "goto.distance": 0.14153396011989788
+        "goto.distance": 0.14153396011989816
       },
-      "fingerprint": "e795eb3b945e322f9c1835664999752f465ccb0f19aaabfe064ae842010383b3"
+      "fingerprint": "46863ca7d506f27b12331d073b706d65c0d0fb41f6b32bfb7d02435f98411bbe"
     },
     {
       "seed": 1128,
@@ -6456,11 +6456,11 @@
       "score": -15.212,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.61833139598186,
+        "distance": 10.618331395981862,
         "goto.reached": false,
-        "goto.distance": 1.9015470869404432
+        "goto.distance": 1.9015470869404418
       },
-      "fingerprint": "71a2ee5fe183d1d39e32fef92a3f97977bf24ecd502d919848df5825b3e0842f"
+      "fingerprint": "c90660980d3cfdea2ff1e47addef06974dd336e61a14a6827cc43a0e7fbae8d4"
     },
     {
       "seed": 1129,
@@ -6505,11 +6505,11 @@
       "score": 134.5,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.064866492755642,
+        "distance": 7.064866492755643,
         "goto.reached": true,
         "goto.distance": 0.14659565415151593
       },
-      "fingerprint": "b91f727dfb604720aa92b79f010df194164ec4183da8d8c5149336f74c03cd7b"
+      "fingerprint": "52c514cebba0b3bd3d41b56f813836cf728e349d42483f970c4747cbcbd72f91"
     },
     {
       "seed": 1130,
@@ -6556,9 +6556,9 @@
         "collisions": 0,
         "distance": 8.61980095091503,
         "goto.reached": true,
-        "goto.distance": 0.14925262707105738
+        "goto.distance": 0.14925262707105771
       },
-      "fingerprint": "b445a20c72f253015c8442db21986e4247be843dfcfca83af267e0c76fcd16ec"
+      "fingerprint": "e1509d8d60f158569542510471ebb1100d097c9ebf3dc8d2a97cbbc2fd6d808d"
     },
     {
       "seed": 1131,
@@ -6603,11 +6603,11 @@
       "score": 119.125,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.582516583424727,
+        "distance": 9.582516583424729,
         "goto.reached": true,
         "goto.distance": 0.1443564667136859
       },
-      "fingerprint": "541d16a58a65b2fdd1e8cee3d6909572001a634a3f5a2e3e4af55183b6c60ae1"
+      "fingerprint": "771bae354f3696579787232a4c21e6ff6fa14871958a80fcfa16089f9dbe5ae8"
     },
     {
       "seed": 1132,
@@ -6654,9 +6654,9 @@
         "collisions": 0,
         "distance": 6.902930261302643,
         "goto.reached": true,
-        "goto.distance": 0.1462067551857094
+        "goto.distance": 0.14620675518571025
       },
-      "fingerprint": "b711a70f54fe3c91fc467f25018c9376dc82711dc2c41a79dce05fc1822755d9"
+      "fingerprint": "9ff31902fb68a126c72164f2a52bd9de9c8228d718235a1c1821938e27a35dc0"
     },
     {
       "seed": 1133,
@@ -6701,11 +6701,11 @@
       "score": 133.975,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.198111328614591,
+        "distance": 7.1981113286145915,
         "goto.reached": true,
-        "goto.distance": 0.14694521440246272
+        "goto.distance": 0.14694521440246347
       },
-      "fingerprint": "1c6aae1371d86dfba8516c3bcc5aa171cb3005b9042f1792dd74ed2c0444118b"
+      "fingerprint": "90aa30edba208a036ae6a1efc9a5b0a7873101d7104bf66f08098a44a78e42c1"
     },
     {
       "seed": 1134,
@@ -6750,11 +6750,11 @@
       "score": -14.662,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.482377109264629,
+        "distance": 10.48237710926463,
         "goto.reached": false,
-        "goto.distance": 1.832714079474148
+        "goto.distance": 1.8327140794741479
       },
-      "fingerprint": "c673e53051665e67a3f2b1eaa5ece52b2057e44f2f0cc450f306de5ee13f5a56"
+      "fingerprint": "3c72c7a7cf17eec36f1306be7553f56594efbe4563a2e34081ea4f08da099d9a"
     },
     {
       "seed": 1135,
@@ -6848,11 +6848,11 @@
       "score": 102.775,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.591225825124939,
+        "distance": 11.59122582512494,
         "goto.reached": true,
         "goto.distance": 0.1447167425536407
       },
-      "fingerprint": "6c672e6c49be0f00bb1643e8bca5a5b1cc0ff6847b9edcdec6a0ec00514d297b"
+      "fingerprint": "f7726b34758c64b2bcdd122e02d564453c0074875ba5a23b744fb2a3ca140e91"
     },
     {
       "seed": 1137,
@@ -6946,11 +6946,11 @@
       "score": -22.852,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.958593025570911,
+        "distance": 11.958593025570915,
         "goto.reached": false,
-        "goto.distance": 2.8564872029576676
+        "goto.distance": 2.856487202957661
       },
-      "fingerprint": "62ebaaf6dbb2d6c2a232ac866fe206762d550dd4af8c53e9fb4eb672b44df1f0"
+      "fingerprint": "f8596ca08348903afca8fc4369ebfa0e497e05b32dd10dd4f21fdb4ae4e848a2"
     },
     {
       "seed": 1139,
@@ -7044,11 +7044,11 @@
       "score": 129.25,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.020487474969075,
+        "distance": 8.020487474969077,
         "goto.reached": true,
-        "goto.distance": 0.1487713425054068
+        "goto.distance": 0.14877134250540555
       },
-      "fingerprint": "be00975b3f9a5daa11bad05315042b22fa49ee883282387da10e0c3c3eaa75e8"
+      "fingerprint": "cf38b14892ef673803dbd02089419fe8aaef4906a394d4da34f253e6b0f9abe5"
     },
     {
       "seed": 1141,
@@ -7144,9 +7144,9 @@
         "collisions": 0,
         "distance": 7.608953695023739,
         "goto.reached": true,
-        "goto.distance": 0.14593883948330677
+        "goto.distance": 0.14593883948330674
       },
-      "fingerprint": "a900517fd16798ac394c179fa68d324ad74e6446d2b57fa338634955b7da8434"
+      "fingerprint": "2a57248ad025b08d6451fe19efe93a8e91367406be3cdc7c571dbfa413f08786"
     },
     {
       "seed": 1143,
@@ -7191,11 +7191,11 @@
       "score": 126.025,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.443260351050307,
+        "distance": 8.443260351050306,
         "goto.reached": true,
-        "goto.distance": 0.14556252139060621
+        "goto.distance": 0.1455625213906068
       },
-      "fingerprint": "9cd30142b5f6648e1dab7ee2267e6fc8b967e20d04a56106ed2334167574e107"
+      "fingerprint": "824b79ce06ce821d5fe22db80f4dc10fa70c459dc527c5b90031aea9801fe8ef"
     },
     {
       "seed": 1144,
@@ -7242,9 +7242,9 @@
         "collisions": 0,
         "distance": 6.90076846733157,
         "goto.reached": true,
-        "goto.distance": 0.14303457346050524
+        "goto.distance": 0.14303457346050605
       },
-      "fingerprint": "f0c070697425fd0f593ffd286a4a596105d67719380aec6d5ea000b9f195cfaf"
+      "fingerprint": "291b9aa2fa448388a14e4cb4c6583c2280c8f111509c66fb278dc7fa40bc5337"
     },
     {
       "seed": 1145,
@@ -7291,9 +7291,9 @@
         "collisions": 0,
         "distance": 10.923071727363212,
         "goto.reached": true,
-        "goto.distance": 0.14400306126062123
+        "goto.distance": 0.1440030612606242
       },
-      "fingerprint": "96e65c58227e5b8100e889872b2b880dc2797b58e839248d54d495bc58c40e77"
+      "fingerprint": "b54d98b8f84aa56502df7b3e042285d79684f207497a23f0a8297e7e602ff5f9"
     },
     {
       "seed": 1146,
@@ -7340,9 +7340,9 @@
         "collisions": 0,
         "distance": 11.037234602408315,
         "goto.reached": false,
-        "goto.distance": 1.5770530041285222
+        "goto.distance": 1.5770530041285218
       },
-      "fingerprint": "b69048a682c442d9345337d2d14eb92213cabe4a769d6fba0194f3be28875e18"
+      "fingerprint": "bef8073514c8ca36945e12c2344bd518d824ed685228902f61aa252a15b5125c"
     },
     {
       "seed": 1147,
@@ -7389,9 +7389,9 @@
         "collisions": 0,
         "distance": 6.837400186223623,
         "goto.reached": true,
-        "goto.distance": 0.1461800884148689
+        "goto.distance": 0.14618008841486807
       },
-      "fingerprint": "6f7875311db3a9ad5a09f1eb0e565f38ce950181d234ece4c936634e39b8410e"
+      "fingerprint": "8507952c6b75420b097b30cbf0824819639091d75d2af1059b0883b6a1930888"
     },
     {
       "seed": 1148,
@@ -7436,11 +7436,11 @@
       "score": -12.045,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.614102341256292,
+        "distance": 10.614102341256293,
         "goto.reached": false,
-        "goto.distance": 1.5056433735469317
+        "goto.distance": 1.505643373546931
       },
-      "fingerprint": "19e6ca24f6fa19e78659cbcd858f2263a8b001033e68d0824dfe6366f18e93c5"
+      "fingerprint": "03b01c8d932f8bae2d4a38b9fd76502c57745e041e80544680e702654e3d3979"
     },
     {
       "seed": 1149,
@@ -7487,9 +7487,9 @@
         "collisions": 0,
         "distance": 10.72418472105544,
         "goto.reached": false,
-        "goto.distance": 1.785972542630415
+        "goto.distance": 1.7859725426304132
       },
-      "fingerprint": "956afc34f3f1e16c9570aaad7a963c42e655b99b71d9724957f7114806da5d8c"
+      "fingerprint": "f057ffc0a71e27faf587db6b9472f5cf705fc4b7cd351635ff3b544f490340ba"
     },
     {
       "seed": 1150,
@@ -7534,11 +7534,11 @@
       "score": 135.25,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.966170254119522,
+        "distance": 6.96617025411952,
         "goto.reached": true,
         "goto.distance": 0.14467834551438694
       },
-      "fingerprint": "5bc58e22e1574e522fc8fc94d75e8f24d61c1244813306a5e9a38ce4e1b006a1"
+      "fingerprint": "b985295b9d72278e8331d8728a0a6472df53ed2db647bdd315ee4b65c496e691"
     },
     {
       "seed": 1151,
@@ -7585,9 +7585,9 @@
         "collisions": 0,
         "distance": 11.44024852272769,
         "goto.reached": false,
-        "goto.distance": 1.4985156757945666
+        "goto.distance": 1.4985156757945683
       },
-      "fingerprint": "3e20fe116a25616754cbb1f1831238a7a596817caeb6fb2b2b5c31f651b11326"
+      "fingerprint": "8bfb385e9e2c979ace17a44b1401d3d94796f79628b3ae9450dfdc8000eca0f1"
     },
     {
       "seed": 1152,
@@ -7632,11 +7632,11 @@
       "score": 129.475,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.868942035301645,
+        "distance": 7.868942035301642,
         "goto.reached": true,
         "goto.distance": 0.14260712371282336
       },
-      "fingerprint": "9bcda3d554ad2bfdf0510201b92659772a0d83690698dfc8a6c32ce25bd72e5b"
+      "fingerprint": "5ae37c9f03347d492110eeabb096e7e876d9fb29f8182678a9aa58e64a0003f4"
     },
     {
       "seed": 1153,
@@ -7681,11 +7681,11 @@
       "score": 135.325,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.964061023234577,
+        "distance": 6.96406102323458,
         "goto.reached": true,
         "goto.distance": 0.14455641634324828
       },
-      "fingerprint": "732ac1c715b34bcebf2547fb256433151e5216ffc8e9bb52b6131b37c8ab2240"
+      "fingerprint": "c64979f16113af21eef17d98d19d5f6b01ca528a8dcd42563575884eeb112d9b"
     },
     {
       "seed": 1154,
@@ -7730,11 +7730,11 @@
       "score": -3.753,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.389598167788519,
+        "distance": 12.38959816778852,
         "goto.reached": false,
-        "goto.distance": 0.4691087630270689
+        "goto.distance": 0.4691087630270672
       },
-      "fingerprint": "780adcb3dfe45ae5ef7ea140639554726e015165a4859390b999df6eb4773d46"
+      "fingerprint": "8241403e92e30e50d6ffdfc15fed0c02e230ab20d73e0da1b36b5e0d8ea63a53"
     },
     {
       "seed": 1155,
@@ -7779,11 +7779,11 @@
       "score": 129.175,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.998282116258408,
+        "distance": 7.998282116258409,
         "goto.reached": true,
-        "goto.distance": 0.1475329481181978
+        "goto.distance": 0.14753294811819784
       },
-      "fingerprint": "7f1771fc5b8ba8ee68ff7ca44b6c7bd3295cdb6f14f4f54d165466272034e442"
+      "fingerprint": "909321cb9b1ec99686455821f2fd70da2024ad519e6485a7fd103e76e647d401"
     },
     {
       "seed": 1156,
@@ -7830,9 +7830,9 @@
         "collisions": 0,
         "distance": 12.30275296756695,
         "goto.reached": false,
-        "goto.distance": 1.2332216714234512
+        "goto.distance": 1.233221671423449
       },
-      "fingerprint": "90e38feb980bbad6f8bc0102d1f8f6c33c209cdf30993e90ecc923551debafec"
+      "fingerprint": "03263eda12a0bf4cf2cecbf96c0d8f0e28128ba373da579f465d9d188cc864ed"
     },
     {
       "seed": 1157,
@@ -7877,11 +7877,11 @@
       "score": 123.55,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.133919681068518,
+        "distance": 9.13391968106852,
         "goto.reached": true,
         "goto.distance": 0.14527068686360647
       },
-      "fingerprint": "2ca854624ef54302d310def793ce2b489d587e6f13689f1ef0406cf3120206a0"
+      "fingerprint": "f09ce0b62ecabcde0aedb97e1c1884e6c0baae0ab5a9076df188c5e4ac8a389f"
     },
     {
       "seed": 1158,
@@ -7928,9 +7928,9 @@
         "collisions": 0,
         "distance": 11.010787977304654,
         "goto.reached": false,
-        "goto.distance": 1.6816012418772452
+        "goto.distance": 1.6816012418772455
       },
-      "fingerprint": "c7ace79d3157f83a1fac54c9fb0cbc114bd9740200be8516bcb4cf7150393957"
+      "fingerprint": "3b18294dd1fbe60169d02e54009204e9e3e9a026cb3fd7fd8adc5588d4ca46bd"
     },
     {
       "seed": 1159,
@@ -7975,11 +7975,11 @@
       "score": -9.588,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.957483555948896,
+        "distance": 11.957483555948894,
         "goto.reached": false,
-        "goto.distance": 1.1984472317279806
+        "goto.distance": 1.1984472317279768
       },
-      "fingerprint": "7e008ffb80cfcf21ef4de6fe4e22f356e1fc1ab306a18f9e159dd74be409b4d7"
+      "fingerprint": "a77741fc0ecc8b89b56a22f9e1dbcacde611185efbf3e2b9639ceac892a9cfd5"
     },
     {
       "seed": 1160,
@@ -8024,11 +8024,11 @@
       "score": 128.875,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.973363463608779,
+        "distance": 7.97336346360878,
         "goto.reached": true,
-        "goto.distance": 0.1497013606953809
+        "goto.distance": 0.14970136069538018
       },
-      "fingerprint": "7900899ce48a6a6a5e424d1f442d0064a4b41435fd67d2a8bcd53104d5ac7100"
+      "fingerprint": "fda2c843a3012e8167846798d52bf4e02bda8478c91d0e1909e1050ad4990808"
     },
     {
       "seed": 1161,
@@ -8075,9 +8075,9 @@
         "collisions": 0,
         "distance": 7.83620424497226,
         "goto.reached": true,
-        "goto.distance": 0.14377885575850602
+        "goto.distance": 0.143778855758506
       },
-      "fingerprint": "0bace218c006bbc987255cf37cbde852b57ba747c3f5e04e7a0f30f5740c35e1"
+      "fingerprint": "00c7c5654f40171cdef423e082c55010784875447f5a3aeb77c2ddae4523508b"
     },
     {
       "seed": 1162,
@@ -8124,9 +8124,9 @@
         "collisions": 0,
         "distance": 12.746609592535112,
         "goto.reached": false,
-        "goto.distance": 0.16000332028872769
+        "goto.distance": 0.16000332028872832
       },
-      "fingerprint": "1563d3e68ddf8278e08f5234990a53a097d1c610cd02a9d484ecf21f73a5d0b0"
+      "fingerprint": "b396e177018113c0f327ad190f23758e7363223512efe5b4de3f3dcc316f1f08"
     },
     {
       "seed": 1163,
@@ -8171,11 +8171,11 @@
       "score": 128.575,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.10015126758504,
+        "distance": 8.100151267585042,
         "goto.reached": true,
         "goto.distance": 0.14965079737746229
       },
-      "fingerprint": "3eb832b8e02c5267410fe8d7e9d0228a0ba80ddfcd0223f35f566285acb0125c"
+      "fingerprint": "7a194807eb12198593d3f334cd555b284efc29183ce44d054c6f452f44ec2475"
     },
     {
       "seed": 1164,
@@ -8220,11 +8220,11 @@
       "score": 128.275,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.036474916437587,
+        "distance": 8.036474916437589,
         "goto.reached": true,
-        "goto.distance": 0.1436189037187872
+        "goto.distance": 0.14361890371878722
       },
-      "fingerprint": "58e69e33f1049bcf658a551b8883b0f0ebbb7ea38c4ab9d7e8a1ca5a3b3b4b13"
+      "fingerprint": "02dc63c1c1db54b27d3357a52342bf3db8d94fc951443c6580b301b5ba68fec2"
     },
     {
       "seed": 1165,
@@ -8271,9 +8271,9 @@
         "collisions": 0,
         "distance": 12.058552796114492,
         "goto.reached": false,
-        "goto.distance": 1.2439036444873843
+        "goto.distance": 1.2439036444873859
       },
-      "fingerprint": "8da078daf8fc0e5af8f97cacf18a9655af39e01a3fa7ceee76d240a605b9ac6d"
+      "fingerprint": "ef6da9e9e719ca962e78c88ddb8961e33ab2cbfac0f4e6f116b57728df011ff5"
     },
     {
       "seed": 1166,
@@ -8367,11 +8367,11 @@
       "score": 114.475,
       "scorecard": {
         "collisions": 0,
-        "distance": 10.602029436808902,
+        "distance": 10.602029436808904,
         "goto.reached": true,
-        "goto.distance": 0.148053512769802
+        "goto.distance": 0.14805351276980272
       },
-      "fingerprint": "e0773ad13af50ee1d19fdd1915eb64e7cfaf8032f90407985e1b6baf41878e68"
+      "fingerprint": "696098f36261ae229bf6c0f98b6b2233219042dde3e576d34b093fb90cf9b48b"
     },
     {
       "seed": 1168,
@@ -8416,11 +8416,11 @@
       "score": 135.775,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.8638400143681855,
+        "distance": 6.863840014368186,
         "goto.reached": true,
         "goto.distance": 0.1444718490570654
       },
-      "fingerprint": "d5488ba8880a7dfcd180a23dfe8d1fdc7f29e4eb5f81c4a63b28353d294da81a"
+      "fingerprint": "76f8c7b33653b3545fb1bc62d18c796309806f106a68c22308719b4c245c7c8c"
     },
     {
       "seed": 1169,
@@ -8467,9 +8467,9 @@
         "collisions": 0,
         "distance": 7.893324562395709,
         "goto.reached": true,
-        "goto.distance": 0.1466246926743862
+        "goto.distance": 0.14662469267438621
       },
-      "fingerprint": "e095d7f00d403c1f2770fb1f6ba6774b0d24e575add6741990485a83a08fbd6c"
+      "fingerprint": "dc444390656ee5021ec443d9b2248982a969af36b25890f4f7a101317106da71"
     },
     {
       "seed": 1170,
@@ -8514,11 +8514,11 @@
       "score": 131.35,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.877631510286464,
+        "distance": 7.877631510286465,
         "goto.reached": true,
-        "goto.distance": 0.14467818540233995
+        "goto.distance": 0.14467818540233993
       },
-      "fingerprint": "ccf1e21637abb879afe6b08d1998985e13aee7105f756454e18a7d902c9de9ed"
+      "fingerprint": "0e8aeeabdf9deb1f3edb7cd0b45376e754a6ae72a3e2d55c4d56591d9a14f83c"
     },
     {
       "seed": 1171,
@@ -8563,11 +8563,11 @@
       "score": -8.664,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.007628976690034,
+        "distance": 12.007628976690036,
         "goto.reached": false,
-        "goto.distance": 1.0829976586087968
+        "goto.distance": 1.0829976586087953
       },
-      "fingerprint": "b90894b3030c36d141c0a0b9885c4f1e43a8bd33637ef16a2cb2116995803868"
+      "fingerprint": "0bec23bd57137bad6f7490d785c96a8350753ea50fd8fbcfda21012110362e10"
     },
     {
       "seed": 1172,
@@ -8612,11 +8612,11 @@
       "score": 135.7,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.926167934889518,
+        "distance": 6.92616793488952,
         "goto.reached": true,
         "goto.distance": 0.14264156885214907
       },
-      "fingerprint": "ce66323af7ffdf0d91d4e4488b753ae5e74375541e498119c380a7841f1dca6e"
+      "fingerprint": "f8b17cc9f9dcb075374a328a164ee183bd1ce89f0374d89908590b7836a4ffec"
     },
     {
       "seed": 1173,
@@ -8661,11 +8661,11 @@
       "score": 125.725,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.454524562737564,
+        "distance": 8.454524562737562,
         "goto.reached": true,
         "goto.distance": 0.14135422033572095
       },
-      "fingerprint": "4ff24bfb6b51c87c6963791a75dcad71578840c0a00ce8f0a0e10220eccd344f"
+      "fingerprint": "643a963b442c893b069486230d5f9b5f28df7d771edfafbb844584d5bd36dc52"
     },
     {
       "seed": 1174,
@@ -8710,11 +8710,11 @@
       "score": 119.05,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.531100201457788,
+        "distance": 9.531100201457786,
         "goto.reached": true,
         "goto.distance": 0.14815440346032036
       },
-      "fingerprint": "dd00e863e9480cc8b7f2eeaeff46c9d43db2eb9c774853c6f3e5f21cf543b77b"
+      "fingerprint": "240a99b9eb468b639cc27d4fe1ecf437241977cbaf382d45520aa3fc6bce8dff"
     },
     {
       "seed": 1175,
@@ -8759,11 +8759,11 @@
       "score": -20.547,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.685465370336983,
+        "distance": 11.685465370336987,
         "goto.reached": false,
-        "goto.distance": 2.568431179348345
+        "goto.distance": 2.5684311793483428
       },
-      "fingerprint": "438a1838bdc20df72d8156561f6fe910ee77762a9478082b39449720a9aee2ce"
+      "fingerprint": "9c6ef68155b54aacec2321490c0734c29824acbb182f72c7649a78baac59af05"
     },
     {
       "seed": 1176,
@@ -8810,9 +8810,9 @@
         "collisions": 0,
         "distance": 11.499390208582769,
         "goto.reached": false,
-        "goto.distance": 1.5218783728286065
+        "goto.distance": 1.5218783728286074
       },
-      "fingerprint": "62a38a54df13db9b2a1f56ce593778144fa836f8b517d00d102d8e6e6a8cb03f"
+      "fingerprint": "bad39ae28d072eb2033903e4468a3200031aa54c93ea7f667d9c789e03e7743a"
     },
     {
       "seed": 1177,
@@ -8859,9 +8859,9 @@
         "collisions": 0,
         "distance": 8.353992622522167,
         "goto.reached": true,
-        "goto.distance": 0.1479342021677925
+        "goto.distance": 0.14793420216779202
       },
-      "fingerprint": "bc5fd6d128fcb33e65d67d1225289cebf7928f9d5976c0e0b42d6681db6e1ea9"
+      "fingerprint": "da0b653a128b7d35a43521e38d97dac9fdb4d941cda85b3fd19c8460efc84629"
     },
     {
       "seed": 1178,
@@ -8908,9 +8908,9 @@
         "collisions": 0,
         "distance": 11.065239263635373,
         "goto.reached": false,
-        "goto.distance": 1.8523574472542144
+        "goto.distance": 1.8523574472542137
       },
-      "fingerprint": "3d3d6ba4d83d4d499100df2fadc44fd519db58270803e7dc8fd1f70dd1ab72a5"
+      "fingerprint": "efc8cf896a65d5043a450a9521ddbcf779d6f0603aea1419bb526d1df141cf71"
     },
     {
       "seed": 1179,
@@ -8955,11 +8955,11 @@
       "score": 128.05,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.153043373882543,
+        "distance": 8.153043373882545,
         "goto.reached": true,
-        "goto.distance": 0.14459269942311945
+        "goto.distance": 0.14459269942311842
       },
-      "fingerprint": "982c82f38464c786ce7241bed03d0634a70f44bdb859b89c32429153ce8b89fc"
+      "fingerprint": "9fdb1376a62e3bb929cad2b0823ae5550c2f256e53cb87a73e9fcd8bf990b7b9"
     },
     {
       "seed": 1180,
@@ -9006,9 +9006,9 @@
         "collisions": 0,
         "distance": 11.382975553523886,
         "goto.reached": false,
-        "goto.distance": 1.6514097709975104
+        "goto.distance": 1.65140977099751
       },
-      "fingerprint": "031d2cfd97c9e3605c23b2979320318c7638884846f08a41cfb0297a097375f0"
+      "fingerprint": "031e1e585fd913725a25bac85e54a7042c244960a77045c530b9093e71f40d75"
     },
     {
       "seed": 1181,
@@ -9055,9 +9055,9 @@
         "collisions": 0,
         "distance": 11.66179703202021,
         "goto.reached": false,
-        "goto.distance": 3.0611465493844605
+        "goto.distance": 3.0611465493844596
       },
-      "fingerprint": "1ff5d554c43f28995356f8e409104b43426ef1285a22582db3cbbd851c31e99a"
+      "fingerprint": "e0f92d3d6bfd3195195a43e7c1b62aae4adb9e1d4862cda0740126bed5bfb853"
     },
     {
       "seed": 1182,
@@ -9102,11 +9102,11 @@
       "score": 127.825,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.174444026859904,
+        "distance": 8.174444026859907,
         "goto.reached": true,
-        "goto.distance": 0.1453616073580663
+        "goto.distance": 0.14536160735806564
       },
-      "fingerprint": "9f5465f3bde46acbbda71dd053c3715ab1b90632c751462f71aa32c8e7dced90"
+      "fingerprint": "3f605f19a351a7b6cdb2c0e3b4f482d166446e38e7abc482bf0b352cb9cbb3d2"
     },
     {
       "seed": 1183,
@@ -9151,11 +9151,11 @@
       "score": 135.925,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.96473598513793,
+        "distance": 6.9647359851379305,
         "goto.reached": true,
-        "goto.distance": 0.14919199196803262
+        "goto.distance": 0.14919199196803265
       },
-      "fingerprint": "fce72247fe9d49dbdaf9cf68a863d3d3147cabc356086fb50b4da9dc95645b4b"
+      "fingerprint": "fbb583bac46f3ac0b016aaa86dedc3482c8470d330c98668fbf8250058e4e3c8"
     },
     {
       "seed": 1184,
@@ -9200,11 +9200,11 @@
       "score": 130.9,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.680999623149399,
+        "distance": 7.680999623149396,
         "goto.reached": true,
-        "goto.distance": 0.1465855712448575
+        "goto.distance": 0.14658557124485666
       },
-      "fingerprint": "d7e9484cc6d9a73a2f2b5022fdb36cae3281113f2ac2d75b0bf7a741ee8d4c42"
+      "fingerprint": "4af83970c283d708872f314358daecaa0300c2b9561e9dd510d8040d5aeeb2c0"
     },
     {
       "seed": 1185,
@@ -9249,11 +9249,11 @@
       "score": -9.879,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.00791665496255,
+        "distance": 12.007916654962546,
         "goto.reached": false,
         "goto.distance": 1.2348551062289053
       },
-      "fingerprint": "a2f2a074cc76eef718089795144a24dbd2f845ae7a456c75134486fca7da926e"
+      "fingerprint": "430aa1e16e3a3fbe857e7acaa43e92a85f58bf44fa12fd17b2507679b75d9b7b"
     },
     {
       "seed": 1186,
@@ -9298,11 +9298,11 @@
       "score": -10.11,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.895866264012474,
+        "distance": 11.895866264012477,
         "goto.reached": false,
-        "goto.distance": 1.2638068002533802
+        "goto.distance": 1.2638068002533807
       },
-      "fingerprint": "8fcd5d0da7aff1b735184f3b5339097081d2b2a3bd8f8d250c6ef1c61b211d46"
+      "fingerprint": "35d32833f06e092a67e7a0728c3762a2c486d8151b4440006fa7219dba3f0189"
     },
     {
       "seed": 1187,
@@ -9347,11 +9347,11 @@
       "score": 136,
       "scorecard": {
         "collisions": 0,
-        "distance": 6.903743887723409,
+        "distance": 6.90374388772341,
         "goto.reached": true,
-        "goto.distance": 0.14134811030916128
+        "goto.distance": 0.14134811030916125
       },
-      "fingerprint": "d0fcd9c409bd16288ae2544ef963b61619794ca4efa16ee3ee5baeee97af9e0f"
+      "fingerprint": "2494d08a1aace5320e6f0e41b59d1ec7f733795c23cc150916ff2b0970d1ee16"
     },
     {
       "seed": 1188,
@@ -9398,9 +9398,9 @@
         "collisions": 0,
         "distance": 9.17443599849665,
         "goto.reached": true,
-        "goto.distance": 0.1457587157559575
+        "goto.distance": 0.14575871575595753
       },
-      "fingerprint": "e80150c725969f2000967a51c58fca53b7e00aa2bd40525e52fe2b7df24d9872"
+      "fingerprint": "f658781f90ff4916a8d926e284bd2e5b6b2aae927d6d8ad7ce4a722c760c207e"
     },
     {
       "seed": 1189,
@@ -9447,9 +9447,9 @@
         "collisions": 0,
         "distance": 12.74127825287357,
         "goto.reached": false,
-        "goto.distance": 0.24244464685424544
+        "goto.distance": 0.2424446468542454
       },
-      "fingerprint": "32cc05aea580defcf0f08264bf884f8daffbcf52f880f0e7e4453182332b4941"
+      "fingerprint": "240aa3cc7f223363bd0c19ca7669470f01c56c769bde92242b070ce38b2a4ea8"
     },
     {
       "seed": 1190,
@@ -9494,11 +9494,11 @@
       "score": 125.05,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.452944427252925,
+        "distance": 8.452944427252927,
         "goto.reached": true,
-        "goto.distance": 0.14520600374957354
+        "goto.distance": 0.14520600374957326
       },
-      "fingerprint": "cd4974b7f7c9dfa4ea0228f0918870530ab2a2fcebddac0868382fbc30fb7c69"
+      "fingerprint": "940d75619b1f84c211939532f950ae3bdb5423241791e4138302527144614b23"
     },
     {
       "seed": 1191,
@@ -9543,11 +9543,11 @@
       "score": -6.056,
       "scorecard": {
         "collisions": 0,
-        "distance": 12.26975150762453,
+        "distance": 12.269751507624528,
         "goto.reached": false,
-        "goto.distance": 0.7569770615880695
+        "goto.distance": 0.7569770615880697
       },
-      "fingerprint": "c658d071862d1c86ff01036afc08643482acd85ba928ffbf978ba52b55574986"
+      "fingerprint": "6200180c48c3bff8954dba0a1ffd18fff94c3f5cf411af2f0eb42bd0b66c8271"
     },
     {
       "seed": 1192,
@@ -9592,11 +9592,11 @@
       "score": 134.95,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.0415542788128995,
+        "distance": 7.041554278812899,
         "goto.reached": true,
-        "goto.distance": 0.14329210293948602
+        "goto.distance": 0.1432921029394868
       },
-      "fingerprint": "4c28f7b1f365937b395237b1b47612729cd593b281af45f85e805ebf73ea8ecc"
+      "fingerprint": "89c86f6114e57539c9579ab5146aa2292875274abb7d51bd83a78e924cbad6ea"
     },
     {
       "seed": 1193,
@@ -9641,11 +9641,11 @@
       "score": -24.749,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.074218258120071,
+        "distance": 11.074218258120068,
         "goto.reached": false,
-        "goto.distance": 3.093591521406812
+        "goto.distance": 3.093591521406811
       },
-      "fingerprint": "37e8d644a9908963c417f5ee15be154f88cdf35d06dbddf05b5cef6a90ee0c61"
+      "fingerprint": "fbec6529ddf53cc07a87eeae55cbe20e75857f5bc5ffc234930210921933dea9"
     },
     {
       "seed": 1194,
@@ -9690,11 +9690,11 @@
       "score": 132.325,
       "scorecard": {
         "collisions": 0,
-        "distance": 7.46194032143944,
+        "distance": 7.461940321439439,
         "goto.reached": true,
         "goto.distance": 0.14161113681154422
       },
-      "fingerprint": "6016d55d42c6cc7743d1035877dc1373477d3a316446784bfdb14b3d7fb215dc"
+      "fingerprint": "3c634e2172ba88ac01e815cbe638b5a1bc10018fd88ffea2831101864ce85989"
     },
     {
       "seed": 1195,
@@ -9741,9 +9741,9 @@
         "collisions": 0,
         "distance": 9.753654172274915,
         "goto.reached": true,
-        "goto.distance": 0.14786139356718211
+        "goto.distance": 0.1478613935671821
       },
-      "fingerprint": "99e25d234e565b79ffe02288824af7d6287847b577d9a55d82591d33ed84f31b"
+      "fingerprint": "6507b830c3e8cddf1e1ee6ea94b55393c85d5e86bcfb4736a507d8af8b022660"
     },
     {
       "seed": 1196,
@@ -9788,11 +9788,11 @@
       "score": 128.875,
       "scorecard": {
         "collisions": 0,
-        "distance": 8.121814274965555,
+        "distance": 8.121814274965557,
         "goto.reached": true,
-        "goto.distance": 0.14242455714211735
+        "goto.distance": 0.14242455714211733
       },
-      "fingerprint": "0231650b72e3d803b5cead06bace64f7b1eefc39bf112d1752bb72c13cac6476"
+      "fingerprint": "f7903f71433fba41d8437b2837fe8e07af6eca6a83ee7d748e78a63cbc3a04a4"
     },
     {
       "seed": 1197,
@@ -9886,11 +9886,11 @@
       "score": -5.026,
       "scorecard": {
         "collisions": 0,
-        "distance": 11.987091079475743,
+        "distance": 11.987091079475745,
         "goto.reached": false,
-        "goto.distance": 0.6282528257343019
+        "goto.distance": 0.6282528257343022
       },
-      "fingerprint": "a63e2a0980cb88e4bf5a6b7a9d2053245700ffa17a88e3f5fc28860db8740113"
+      "fingerprint": "ec2227821ad80c807d2c0cc149437c5d2711c4f50dc3f4a506a2a4e429511ea1"
     },
     {
       "seed": 1199,
@@ -9935,11 +9935,11 @@
       "score": 117.85,
       "scorecard": {
         "collisions": 0,
-        "distance": 9.71356553400115,
+        "distance": 9.713565534001152,
         "goto.reached": true,
         "goto.distance": 0.1448857074020647
       },
-      "fingerprint": "30aacdf361495503b11ed344b2a49e1d8544bc782a08ad48d8aa13bdf4b7d41a"
+      "fingerprint": "828bd0774a1d92fcffc48815105cfeb3941fda6eb0ad4c5e5279d6c2e2169e10"
     }
   ],
   "summary": {
@@ -9952,9 +9952,11 @@
     ],
     "meanScore": 77.725
   },
-  "createdAt": "2026-11-03T02:40:37.332Z",
+  "createdAt": "2026-11-03T12:43:25.763Z",
   "approval": {
     "by": "Ossilic examples",
-    "at": "2026-11-03T02:40:37.335Z"
+    "at": "2026-11-03T12:43:25.773Z",
+    "reason": "re-recorded under deterministic cross-platform math (dmath); behaviour is unchanged to within 1 ulp per operation",
+    "replaces": "6aa17346356b1ff98cf1b691ca5de1c1941ea765906548c4126d9d48679f7f51"
   }
 }

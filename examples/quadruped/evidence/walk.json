@@ -126,12 +126,12 @@
       "ticks": 400,
       "score": 77.131,
       "scorecard": {
-        "height": 0.28088540423906455,
+        "height": 0.2808854042390423,
         "upright": true,
         "collisions": 0,
-        "distance": 8.521386228681644
+        "distance": 8.521386228681681
       },
-      "fingerprint": "9d8f8978f7c05da8de7adff12f2b256d977e0fe4e8a7e5b73bb656145fa19eb3"
+      "fingerprint": "263edb208984cdf497899cd925992601ceb3cc9c786ff5062315eaa4a85f3e6e"
     },
     {
       "seed": 1001,
@@ -145,12 +145,12 @@
       "ticks": 400,
       "score": 78.176,
       "scorecard": {
-        "height": 0.27871245925857757,
+        "height": 0.27871245925856786,
         "upright": true,
         "collisions": 0,
-        "distance": 8.22724917415256
+        "distance": 8.227249174152528
       },
-      "fingerprint": "0330cd956c3f7761ee638e0a36f996551c378c1f41ae24186a4a6e5f67243c5c"
+      "fingerprint": "ad73543e92d722033699f3be96c9e03c5d38bdc6db07fedb458f7c33444ff8e2"
     },
     {
       "seed": 1002,
@@ -164,12 +164,12 @@
       "ticks": 400,
       "score": 81.869,
       "scorecard": {
-        "height": 0.2811146967394813,
+        "height": 0.2811146967394731,
         "upright": true,
         "collisions": 0,
-        "distance": 8.655144419290899
+        "distance": 8.65514441929097
       },
-      "fingerprint": "32540461444d393fb2dd7eccdb33423c074658ef8df3c31e65f1259e9e3bea2f"
+      "fingerprint": "ae1760546e290d7d40fed3be5536a19680b422c850e5f02baa73ff57082a4ab8"
     },
     {
       "seed": 1003,
@@ -183,12 +183,12 @@
       "ticks": 400,
       "score": 85.158,
       "scorecard": {
-        "height": 0.2810416162054062,
+        "height": 0.28104161620547957,
         "upright": true,
         "collisions": 0,
-        "distance": 8.781222574645827
+        "distance": 8.781222574645696
       },
-      "fingerprint": "8b948284ab836da95ace75b3a328ebba6c4c1ca37819db0476d420447c8ef41f"
+      "fingerprint": "5d7a1e92e162d5cbecba224abb63761efac6840139a8b0a34dcae93d696e0967"
     },
     {
       "seed": 1004,
@@ -202,12 +202,12 @@
       "ticks": 400,
       "score": 81.29,
       "scorecard": {
-        "height": 0.28121913805555465,
+        "height": 0.2812191380553454,
         "upright": true,
         "collisions": 0,
-        "distance": 8.508367465224934
+        "distance": 8.508367465225309
       },
-      "fingerprint": "9fa6a576b2458fadfcc1201633d91b4683e2f78cbc19fbcdaca5f2392793c5ca"
+      "fingerprint": "362441e7c56c8e1fe2c861f30edbac039da182e3a3747ddf479f98c6f071d989"
     },
     {
       "seed": 1005,
@@ -221,12 +221,12 @@
       "ticks": 400,
       "score": 77.497,
       "scorecard": {
-        "height": 0.2812862832254001,
+        "height": 0.281286283225315,
         "upright": true,
         "collisions": 0,
-        "distance": 8.48382625342937
+        "distance": 8.483826253429477
       },
-      "fingerprint": "bc6eec7c06133f62d2e80d09cd7ec147617a9be41cfd4dabd11d2965d2d75ca4"
+      "fingerprint": "37bc3f9fa163b2ab5a2c5deb9db68ed26d8069e89047e81f35cb7aff68e4bbb0"
     },
     {
       "seed": 1006,
@@ -240,12 +240,12 @@
       "ticks": 400,
       "score": 84.707,
       "scorecard": {
-        "height": 0.28045197368107866,
+        "height": 0.2804519736810818,
         "upright": true,
         "collisions": 0,
-        "distance": 8.797420457447458
+        "distance": 8.797420457447496
       },
-      "fingerprint": "2f1eb9c75e38e952e17bf94674c1c4c16794865906803affc237b6251b125310"
+      "fingerprint": "3dcf571598d33efb44b9b93d561d98c8d80d024850fee29e7a17fb601cf56430"
     },
     {
       "seed": 1007,
@@ -259,12 +259,12 @@
       "ticks": 400,
       "score": 87.118,
       "scorecard": {
-        "height": 0.28175835179035597,
+        "height": 0.2817583517903691,
         "upright": true,
         "collisions": 0,
-        "distance": 9.067416922456848
+        "distance": 9.067416922456852
       },
-      "fingerprint": "5e3044761fe5255a36ec58d79ff41452394ee9c1121d37ae096fa3b4624c1aca"
+      "fingerprint": "4a50172c1b84735bab2257f05fdc12289acdd75f7fabab007d01d7332e29a3a4"
     },
     {
       "seed": 1008,
@@ -278,12 +278,12 @@
       "ticks": 400,
       "score": 79.141,
       "scorecard": {
-        "height": 0.28084090401890427,
+        "height": 0.2808409040188843,
         "upright": true,
         "collisions": 0,
-        "distance": 8.612359506400837
+        "distance": 8.612359506400884
       },
-      "fingerprint": "75b01c61db8579d293265cfd6d26a04dcdd3901855db091828d1e181dce18fc1"
+      "fingerprint": "f455ac00bd4f3c6d65c5cfc51116f185213459922fdf62a3248d17d02965bb91"
     },
     {
       "seed": 1009,
@@ -297,12 +297,12 @@
       "ticks": 400,
       "score": 82.695,
       "scorecard": {
-        "height": 0.28130620464990863,
+        "height": 0.28130620464988504,
         "upright": true,
         "collisions": 0,
-        "distance": 8.707729289962261
+        "distance": 8.707729289962264
       },
-      "fingerprint": "67a5fc2fbaf6ee319d1c260935853e87698af935baaf9864e25acc842266f629"
+      "fingerprint": "bdc47be232696f7ed1948c99029e7906e250d318248e1d1eabcdf3cfcb8727ee"
     },
     {
       "seed": 1010,
@@ -316,12 +316,12 @@
       "ticks": 400,
       "score": 81.01,
       "scorecard": {
-        "height": 0.28021680937806415,
+        "height": 0.2802168093776206,
         "upright": true,
         "collisions": 0,
-        "distance": 8.469472646984984
+        "distance": 8.469472646985649
       },
-      "fingerprint": "8d5088ef077ddc7c651e0b384eaaa83b3f145210b941ec303a1a259003533e6b"
+      "fingerprint": "25da8863b9c69837f01a7f68c5f61b9d4f9cfed36212ec44bab5cdc9ec6fb333"
     },
     {
       "seed": 1011,
@@ -335,12 +335,12 @@
       "ticks": 400,
       "score": 80.563,
       "scorecard": {
-        "height": 0.2801502374319536,
+        "height": 0.2801502374319865,
         "upright": true,
         "collisions": 0,
-        "distance": 8.699923081299094
+        "distance": 8.699923081299005
       },
-      "fingerprint": "b0b4b37e7108c73cc49a934b54b7fccba77098031c92a25b488fe06831e53e35"
+      "fingerprint": "babb3dffc39f7bc608475df359dafac3f8a88abc9ac908aea9078146728a8c4b"
     },
     {
       "seed": 1012,
@@ -354,12 +354,12 @@
       "ticks": 400,
       "score": 83.087,
       "scorecard": {
-        "height": 0.2805986615750291,
+        "height": 0.280598661575024,
         "upright": true,
         "collisions": 0,
-        "distance": 8.569563421405881
+        "distance": 8.5695634214059
       },
-      "fingerprint": "629e7a327114cb0a937eae78259f22772434718b8dd59a91eb7843976ce50aac"
+      "fingerprint": "66b45933416cd6af2c5531a9f4c78af7ca1a50b52d4445c6c7e8ab89af7246d5"
     },
     {
       "seed": 1013,
@@ -373,12 +373,12 @@
       "ticks": 400,
       "score": 73.772,
       "scorecard": {
-        "height": 0.2830273990437041,
+        "height": 0.2830273990439403,
         "upright": true,
         "collisions": 0,
-        "distance": 7.71036507418506
+        "distance": 7.710365074185026
       },
-      "fingerprint": "85df6ce451a24ba31f7d2a0373c5dada6e96aa252e911a78414c26b8c4ac0ae2"
+      "fingerprint": "108ee8ddd6a361c54adf9f07c80ad6cbf64b5080bbdf58ed5d71a1c77d27e266"
     },
     {
       "seed": 1014,
@@ -392,12 +392,12 @@
       "ticks": 400,
       "score": 77.618,
       "scorecard": {
-        "height": 0.2801256530781232,
+        "height": 0.28012565307932585,
         "upright": true,
         "collisions": 0,
-        "distance": 8.178985675543412
+        "distance": 8.178985675540048
       },
-      "fingerprint": "7c1f743e6a8af8f7860ef5c93728d7c5cdf94912999e54c253b9716725d49c5f"
+      "fingerprint": "33d0a3e73a3dc2ec0af807b3c0c5f32c497506ef1b9d75c0d6666de25484e359"
     },
     {
       "seed": 1015,
@@ -411,12 +411,12 @@
       "ticks": 400,
       "score": 74.766,
       "scorecard": {
-        "height": 0.28106204062479745,
+        "height": 0.2810620406244979,
         "upright": true,
         "collisions": 0,
-        "distance": 8.151186555982537
+        "distance": 8.151186555982605
       },
-      "fingerprint": "c2023f65ab1cc438bc9ca5e33b6f8a390400c1e47bbfddc33f2b4d319ce86f67"
+      "fingerprint": "d908eb9e1905ea35859d2f64c29e40edc7eb459c3b8f61bf9665c9fa9c67f711"
     },
     {
       "seed": 1016,
@@ -430,12 +430,12 @@
       "ticks": 400,
       "score": 79.41,
       "scorecard": {
-        "height": 0.2796766621998753,
+        "height": 0.27967666219987325,
         "upright": true,
         "collisions": 0,
-        "distance": 8.464330996232883
+        "distance": 8.464330996232913
       },
-      "fingerprint": "172a8de46d601193ae396839407769a2a8c96065f061b85f3e4e51573e057638"
+      "fingerprint": "1de8cb8c0cddf605bd31eee7d0d563b0cc7a9db7aa0d0620da633e7d18c23625"
     },
     {
       "seed": 1017,
@@ -449,12 +449,12 @@
       "ticks": 400,
       "score": 80.682,
       "scorecard": {
-        "height": 0.28250171992193,
+        "height": 0.28250171992176243,
         "upright": true,
         "collisions": 0,
-        "distance": 8.604925413051541
+        "distance": 8.604925413051802
       },
-      "fingerprint": "f527cce3aae051afc1d8830f2da5351ef302438931f6ef0b998c9a05de75fe37"
+      "fingerprint": "17788465990eac12d8baf42ff5e9b1690fc305466df45ea3f19234bb0725b9e4"
     },
     {
       "seed": 1018,
@@ -468,12 +468,12 @@
       "ticks": 400,
       "score": 77.842,
       "scorecard": {
-        "height": 0.2805489885610687,
+        "height": 0.28054898856105004,
         "upright": true,
         "collisions": 0,
-        "distance": 8.48976807263608
+        "distance": 8.489768072636105
       },
-      "fingerprint": "9586f509a63b998e914ba10ca93e5304f881f35bbfc0674aef7e816fd775d2e8"
+      "fingerprint": "75a283346c7bde07046b9a32ca22460158a775d808893c9878c94f4e8c2a3d94"
     },
     {
       "seed": 1019,
@@ -487,12 +487,12 @@
       "ticks": 400,
       "score": 76.907,
       "scorecard": {
-        "height": 0.27976057726168496,
+        "height": 0.27976057726126524,
         "upright": true,
         "collisions": 0,
-        "distance": 7.896638816743156
+        "distance": 7.896638816743901
       },
-      "fingerprint": "3056cca77461064bff82baf6e5dfc6b131d7e529465d7886f8648edb25f9311a"
+      "fingerprint": "c4125bd2a2b11181ada05466a70a125b593e62fc7c654a81ca5f7895cf924f28"
     },
     {
       "seed": 1020,
@@ -506,12 +506,12 @@
       "ticks": 400,
       "score": 79.331,
       "scorecard": {
-        "height": 0.28013703038717325,
+        "height": 0.28013703038651033,
         "upright": true,
         "collisions": 0,
-        "distance": 8.036825500588757
+        "distance": 8.036825500591435
       },
-      "fingerprint": "946d3a42321a38951e333a206b9e5b07b906a300bfd850e4a275dc0ba4916f93"
+      "fingerprint": "1d98dee6877d1ae2b1b26adf57e81b8c2870332e8740c71aaae19ec210b4d98f"
     },
     {
       "seed": 1021,
@@ -525,12 +525,12 @@
       "ticks": 400,
       "score": 77.74,
       "scorecard": {
-        "height": 0.27970469395497805,
+        "height": 0.27970469395497816,
         "upright": true,
         "collisions": 0,
-        "distance": 8.518219924576721
+        "distance": 8.518219924576728
       },
-      "fingerprint": "bef587495704378d2bb6d29cf8e1cb773da815751bad3aa125ee34b1fb2a7347"
+      "fingerprint": "d0091dd4a1738a06968afa764018dc25380f62d65420ce7c96182f25bc3e04f4"
     },
     {
       "seed": 1022,
@@ -544,12 +544,12 @@
       "ticks": 400,
       "score": 81.029,
       "scorecard": {
-        "height": 0.28091745377712285,
+        "height": 0.2809174537770811,
         "upright": true,
         "collisions": 0,
-        "distance": 8.917513804486926
+        "distance": 8.91751380448697
       },
-      "fingerprint": "3e15d81f76fad1609673e0888f95f08749015bd2ac72bd1fa706e57845cd55e0"
+      "fingerprint": "c0802d41a3e7e5973294d97a6ccc2924d98492c8a083da023c145b1b6ba80b47"
     },
     {
       "seed": 1023,
@@ -563,12 +563,12 @@
       "ticks": 400,
       "score": 76.393,
       "scorecard": {
-        "height": 0.2807548649959366,
+        "height": 0.280754864995946,
         "upright": true,
         "collisions": 0,
-        "distance": 8.36010503741568
+        "distance": 8.360105037415654
       },
-      "fingerprint": "47090a2bf1da5d751389a2623788ae4846c1831c1738cc61018abe712899a304"
+      "fingerprint": "9f0a256150a8b2f05aa49c85e26897ed4c760f1511b2b46922534925ad8c4ee3"
     },
     {
       "seed": 1024,
@@ -582,12 +582,12 @@
       "ticks": 400,
       "score": 83.08,
       "scorecard": {
-        "height": 0.2815560428936332,
+        "height": 0.28155604289362723,
         "upright": true,
         "collisions": 0,
-        "distance": 8.767717442459833
+        "distance": 8.767717442459853
       },
-      "fingerprint": "46ceb0c15733fef47a5b67784eb468817ff28b076ae2e0e35a8c3b692e388f86"
+      "fingerprint": "0920de13537d6417558796072d131ae0bebfa9e6f861b1f155359a1df76f81ad"
     },
     {
       "seed": 1025,
@@ -601,12 +601,12 @@
       "ticks": 400,
       "score": 80.776,
       "scorecard": {
-        "height": 0.2809485603102739,
+        "height": 0.28094856031026566,
         "upright": true,
         "collisions": 0,
-        "distance": 8.774405462450249
+        "distance": 8.774405462450234
       },
-      "fingerprint": "c089bc0c646d9cb003553c9af3679d90905a531bc7d50789dc132791fc3c5bb6"
+      "fingerprint": "f13c25ca3522a7ce406a0c8a9c93bd04037a2cf8365d03613a0fd78a3b09f288"
     },
     {
       "seed": 1026,
@@ -620,12 +620,12 @@
       "ticks": 400,
       "score": 77.482,
       "scorecard": {
-        "height": 0.2806736044244419,
+        "height": 0.28067360442372996,
         "upright": true,
         "collisions": 0,
-        "distance": 8.357111186148954
+        "distance": 8.357111186149842
       },
-      "fingerprint": "5611cee312352d991590d769af6fe402e61d6682aceb0f440e3146c6dd80882a"
+      "fingerprint": "4c2f5db80be7e4005af174df04d304d28079fa8cd1b26004085a1b6d9bbcb728"
     },
     {
       "seed": 1027,
@@ -639,12 +639,12 @@
       "ticks": 400,
       "score": 75.779,
       "scorecard": {
-        "height": 0.28097797020077486,
+        "height": 0.28097797020074033,
         "upright": true,
         "collisions": 0,
-        "distance": 8.331270445616752
+        "distance": 8.331270445616774
       },
-      "fingerprint": "ebcecbf21fd8ab8e65f2d02e6448382cfe91ce40fd55ef3168eb729e3f8d6cd5"
+      "fingerprint": "2639fd6f75062ea08fcf06137b223d194bc6f3ed67db4ea7e5d1e848f9131c66"
     },
     {
       "seed": 1028,
@@ -658,12 +658,12 @@
       "ticks": 400,
       "score": 76.872,
       "scorecard": {
-        "height": 0.2808280729894626,
+        "height": 0.28082807298931206,
         "upright": true,
         "collisions": 0,
-        "distance": 8.142083494557344
+        "distance": 8.142083494557896
       },
-      "fingerprint": "7336dcb200e58c7d828525a68eda1d6553541919a73794d187903d4d6aebf98b"
+      "fingerprint": "c24c0b5b7f900cfeb9d70c8614541939a713be88be2de5bb55c9060ccaf7cc7d"
     },
     {
       "seed": 1029,
@@ -677,12 +677,12 @@
       "ticks": 400,
       "score": 80.504,
       "scorecard": {
-        "height": 0.2809435507247914,
+        "height": 0.2809435507250908,
         "upright": true,
         "collisions": 0,
-        "distance": 8.383622591753113
+        "distance": 8.383622591752511
       },
-      "fingerprint": "5e32dc9d877b61c5c6f617759c7de66c757dd969f5accc4a122705b987d35393"
+      "fingerprint": "ca75ab61e4c3b2a652575d2e1073c0163ff8124917fc5b9be5e907d5f9dc6c39"
     },
     {
       "seed": 1030,
@@ -696,12 +696,12 @@
       "ticks": 400,
       "score": 85.445,
       "scorecard": {
-        "height": 0.2811313928518896,
+        "height": 0.2811313928518925,
         "upright": true,
         "collisions": 0,
-        "distance": 8.98131651413649
+        "distance": 8.981316514136399
       },
-      "fingerprint": "30ecf7da3a7f6e65c31dcbae2717c9823ee085b369a0360f9ee443d8a3f6d6c0"
+      "fingerprint": "392259f53176cbc1aa6df21399c76bcdd90f0a5dcc98af65b49cfd7b19bf0d1f"
     },
     {
       "seed": 1031,
@@ -715,12 +715,12 @@
       "ticks": 400,
       "score": 77.351,
       "scorecard": {
-        "height": 0.27950867929273016,
+        "height": 0.27950867929272627,
         "upright": true,
         "collisions": 0,
-        "distance": 8.559650111998678
+        "distance": 8.559650111998689
       },
-      "fingerprint": "9ca2db8205c6a664aa7b438ddf8b6443d38f43d3d51bfdbbdd8dcec6db76bc62"
+      "fingerprint": "61cf5360ca43efd6c35b098df1d0410901f011309f16ae073e2593cd4c8fc5a8"
     },
     {
       "seed": 1032,
@@ -734,12 +734,12 @@
       "ticks": 400,
       "score": 82.366,
       "scorecard": {
-        "height": 0.280965157752158,
+        "height": 0.28096515775204955,
         "upright": true,
         "collisions": 0,
-        "distance": 8.75761113624486
+        "distance": 8.757611136245059
       },
-      "fingerprint": "2e7f4fb702b5f525d9360de1933d869a09b985df127f4098b3039ff9adb53d8e"
+      "fingerprint": "c52acd0c0ed3730e5c0767d8e5a7ab02d12ecab983b5a8d0a4cd8571cf5b739f"
     },
     {
       "seed": 1033,
@@ -753,12 +753,12 @@
       "ticks": 400,
       "score": 78.114,
       "scorecard": {
-        "height": 0.2807452056273334,
+        "height": 0.2807452056273016,
         "upright": true,
         "collisions": 0,
-        "distance": 8.55082617640879
+        "distance": 8.550826176408787
       },
-      "fingerprint": "e6ab5cae380bc9678555cb136483febab69604ca135db317b36b5e3039d7442f"
+      "fingerprint": "8e3b0a932d9d4075e40470e8c2fa9eda4f57dd2d340c313d5cde97b4cb081a54"
     },
     {
       "seed": 1034,
@@ -772,12 +772,12 @@
       "ticks": 400,
       "score": 76.902,
       "scorecard": {
-        "height": 0.28035828040575883,
+        "height": 0.28035828040580835,
         "upright": true,
         "collisions": 0,
-        "distance": 8.56578791204238
+        "distance": 8.565787912042394
       },
-      "fingerprint": "11ad7be440717d0a0eb17c0f96c89ba4017b592a41b43100ff73efa022199f05"
+      "fingerprint": "aa3fbaa09b8410b29a64af54203ae0ce039b04838ef79b681c1d74a85178b470"
     },
     {
       "seed": 1035,
@@ -791,12 +791,12 @@
       "ticks": 400,
       "score": 77.317,
       "scorecard": {
-        "height": 0.2802722575124568,
+        "height": 0.28027225751241286,
         "upright": true,
         "collisions": 0,
-        "distance": 8.372535442387207
+        "distance": 8.372535442387285
       },
-      "fingerprint": "0caa83b51c294dea41090fec6dd1b9dd14e23b6411320b797811a23faaf6afe8"
+      "fingerprint": "bfe7cc2be049a802f64156899a6a6f3d044ad592f530bf9239f5908878532738"
     },
     {
       "seed": 1036,
@@ -810,12 +810,12 @@
       "ticks": 400,
       "score": 78.233,
       "scorecard": {
-        "height": 0.2799805757019135,
+        "height": 0.27998057570196866,
         "upright": true,
         "collisions": 0,
-        "distance": 8.526812554515423
+        "distance": 8.526812554515473
       },
-      "fingerprint": "0c736634b6cadec5f7f0f96ba3cb36b970dbe1a067c1b487b18fe0a0b7173bb4"
+      "fingerprint": "6f874465cc5b7321f14de600dae625796ab4c1f48785ab13d98c2cd165ceec05"
     },
     {
       "seed": 1037,
@@ -829,12 +829,12 @@
       "ticks": 400,
       "score": 83.401,
       "scorecard": {
-        "height": 0.281735929209293,
+        "height": 0.28173592920928386,
         "upright": true,
         "collisions": 0,
-        "distance": 8.825765450453016
+        "distance": 8.825765450453046
       },
-      "fingerprint": "b7d9e947148db96eb3cf49aabcc5393196a436d72235b17e0d0cf4b7eaf29add"
+      "fingerprint": "22f417a5e39d08039972089994c8945094e1e6466b34e77650c72595ade6f95c"
     },
     {
       "seed": 1038,
@@ -848,12 +848,12 @@
       "ticks": 400,
       "score": 76.717,
       "scorecard": {
-        "height": 0.2808563370336691,
+        "height": 0.2808563370314926,
         "upright": true,
         "collisions": 0,
-        "distance": 7.8906301383571185
+        "distance": 7.890630138362653
       },
-      "fingerprint": "fba752362e4fb57d6144a0be691dc720f2c54f54eb7c0b73e6e457187bdc2a82"
+      "fingerprint": "5f7c60a1d32152a7bd5f890e2252a4d9ff4f5c0389e6206494a06e2618d27c71"
     },
     {
       "seed": 1039,
@@ -867,12 +867,12 @@
       "ticks": 400,
       "score": 83.83,
       "scorecard": {
-        "height": 0.2806729178079625,
+        "height": 0.2806729178079612,
         "upright": true,
         "collisions": 0,
-        "distance": 8.785158544432559
+        "distance": 8.785158544432585
       },
-      "fingerprint": "73449bb2b830caa8017d1c8a99f84b5caf3fddc3e906a5837bb40dd55fa60cb2"
+      "fingerprint": "50a93a2c8b7f70f89b58ee2722375ff6c255cf65098ecd5e06b5192643fe4039"
     },
     {
       "seed": 1040,
@@ -886,12 +886,12 @@
       "ticks": 400,
       "score": 78.358,
       "scorecard": {
-        "height": 0.28066286147351416,
+        "height": 0.2806628614734277,
         "upright": true,
         "collisions": 0,
-        "distance": 8.215767150064599
+        "distance": 8.215767150064886
       },
-      "fingerprint": "9f02d0e15a90e9ef0b79d1eaf6fe7121f58a3508208dbd2a71ae367fcb277256"
+      "fingerprint": "1165894febd7cd35a863d45a16d322ff550bea0fa9c99fc1612a5507d4eac9a8"
     },
     {
       "seed": 1041,
@@ -905,12 +905,12 @@
       "ticks": 400,
       "score": 82.847,
       "scorecard": {
-        "height": 0.2816763288336474,
+        "height": 0.28167632883366994,
         "upright": true,
         "collisions": 0,
-        "distance": 8.771426028580642
+        "distance": 8.771426028580544
       },
-      "fingerprint": "e317453ff4ab6efb756f27f3d67307fd162d3c073d820d985e8efbdff85c7157"
+      "fingerprint": "f008309992476f391dc5a11f789f2258fb7d4bb9337d451f5d471fc00e9afa42"
     },
     {
       "seed": 1042,
@@ -924,12 +924,12 @@
       "ticks": 400,
       "score": 81.785,
       "scorecard": {
-        "height": 0.28075774071381804,
+        "height": 0.2807577407138111,
         "upright": true,
         "collisions": 0,
-        "distance": 8.597066402171693
+        "distance": 8.597066402171697
       },
-      "fingerprint": "2581b3b938107171c4e71c4e769fb332796e679818ab94857da17147221c141c"
+      "fingerprint": "4c0d162b5c8f94d07d2309161ef4d1e8f07e4098945cb46fc5f781523f433314"
     },
     {
       "seed": 1043,
@@ -943,12 +943,12 @@
       "ticks": 400,
       "score": 80.738,
       "scorecard": {
-        "height": 0.2813431892398298,
+        "height": 0.2813431892398454,
         "upright": true,
         "collisions": 0,
-        "distance": 8.579143585970446
+        "distance": 8.57914358597035
       },
-      "fingerprint": "70b060df2ded1bd497eb9acf9ce4aa2bb2ffdb21f61d59e368ead827e8d3d584"
+      "fingerprint": "e8f8786198a6b8fc5d9e8ea434e8aedeed175130d6f73ad01d5e3093f3ecc9c7"
     },
     {
       "seed": 1044,
@@ -962,12 +962,12 @@
       "ticks": 400,
       "score": 79.452,
       "scorecard": {
-        "height": 0.28225430217110825,
+        "height": 0.2822543021710418,
         "upright": true,
         "collisions": 0,
-        "distance": 8.570551852340188
+        "distance": 8.570551852340213
       },
-      "fingerprint": "4e18f5dcfd5c40f3e7fdc5faeb71fd1d2413d49a0e2f245a372a66e09e5001e9"
+      "fingerprint": "661030e469c54a72ff50014da00da2f1d9a219627025ffb6542bd935958df04a"
     },
     {
       "seed": 1045,
@@ -981,12 +981,12 @@
       "ticks": 400,
       "score": 84.909,
       "scorecard": {
-        "height": 0.2812562990950523,
+        "height": 0.28125629909515537,
         "upright": true,
         "collisions": 0,
-        "distance": 8.89249707067382
+        "distance": 8.8924970706734
       },
-      "fingerprint": "998e8e0f55aef97de2b5061f7536c340fe2dd6993ac59a416d01d3038b0780a6"
+      "fingerprint": "92f4782a7328ec15c2e69a00cd2d6ba8de1804ffd1aa7e7e203d0792e0cb05a9"
     },
     {
       "seed": 1046,
@@ -1000,12 +1000,12 @@
       "ticks": 400,
       "score": 85.417,
       "scorecard": {
-        "height": 0.2826447176145115,
+        "height": 0.2826447176143007,
         "upright": true,
         "collisions": 0,
-        "distance": 8.972294755631731
+        "distance": 8.972294755632207
       },
-      "fingerprint": "70fad5701bc544ad0ef09a45473244bc8c7c57cce859fc876aeccd03b8552959"
+      "fingerprint": "452795618dc070be26a844cdc52bd866c9c2d66e97fa5721fb8dbf4d2cc5b691"
     },
     {
       "seed": 1047,
@@ -1019,12 +1019,12 @@
       "ticks": 400,
       "score": 80.446,
       "scorecard": {
-        "height": 0.2806611320651302,
+        "height": 0.28066113206511684,
         "upright": true,
         "collisions": 0,
-        "distance": 8.540970277751423
+        "distance": 8.540970277751441
       },
-      "fingerprint": "267e0d5eecbdb2223d66bfdd11ca82527d6d5724bfb3ad356048f451d42f8c88"
+      "fingerprint": "5b93523352f5a502d2453dc126472824547f30fcbbd68efd73e8f431dd936599"
     },
     {
       "seed": 1048,
@@ -1038,12 +1038,12 @@
       "ticks": 400,
       "score": 79.477,
       "scorecard": {
-        "height": 0.28057873061893696,
+        "height": 0.28057873061898303,
         "upright": true,
         "collisions": 0,
-        "distance": 8.444258578122271
+        "distance": 8.444258578122243
       },
-      "fingerprint": "d41f2de86c3171651572658942d492bf691f19828d98a7f7aac8b5ba351c0927"
+      "fingerprint": "1383325570bb364165c00ee769ebdf514b9df7d71964484470590186d40f7c1f"
     },
     {
       "seed": 1049,
@@ -1057,12 +1057,12 @@
       "ticks": 400,
       "score": 78.187,
       "scorecard": {
-        "height": 0.2802323310312364,
+        "height": 0.28023233103126094,
         "upright": true,
         "collisions": 0,
-        "distance": 8.526069369476318
+        "distance": 8.526069369476314
       },
-      "fingerprint": "8ebacac06159307fd820d573d3b15b97610463109cc705e56f79efedf81adb62"
+      "fingerprint": "eb847bae73950974aa92112bc6a94fb5750e81291de07236397b771e7922e7cf"
     }
   ],
   "summary": {
@@ -1075,9 +1075,11 @@
     ],
     "meanScore": 80.014
   },
-  "createdAt": "2026-11-03T02:40:50.299Z",
+  "createdAt": "2026-11-03T12:43:48.648Z",
   "approval": {
     "by": "Ossilic examples",
-    "at": "2026-11-03T02:40:50.301Z"
+    "at": "2026-11-03T12:43:48.651Z",
+    "reason": "re-recorded under deterministic cross-platform math (dmath); behaviour is unchanged to within 1 ulp per operation",
+    "replaces": "ac3fd7790520f84a9720f1abfd96679f9d3c24a3fd6bdf039541343c1ddd4a2c"
   }
 }

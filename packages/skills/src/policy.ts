@@ -4,10 +4,10 @@
  * fitted brain runs in Node, in Desktop and on an edge board alike.
  */
 import type { MlpPolicy, Pose, Scan, Twist } from "@ossilic/spec";
-import type { SkillSpec } from "@ossilic/runtime";
+import { dmath, type SkillSpec } from "@ossilic/runtime";
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
-const wrap = (a: number) => Math.atan2(Math.sin(a), Math.cos(a));
+const wrap = (a: number) => dmath.atan2(dmath.sin(a), dmath.cos(a));
 
 export function mlpParamCount(inputs: number, hidden: number[], outputs: number): number {
   let n = 0, prev = inputs;
@@ -24,7 +24,7 @@ export function mlpForward(p: MlpPolicy, obs: number[]): number[] {
     const y = new Array<number>(size).fill(0);
     for (let i = 0; i < x.length; i++) for (let j = 0; j < size; j++) y[j] += x[i] * p.weights[k + i * size + j];
     k += x.length * size;
-    for (let j = 0; j < size; j++) y[j] = Math.tanh(y[j] + p.weights[k + j]);
+    for (let j = 0; j < size; j++) y[j] = dmath.tanh(y[j] + p.weights[k + j]);
     k += size;
     x = y;
   }
@@ -63,9 +63,9 @@ export const navObserve: SkillSpec = {
   create: (p) => ({
     tick: (i) => {
       const scan = i.scan as Scan, pose = i.pose as Pose;
-      const dx = (p.x as number) - pose.x, dy = (p.y as number) - pose.y, dist = Math.hypot(dx, dy);
-      const bearing = wrap(Math.atan2(dy, dx) - pose.theta);
-      return { obs: [...scan.ranges.map((r) => r / scan.maxRange), Math.sin(bearing), Math.cos(bearing), Math.min(1, dist / 5)], distance: dist, reached: dist < (p.tolerance as number) };
+      const dx = (p.x as number) - pose.x, dy = (p.y as number) - pose.y, dist = dmath.hypot(dx, dy);
+      const bearing = wrap(dmath.atan2(dy, dx) - pose.theta);
+      return { obs: [...scan.ranges.map((r) => r / scan.maxRange), dmath.sin(bearing), dmath.cos(bearing), Math.min(1, dist / 5)], distance: dist, reached: dist < (p.tolerance as number) };
     },
   }),
 };

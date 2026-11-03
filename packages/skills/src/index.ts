@@ -5,13 +5,13 @@
  * registry exactly the same way.
  */
 import { ACTUATOR_TYPES, PORT_TYPES, SENSOR_TYPES, type PortType, type Pose, type Scan, type Twist } from "@ossilic/spec";
-import { SkillRegistry, type SkillSpec } from "@ossilic/runtime";
+import { dmath, SkillRegistry, type SkillSpec } from "@ossilic/runtime";
 import { actTwist, brainPolicy, navObserve } from "./policy.ts";
 
 export * from "./policy.ts";
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
-const wrap = (a: number) => Math.atan2(Math.sin(a), Math.cos(a));
+const wrap = (a: number) => dmath.atan2(dmath.sin(a), dmath.cos(a));
 
 export const sensorRead: SkillSpec = {
   name: "sensor.read", version: "1.0.0", category: "io",
@@ -53,10 +53,10 @@ export const navGoto: SkillSpec = {
   create: (p) => ({
     tick: (i) => {
       const pose = i.pose as Pose;
-      const dx = (p.x as number) - pose.x, dy = (p.y as number) - pose.y, dist = Math.hypot(dx, dy);
+      const dx = (p.x as number) - pose.x, dy = (p.y as number) - pose.y, dist = dmath.hypot(dx, dy);
       if (dist < (p.tolerance as number)) return { twist: { v: 0, w: 0 }, reached: true, distance: dist };
-      const err = wrap(Math.atan2(dy, dx) - pose.theta);
-      const v = (p.cruise as number) * Math.max(0, Math.cos(err)) * Math.min(1, dist / 0.5); // slow when facing away or close
+      const err = wrap(dmath.atan2(dy, dx) - pose.theta);
+      const v = (p.cruise as number) * Math.max(0, dmath.cos(err)) * Math.min(1, dist / 0.5); // slow when facing away or close
       return { twist: { v, w: clamp((p.turnGain as number) * err, -2.5, 2.5) }, reached: false, distance: dist };
     },
   }),
@@ -82,8 +82,8 @@ export const navObstacleAvoid: SkillSpec = {
         const scan = i.scan as Scan;
         let nearest = scan.maxRange, left = 0, right = 0;
         scan.angles.forEach((a, k) => {
-          const r = scan.ranges[k], fwd = r * Math.cos(a);
-          if (fwd > 0 && Math.abs(r * Math.sin(a)) < width && fwd < nearest) nearest = fwd; // inside the swept corridor
+          const r = scan.ranges[k], fwd = r * dmath.cos(a);
+          if (fwd > 0 && Math.abs(r * dmath.sin(a)) < width && fwd < nearest) nearest = fwd; // inside the swept corridor
           a > 0 ? (left += r) : a < 0 && (right += r);
         });
         const blocked = nearest < stop, freeSide = left >= right ? 1 : -1;
@@ -174,8 +174,8 @@ export const gaitTrot: SkillSpec = {
         const s = (i.speed as number | undefined) ?? 1, phase = 2 * Math.PI * (p.frequency as number) * ctx.t;
         // hip swings sinusoidally; the knee flexes only while the hip moves forward (swing), so the foot clears the ground
         const targets = legPhase.flatMap((off) => [
-          (p.hipOffset as number) + s * (p.hipAmp as number) * Math.sin(phase + off),
-          (p.kneeOffset as number) - s * (p.kneeAmp as number) * Math.max(0, -Math.cos(phase + off)),
+          (p.hipOffset as number) + s * (p.hipAmp as number) * dmath.sin(phase + off),
+          (p.kneeOffset as number) - s * (p.kneeAmp as number) * Math.max(0, -dmath.cos(phase + off)),
         ]);
         return { targets, phase: (phase % (2 * Math.PI)) / (2 * Math.PI) };
       },

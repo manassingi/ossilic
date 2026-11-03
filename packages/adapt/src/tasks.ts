@@ -3,6 +3,7 @@
  * score; Evaluate reports the pass rate. Scores are shaped so that partial
  * progress counts, which is what lets an optimizer climb.
  */
+import { dmath } from "@ossilic/runtime";
 import type { RunRecord, Scorecard } from "@ossilic/spec";
 
 export interface Task {
@@ -42,10 +43,10 @@ export const TASKS: Record<string, Task> = {
 function progress(r: RunRecord): number {
   const p = r.trajectory.poses; if (p.length < 2) return 0;
   const [x0, y0, th] = p[0], [x1, y1] = p[p.length - 1];
-  return (x1 - x0) * Math.cos(th) + (y1 - y0) * Math.sin(th);
+  return (x1 - x0) * dmath.cos(th) + (y1 - y0) * dmath.sin(th);
 }
 function drift(r: RunRecord): number {
   const p = r.trajectory.poses; if (p.length < 2) return 0;
   const [x0, y0, th] = p[0], [x1, y1] = p[p.length - 1];
-  return Math.abs(-(x1 - x0) * Math.sin(th) + (y1 - y0) * Math.cos(th));
+  return Math.abs(-(x1 - x0) * dmath.sin(th) + (y1 - y0) * dmath.cos(th));
 }

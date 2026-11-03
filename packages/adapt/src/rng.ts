@@ -1,3 +1,4 @@
+import { dmath } from "@ossilic/runtime";
 /** Deterministic randomness: every fit and evaluation is reproducible from its seed. */
 export class Rng {
   #s: number;
@@ -10,5 +11,5 @@ export class Rng {
   }
   range(lo: number, hi: number): number { return lo + (hi - lo) * this.next(); }
   int(n: number): number { return Math.floor(this.next() * n); }
-  gaussian(): number { const u = 1 - this.next(), v = this.next(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+  gaussian(): number { const u = 1 - this.next(), v = this.next(); return Math.sqrt(-2 * dmath.log(u)) * dmath.cos(2 * Math.PI * v); }
 }

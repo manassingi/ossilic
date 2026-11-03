@@ -116,7 +116,8 @@ Replication on fresh cases is specified for step I5 and is not part of this rele
 
 - Sensor noise is counter-based: each value is a pure function of (seed, tick, sensor, element), through a fixed 32-bit integer hash. The engine (TypeScript) and the MuJoCo host (Python) implement the same function, and AT1.1 checks them value for value.
 - Randomized worlds come from a seeded generator (`ossilic-randomize 1`). The realized initial state of every world is stored with it.
-- Kinematic simulation is bit-exact across platforms. Physics (MuJoCo) is bit-exact on the same platform and kernel version (AT1.2), and is compared by outcome elsewhere.
+- Every computation that shapes a world or a score uses deterministic math (`dmath`: fdlibm ports built only from +, −, ×, ÷ and sqrt, which IEEE 754 fixes bit for bit). JavaScript's own Math.sin, Math.exp and the like are compiled C, and they differed in the last bit between ARM64 Macs and x64 Linux. That made 59 of 200 rover worlds fail to reproduce in CI before the change. Golden bit patterns and fingerprints recorded on one platform are checked on the other in CI (AT1.5, AT1.6).
+- Kinematic simulation is therefore bit-exact across platforms. Physics (MuJoCo, a compiled C library) is bit-exact on the same platform and kernel version (AT1.2), and is compared by outcome elsewhere.
 
 ## What this does not establish
 
