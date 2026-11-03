@@ -1,0 +1,38 @@
+<mujoco model="ossilic-quadruped">
+  <compiler angle="radian"/>
+  <option timestep="0.002" integrator="implicitfast"/>
+  <default>
+    <geom friction="1 0.005 0.0001" condim="3"/>
+    <joint type="hinge" axis="0 1 0" damping="0.5" armature="0.01"/>
+    <position kp="40" kv="1.5" ctrlrange="-2.5 2.5" forcerange="-25 25"/>
+    <default class="thigh"><geom type="capsule" size="0.02" fromto="0 0 0 0 0 -0.16" mass="0.4" rgba="0.25 0.25 0.3 1"/></default>
+    <default class="shank"><geom type="capsule" size="0.016" fromto="0 0 0 0 0 -0.16" mass="0.2" rgba="0.3 0.3 0.35 1"/></default>
+  </default>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.9 0.9 0.9" rgb2="0.8 0.8 0.8" width="256" height="256"/>
+    <material name="grid" texture="grid" texrepeat="10 10" reflectance="0.1"/>
+  </asset>
+  <worldbody>
+    <light pos="0 0 4" dir="0 0 -1" diffuse="0.9 0.9 0.9"/>
+    <geom name="floor" type="plane" size="20 20 0.1" material="grid"/>
+    <body name="trunk" pos="0 0 0.30">
+      <freejoint/>
+      <geom type="box" size="0.20 0.10 0.04" mass="5" rgba="0.85 0.45 0.15 1"/>
+      <geom type="box" size="0.03 0.03 0.03" pos="0.22 0 0.02" mass="0.1" rgba="0.1 0.1 0.1 1"/>
+      <body name="fl_thigh" pos="0.16 0.11 0"><joint name="fl_hip" range="-1.2 1.2"/><geom class="thigh"/>
+        <body name="fl_shank" pos="0 0 -0.16"><joint name="fl_knee" range="-2.4 0"/><geom class="shank"/><geom type="sphere" size="0.022" pos="0 0 -0.16" mass="0.05" rgba="0.1 0.1 0.1 1"/></body></body>
+      <body name="fr_thigh" pos="0.16 -0.11 0"><joint name="fr_hip" range="-1.2 1.2"/><geom class="thigh"/>
+        <body name="fr_shank" pos="0 0 -0.16"><joint name="fr_knee" range="-2.4 0"/><geom class="shank"/><geom type="sphere" size="0.022" pos="0 0 -0.16" mass="0.05" rgba="0.1 0.1 0.1 1"/></body></body>
+      <body name="rl_thigh" pos="-0.16 0.11 0"><joint name="rl_hip" range="-1.2 1.2"/><geom class="thigh"/>
+        <body name="rl_shank" pos="0 0 -0.16"><joint name="rl_knee" range="-2.4 0"/><geom class="shank"/><geom type="sphere" size="0.022" pos="0 0 -0.16" mass="0.05" rgba="0.1 0.1 0.1 1"/></body></body>
+      <body name="rr_thigh" pos="-0.16 -0.11 0"><joint name="rr_hip" range="-1.2 1.2"/><geom class="thigh"/>
+        <body name="rr_shank" pos="0 0 -0.16"><joint name="rr_knee" range="-2.4 0"/><geom class="shank"/><geom type="sphere" size="0.022" pos="0 0 -0.16" mass="0.05" rgba="0.1 0.1 0.1 1"/></body></body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="fl_hip" joint="fl_hip"/><position name="fl_knee" joint="fl_knee"/>
+    <position name="fr_hip" joint="fr_hip"/><position name="fr_knee" joint="fr_knee"/>
+    <position name="rl_hip" joint="rl_hip"/><position name="rl_knee" joint="rl_knee"/>
+    <position name="rr_hip" joint="rr_hip"/><position name="rr_knee" joint="rr_knee"/>
+  </actuator>
+</mujoco>

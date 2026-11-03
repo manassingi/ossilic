@@ -1,0 +1,162 @@
+{
+  "ossilic": "1",
+  "name": "rover",
+  "version": "1.0.0",
+  "description": "A differential-drive rover that navigates to a goal while avoiding obstacles. The reference machine.",
+  "license": "Apache-2.0",
+  "authors": [
+    "Ossilic"
+  ],
+  "body": {
+    "base": {
+      "type": "differential_drive",
+      "wheelBase": 0.3,
+      "wheelRadius": 0.05,
+      "maxWheelSpeed": 14,
+      "body": "chassis",
+      "left": "left",
+      "right": "right"
+    },
+    "sensors": [
+      {
+        "id": "lidar",
+        "type": "lidar2d",
+        "rays": 24,
+        "fov": 3.14159,
+        "range": 4.0,
+        "height": 0.1
+      },
+      {
+        "id": "odom",
+        "type": "odometry"
+      }
+    ],
+    "actuators": [
+      {
+        "id": "wheels",
+        "type": "differential_drive"
+      }
+    ],
+    "model": "rover.xml"
+  },
+  "brain": {
+    "tickHz": 20,
+    "nodes": [
+      {
+        "id": "lidar",
+        "skill": "sensor.read",
+        "params": {
+          "sensor": "lidar"
+        }
+      },
+      {
+        "id": "odom",
+        "skill": "sensor.read",
+        "params": {
+          "sensor": "odom"
+        }
+      },
+      {
+        "id": "goto",
+        "skill": "nav.goto",
+        "params": {
+          "x": 5.0,
+          "y": 5.0,
+          "cruise": 0.6
+        }
+      },
+      {
+        "id": "avoid",
+        "skill": "nav.obstacle_avoid",
+        "params": {
+          "stopDist": 0.55,
+          "cruise": 0.5
+        }
+      },
+      {
+        "id": "wheels",
+        "skill": "actuator.write",
+        "params": {
+          "actuator": "wheels"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "lidar.value",
+        "to": "avoid.scan"
+      },
+      {
+        "from": "odom.value",
+        "to": "goto.pose"
+      },
+      {
+        "from": "goto.twist",
+        "to": "avoid.desired"
+      },
+      {
+        "from": "avoid.twist",
+        "to": "wheels.command"
+      }
+    ],
+    "done": "goto.reached"
+  },
+  "deploy": {
+    "targets": [
+      {
+        "name": "sim",
+        "driver": "sim2d",
+        "config": {
+          "bounds": {
+            "w": 6,
+            "h": 6
+          },
+          "start": {
+            "x": 0.5,
+            "y": 0.5,
+            "theta": 0
+          },
+          "obstacles": [
+            {
+              "x": 2.0,
+              "y": 2.0,
+              "r": 0.45
+            },
+            {
+              "x": 3.5,
+              "y": 3.0,
+              "r": 0.5
+            },
+            {
+              "x": 2.8,
+              "y": 4.3,
+              "r": 0.4
+            },
+            {
+              "x": 4.5,
+              "y": 4.4,
+              "r": 0.35
+            }
+          ],
+          "lidarNoise": 0.02,
+          "seed": 1
+        }
+      },
+      {
+        "name": "physics",
+        "driver": "mujoco",
+        "config": {
+          "seed": 1,
+          "lidarNoise": 0.02
+        }
+      },
+      {
+        "name": "edge",
+        "driver": "ros2",
+        "config": {
+          "namespace": "/rover"
+        }
+      }
+    ]
+  }
+}

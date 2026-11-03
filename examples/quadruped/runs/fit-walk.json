@@ -1,0 +1,99 @@
+{
+  "ossilic": "1",
+  "machine": "quadruped",
+  "target": "physics",
+  "task": "walk",
+  "template": "walk.trot",
+  "budget": 90,
+  "evaluated": 90,
+  "best": {
+    "score": 81.582,
+    "params": {
+      "gait.frequency": 3,
+      "gait.hipAmp": 0.4142,
+      "gait.kneeAmp": 0.62,
+      "gait.hipOffset": 0.7139,
+      "gait.kneeOffset": -0.9971
+    }
+  },
+  "history": [
+    0.497,
+    75.958,
+    75.958,
+    75.958,
+    75.958,
+    75.958,
+    75.958,
+    81.582,
+    81.582,
+    81.582,
+    81.582,
+    81.582,
+    81.582
+  ],
+  "before": {
+    "ossilic": "1",
+    "machine": "quadruped",
+    "version": "1.0.0",
+    "target": "physics",
+    "task": "walk",
+    "episodes": 6,
+    "successRate": 1,
+    "mean": {
+      "height": 0.2744,
+      "upright": 1,
+      "collisions": 0,
+      "distance": 7.4029
+    },
+    "scores": [
+      64.86,
+      78.599,
+      62.556,
+      71.305,
+      42.592,
+      69.358
+    ],
+    "seeds": [
+      500,
+      501,
+      502,
+      503,
+      504,
+      505
+    ]
+  },
+  "after": {
+    "ossilic": "1",
+    "machine": "quadruped",
+    "version": "1.0.0",
+    "target": "physics",
+    "task": "walk",
+    "episodes": 6,
+    "successRate": 1,
+    "mean": {
+      "height": 0.2802,
+      "upright": 1,
+      "collisions": 0,
+      "distance": 8.4213
+    },
+    "scores": [
+      78.145,
+      87.126,
+      73.695,
+      79.093,
+      78.377,
+      76.895
+    ],
+    "seeds": [
+      500,
+      501,
+      502,
+      503,
+      504,
+      505
+    ]
+  },
+  "kept": "fitted",
+  "startedAt": "2026-11-02T09:34:30.158Z",
+  "seconds": 83.5
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@ossilic/mujoco",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./driver": "./src/driver.ts"
+  },
+  "license": "Apache-2.0"
+}

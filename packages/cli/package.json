@@ -1,0 +1,12 @@
+{
+  "name": "@ossilic/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "ossilic": "./src/main.ts"
+  },
+  "license": "Apache-2.0"
+}

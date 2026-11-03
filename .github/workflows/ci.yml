@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+
+  # The examples are golden machines: every change must keep their evidence.
+  release-check:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { machine: examples/rover/machine.json, physics: "false" }
+          - { machine: examples/rover-learned/machine.json, physics: "false" }
+          - { machine: examples/quadruped/machine.json, physics: "true" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          machine: ${{ matrix.machine }}
+          physics: ${{ matrix.physics }}

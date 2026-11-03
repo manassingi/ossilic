@@ -1,0 +1,77 @@
+{
+  "ossilic": "1",
+  "name": "quadruped",
+  "version": "1.0.1",
+  "description": "A twelve-kilogram-class quadruped that trots forward on an open-loop gait. The reference legged machine.",
+  "license": "Apache-2.0",
+  "authors": [
+    "Ossilic"
+  ],
+  "body": {
+    "base": {
+      "type": "legged",
+      "body": "trunk"
+    },
+    "model": "quadruped.xml",
+    "sensors": [
+      {
+        "id": "imu",
+        "type": "imu"
+      },
+      {
+        "id": "joints",
+        "type": "joint_state"
+      },
+      {
+        "id": "odom",
+        "type": "odometry"
+      }
+    ],
+    "actuators": [
+      {
+        "id": "legs",
+        "type": "joint_position"
+      }
+    ]
+  },
+  "brain": {
+    "tickHz": 50,
+    "nodes": [
+      {
+        "id": "gait",
+        "skill": "gait.trot",
+        "params": {
+          "frequency": 3,
+          "hipAmp": 0.4142,
+          "kneeAmp": 0.62,
+          "hipOffset": 0.7139,
+          "kneeOffset": -0.9971
+        }
+      },
+      {
+        "id": "legs",
+        "skill": "actuator.write",
+        "params": {
+          "actuator": "legs"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "gait.targets",
+        "to": "legs.command"
+      }
+    ]
+  },
+  "deploy": {
+    "targets": [
+      {
+        "name": "physics",
+        "driver": "mujoco",
+        "config": {
+          "seed": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "ossilic",
+  "private": true,
+  "version": "1.0.0-alpha.1",
+  "description": "Ossilic: the release check for robot policies. Paired, seeded evaluations with a statistical release verdict and evidence anyone can re-run.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --test \"packages/**/test/*.test.ts\"",
+    "ossilic": "node packages/cli/src/main.ts",
+    "demo": "node packages/cli/src/main.ts run examples/rover/machine.json --seconds 30 --record examples/rover/runs/sim.json",
+    "demo:physics": "node packages/cli/src/main.ts run examples/rover/machine.json --target physics --seconds 90 --record examples/rover/runs/physics.json",
+    "demo:quadruped": "node packages/cli/src/main.ts run examples/quadruped/machine.json --seconds 10 --record examples/quadruped/runs/physics.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2"
+  }
+}

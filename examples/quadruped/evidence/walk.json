@@ -1,0 +1,1083 @@
+{
+  "ossilic": "1",
+  "kind": "evidence",
+  "schema": 2,
+  "machine": {
+    "name": "quadruped",
+    "version": "1.0.1",
+    "manifest": "27ee294bcee87f92d3457c384711850c38ba20111aaa86004790273f97f90b29"
+  },
+  "identity": {
+    "brain": "81d24810aa2c925f93a3b5c2bce69a404e3c447112731270e1c55edfa86c63a9",
+    "body": "85eda14f7c4a7489d5602b833894b105c6bb33bfa64dba98600931e1b7915b0f",
+    "world": "545e2a14db7521d02f8b4a4e1f616f18e74f22645bcf4093a682f80f1ef72c20",
+    "suite": "56a5523204a83fcfc6931bcb16ed8f660ce6b685456caf5f07f2401ae2c1a514"
+  },
+  "suite": {
+    "ossilic": "1",
+    "kind": "suite",
+    "schema": 2,
+    "name": "walk",
+    "version": "1.0.0",
+    "description": "walk on physics, randomized worlds",
+    "task": "walk",
+    "target": "physics",
+    "episodes": 50,
+    "seed": 1000,
+    "randomize": true,
+    "cases": {
+      "kind": "seeded-public",
+      "generator": "ossilic-randomize 1"
+    },
+    "primary": {
+      "metric": "success",
+      "direction": "higher",
+      "margin": 0.1
+    },
+    "guardrails": [],
+    "alpha": 0.05,
+    "maxInvalidRate": 0.05,
+    "tolerance": {}
+  },
+  "artifact": {
+    "tickHz": 50,
+    "nodes": {
+      "gait": {
+        "skill": "gait.trot",
+        "params": {
+          "frequency": 3,
+          "hipAmp": 0.4142,
+          "kneeAmp": 0.62,
+          "hipOffset": 0.7139,
+          "kneeOffset": -0.9971
+        }
+      },
+      "legs": {
+        "skill": "actuator.write",
+        "params": {
+          "actuator": "legs"
+        }
+      }
+    },
+    "edges": [
+      "gait.targets → legs.command"
+    ],
+    "body": {
+      "base.type": "legged",
+      "base.body": "trunk",
+      "model": "quadruped.xml",
+      "sensors[imu].id": "imu",
+      "sensors[imu].type": "imu",
+      "sensors[joints].id": "joints",
+      "sensors[joints].type": "joint_state",
+      "sensors[odom].id": "odom",
+      "sensors[odom].type": "odometry",
+      "actuators[legs].id": "legs",
+      "actuators[legs].type": "joint_position"
+    },
+    "files": {
+      "quadruped.xml": {
+        "sha256": "c3e65380d5732ffa5c3a148c66edd95e1c21dc8d1b3be4a5b5b1e9ef40b87ff3",
+        "bytes": 2852
+      }
+    }
+  },
+  "driver": "mujoco",
+  "environment": {
+    "engine": "1.0.0-alpha.1",
+    "evaluator": "ossilic-evidence 2",
+    "scoring": "walk@1",
+    "driver": "mujoco",
+    "kernel": "mujoco 3.17.0",
+    "runtime": "node 24.21.0",
+    "platform": "darwin-arm64"
+  },
+  "executedBy": {
+    "mode": "local"
+  },
+  "createdBy": "Ossilic examples",
+  "cases": {
+    "kind": "seeded-public",
+    "generator": "ossilic-randomize 1"
+  },
+  "accounting": {
+    "planned": 50,
+    "completed": 50,
+    "byStatus": {
+      "success": 50,
+      "failure": 0,
+      "timeout": 0,
+      "safety_stop": 0,
+      "policy_error": 0,
+      "infra_error": 0,
+      "invalid": 0
+    }
+  },
+  "episodes": [
+    {
+      "seed": 1000,
+      "world": {
+        "seed": 1000,
+        "frictionScale": 1.1771169441286475,
+        "massScale": 1.0983063740655779
+      },
+      "worldHash": "7f945c20efb4e8db72400bc70925c37b8005b6da94f9edfbb3eced29ee8815f9",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.131,
+      "scorecard": {
+        "height": 0.28088540423906455,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.521386228681644
+      },
+      "fingerprint": "9d8f8978f7c05da8de7adff12f2b256d977e0fe4e8a7e5b73bb656145fa19eb3"
+    },
+    {
+      "seed": 1001,
+      "world": {
+        "seed": 1001,
+        "frictionScale": 0.7847049871459603,
+        "massScale": 0.9302210823865606
+      },
+      "worldHash": "db36c37b8ce7c2de4988f6e056410412afb928b86144984e8ed13c96d8257cc3",
+      "status": "success",
+      "ticks": 400,
+      "score": 78.176,
+      "scorecard": {
+        "height": 0.27871245925857757,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.22724917415256
+      },
+      "fingerprint": "0330cd956c3f7761ee638e0a36f996551c378c1f41ae24186a4a6e5f67243c5c"
+    },
+    {
+      "seed": 1002,
+      "world": {
+        "seed": 1002,
+        "frictionScale": 0.9601946093607694,
+        "massScale": 1.010208023083396
+      },
+      "worldHash": "bf3ef97002d1f909ed2eb7040ff96b4f7914c5627e0775e8699d24fc1cd89b8f",
+      "status": "success",
+      "ticks": 400,
+      "score": 81.869,
+      "scorecard": {
+        "height": 0.2811146967394813,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.655144419290899
+      },
+      "fingerprint": "32540461444d393fb2dd7eccdb33423c074658ef8df3c31e65f1259e9e3bea2f"
+    },
+    {
+      "seed": 1003,
+      "world": {
+        "seed": 1003,
+        "frictionScale": 0.9003495126031339,
+        "massScale": 0.9173787639010698
+      },
+      "worldHash": "751d9213a4a2267298b2e800a74ee9c316c774d47f608e7368016293b9bd4e00",
+      "status": "success",
+      "ticks": 400,
+      "score": 85.158,
+      "scorecard": {
+        "height": 0.2810416162054062,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.781222574645827
+      },
+      "fingerprint": "8b948284ab836da95ace75b3a328ebba6c4c1ca37819db0476d420447c8ef41f"
+    },
+    {
+      "seed": 1004,
+      "world": {
+        "seed": 1004,
+        "frictionScale": 0.8052448322065174,
+        "massScale": 0.9325947187608108
+      },
+      "worldHash": "b4b7c8c000793fd9d2690eb2fe5de4b182b5562200d15174fea4a2e9f714d457",
+      "status": "success",
+      "ticks": 400,
+      "score": 81.29,
+      "scorecard": {
+        "height": 0.28121913805555465,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.508367465224934
+      },
+      "fingerprint": "9fa6a576b2458fadfcc1201633d91b4683e2f78cbc19fbcdaca5f2392793c5ca"
+    },
+    {
+      "seed": 1005,
+      "world": {
+        "seed": 1005,
+        "frictionScale": 0.9510356530547142,
+        "massScale": 1.057675511529669
+      },
+      "worldHash": "b5ea3f89c8073da61e875da40f1bb4a1f649ecb487e58f378ba2fdb0c8ac71cf",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.497,
+      "scorecard": {
+        "height": 0.2812862832254001,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.48382625342937
+      },
+      "fingerprint": "bc6eec7c06133f62d2e80d09cd7ec147617a9be41cfd4dabd11d2965d2d75ca4"
+    },
+    {
+      "seed": 1006,
+      "world": {
+        "seed": 1006,
+        "frictionScale": 0.9115344817750156,
+        "massScale": 0.9161590141244232
+      },
+      "worldHash": "4ec204fb6b00112bd6570fa400a82822ef7c42906970cce1448f1f62cea28217",
+      "status": "success",
+      "ticks": 400,
+      "score": 84.707,
+      "scorecard": {
+        "height": 0.28045197368107866,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.797420457447458
+      },
+      "fingerprint": "2f1eb9c75e38e952e17bf94674c1c4c16794865906803affc237b6251b125310"
+    },
+    {
+      "seed": 1007,
+      "world": {
+        "seed": 1007,
+        "frictionScale": 1.2226276794448494,
+        "massScale": 0.922900753468275
+      },
+      "worldHash": "a6458e1766777e7bca2bc12342316faf0c12b271d1e60ef87cbc47ebedef4d60",
+      "status": "success",
+      "ticks": 400,
+      "score": 87.118,
+      "scorecard": {
+        "height": 0.28175835179035597,
+        "upright": true,
+        "collisions": 0,
+        "distance": 9.067416922456848
+      },
+      "fingerprint": "5e3044761fe5255a36ec58d79ff41452394ee9c1121d37ae096fa3b4624c1aca"
+    },
+    {
+      "seed": 1008,
+      "world": {
+        "seed": 1008,
+        "frictionScale": 1.1620093753095717,
+        "massScale": 1.0678947208914904
+      },
+      "worldHash": "dbad001bb6c4b2b882adb0ffa9b2cbb24520134bf0fa352f5e373497fdde5e6d",
+      "status": "success",
+      "ticks": 400,
+      "score": 79.141,
+      "scorecard": {
+        "height": 0.28084090401890427,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.612359506400837
+      },
+      "fingerprint": "75b01c61db8579d293265cfd6d26a04dcdd3901855db091828d1e181dce18fc1"
+    },
+    {
+      "seed": 1009,
+      "world": {
+        "seed": 1009,
+        "frictionScale": 1.1157937715295703,
+        "massScale": 1.0388989012921228
+      },
+      "worldHash": "c08ddce77efaeae556cd82176a8ab9a5c9c4f87be98cae70ef0e63c10e993536",
+      "status": "success",
+      "ticks": 400,
+      "score": 82.695,
+      "scorecard": {
+        "height": 0.28130620464990863,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.707729289962261
+      },
+      "fingerprint": "67a5fc2fbaf6ee319d1c260935853e87698af935baaf9864e25acc842266f629"
+    },
+    {
+      "seed": 1010,
+      "world": {
+        "seed": 1010,
+        "frictionScale": 0.959526349697262,
+        "massScale": 1.0905169412493705
+      },
+      "worldHash": "0e3674d6d4347666e233d6af9f794f0f9ca6ea2834462bd9019b6d800506873d",
+      "status": "success",
+      "ticks": 400,
+      "score": 81.01,
+      "scorecard": {
+        "height": 0.28021680937806415,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.469472646984984
+      },
+      "fingerprint": "8d5088ef077ddc7c651e0b384eaaa83b3f145210b941ec303a1a259003533e6b"
+    },
+    {
+      "seed": 1011,
+      "world": {
+        "seed": 1011,
+        "frictionScale": 1.294976845709607,
+        "massScale": 1.051977793336846
+      },
+      "worldHash": "35917279311f7eb34cfc8d6968128fa4745f72afe4972b39250fee803d00d371",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.563,
+      "scorecard": {
+        "height": 0.2801502374319536,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.699923081299094
+      },
+      "fingerprint": "b0b4b37e7108c73cc49a934b54b7fccba77098031c92a25b488fe06831e53e35"
+    },
+    {
+      "seed": 1012,
+      "world": {
+        "seed": 1012,
+        "frictionScale": 0.8781712781637907,
+        "massScale": 1.0146594617981464
+      },
+      "worldHash": "74300cde491cc2327ff8cb0ae0fac5838f140be1ca30f4125ab719f3c42a234a",
+      "status": "success",
+      "ticks": 400,
+      "score": 83.087,
+      "scorecard": {
+        "height": 0.2805986615750291,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.569563421405881
+      },
+      "fingerprint": "629e7a327114cb0a937eae78259f22772434718b8dd59a91eb7843976ce50aac"
+    },
+    {
+      "seed": 1013,
+      "world": {
+        "seed": 1013,
+        "frictionScale": 0.7129209135659038,
+        "massScale": 0.9091181684518232
+      },
+      "worldHash": "7e8dcbddf208e9e8fa3a32eaba72ab2d6a4110c97f5491b6b4e56ba51a1947f9",
+      "status": "success",
+      "ticks": 400,
+      "score": 73.772,
+      "scorecard": {
+        "height": 0.2830273990437041,
+        "upright": true,
+        "collisions": 0,
+        "distance": 7.71036507418506
+      },
+      "fingerprint": "85df6ce451a24ba31f7d2a0373c5dada6e96aa252e911a78414c26b8c4ac0ae2"
+    },
+    {
+      "seed": 1014,
+      "world": {
+        "seed": 1014,
+        "frictionScale": 0.7944536428898572,
+        "massScale": 1.0940412005176767
+      },
+      "worldHash": "225d05af36d6294f0a92a43e0569ceb28b5a7cb15a3ce8c20ea6bd8363e52c4f",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.618,
+      "scorecard": {
+        "height": 0.2801256530781232,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.178985675543412
+      },
+      "fingerprint": "7c1f743e6a8af8f7860ef5c93728d7c5cdf94912999e54c253b9716725d49c5f"
+    },
+    {
+      "seed": 1015,
+      "world": {
+        "seed": 1015,
+        "frictionScale": 0.8504605460446328,
+        "massScale": 1.1347093702759592
+      },
+      "worldHash": "3df1f1891167287c331198825ee5514b85240cc425fda324f2872954cb3ecb70",
+      "status": "success",
+      "ticks": 400,
+      "score": 74.766,
+      "scorecard": {
+        "height": 0.28106204062479745,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.151186555982537
+      },
+      "fingerprint": "c2023f65ab1cc438bc9ca5e33b6f8a390400c1e47bbfddc33f2b4d319ce86f67"
+    },
+    {
+      "seed": 1016,
+      "world": {
+        "seed": 1016,
+        "frictionScale": 1.2910255992319435,
+        "massScale": 1.1483066597022116
+      },
+      "worldHash": "d3b6c9462f5df10ab88f214dda45ec8759dd1dbf9db96d55af24a8b334b84552",
+      "status": "success",
+      "ticks": 400,
+      "score": 79.41,
+      "scorecard": {
+        "height": 0.2796766621998753,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.464330996232883
+      },
+      "fingerprint": "172a8de46d601193ae396839407769a2a8c96065f061b85f3e4e51573e057638"
+    },
+    {
+      "seed": 1017,
+      "world": {
+        "seed": 1017,
+        "frictionScale": 0.8337019482161849,
+        "massScale": 0.9064558591227978
+      },
+      "worldHash": "0dda485d37bf853c3138c76bf1e891940bbd40451b31ee91e08169cb13b98ad4",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.682,
+      "scorecard": {
+        "height": 0.28250171992193,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.604925413051541
+      },
+      "fingerprint": "f527cce3aae051afc1d8830f2da5351ef302438931f6ef0b998c9a05de75fe37"
+    },
+    {
+      "seed": 1018,
+      "world": {
+        "seed": 1018,
+        "frictionScale": 1.127632441278547,
+        "massScale": 1.1061445142608135
+      },
+      "worldHash": "ab49d0332062a07d91ff9f69b997e6d8e7c89bfb17b579128c88e15717371bee",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.842,
+      "scorecard": {
+        "height": 0.2805489885610687,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.48976807263608
+      },
+      "fingerprint": "9586f509a63b998e914ba10ca93e5304f881f35bbfc0674aef7e816fd775d2e8"
+    },
+    {
+      "seed": 1019,
+      "world": {
+        "seed": 1019,
+        "frictionScale": 0.7347259789705276,
+        "massScale": 1.1435680377762765
+      },
+      "worldHash": "ae099b30811bdfa249ee0e8490f9632b3ec13d1a650a839055b68efb76d79188",
+      "status": "success",
+      "ticks": 400,
+      "score": 76.907,
+      "scorecard": {
+        "height": 0.27976057726168496,
+        "upright": true,
+        "collisions": 0,
+        "distance": 7.896638816743156
+      },
+      "fingerprint": "3056cca77461064bff82baf6e5dfc6b131d7e529465d7886f8648edb25f9311a"
+    },
+    {
+      "seed": 1020,
+      "world": {
+        "seed": 1020,
+        "frictionScale": 0.7736506848596036,
+        "massScale": 1.1320670891553162
+      },
+      "worldHash": "a45076f0dbd6a55f81054574de626236e204659c731536075f6ce84b7cfaa8b3",
+      "status": "success",
+      "ticks": 400,
+      "score": 79.331,
+      "scorecard": {
+        "height": 0.28013703038717325,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.036825500588757
+      },
+      "fingerprint": "946d3a42321a38951e333a206b9e5b07b906a300bfd850e4a275dc0ba4916f93"
+    },
+    {
+      "seed": 1021,
+      "world": {
+        "seed": 1021,
+        "frictionScale": 1.2692063735798,
+        "massScale": 1.1141441156854852
+      },
+      "worldHash": "685064d8614e343bb1ee26e77b117801e934161be12dd8aaa698f34f651392e8",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.74,
+      "scorecard": {
+        "height": 0.27970469395497805,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.518219924576721
+      },
+      "fingerprint": "bef587495704378d2bb6d29cf8e1cb773da815751bad3aa125ee34b1fb2a7347"
+    },
+    {
+      "seed": 1022,
+      "world": {
+        "seed": 1022,
+        "frictionScale": 1.243080750713125,
+        "massScale": 0.9639186883112415
+      },
+      "worldHash": "20fb751d89f8bb82aa4fe7e1ca567c1f14c77c01ae748b4b3bd54abc0faa85cb",
+      "status": "success",
+      "ticks": 400,
+      "score": 81.029,
+      "scorecard": {
+        "height": 0.28091745377712285,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.917513804486926
+      },
+      "fingerprint": "3e15d81f76fad1609673e0888f95f08749015bd2ac72bd1fa706e57845cd55e0"
+    },
+    {
+      "seed": 1023,
+      "world": {
+        "seed": 1023,
+        "frictionScale": 1.036669226968661,
+        "massScale": 1.1331700969720258
+      },
+      "worldHash": "a2adae6f156ce70ad692935367fd898d07f453ce86dd18a15d322f87f5ea27b5",
+      "status": "success",
+      "ticks": 400,
+      "score": 76.393,
+      "scorecard": {
+        "height": 0.2807548649959366,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.36010503741568
+      },
+      "fingerprint": "47090a2bf1da5d751389a2623788ae4846c1831c1738cc61018abe712899a304"
+    },
+    {
+      "seed": 1024,
+      "world": {
+        "seed": 1024,
+        "frictionScale": 0.9209330198355019,
+        "massScale": 0.9365198300452903
+      },
+      "worldHash": "2908d31f54e7b612b0ad7398f9bb4501c3fba195ff854f72041e234bf626fa43",
+      "status": "success",
+      "ticks": 400,
+      "score": 83.08,
+      "scorecard": {
+        "height": 0.2815560428936332,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.767717442459833
+      },
+      "fingerprint": "46ceb0c15733fef47a5b67784eb468817ff28b076ae2e0e35a8c3b692e388f86"
+    },
+    {
+      "seed": 1025,
+      "world": {
+        "seed": 1025,
+        "frictionScale": 1.28196194851771,
+        "massScale": 1.0225313568254932
+      },
+      "worldHash": "7a3964419ffe8a81bb73053c1127d00099faac1c8d4cb8d473145ca91cafdad9",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.776,
+      "scorecard": {
+        "height": 0.2809485603102739,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.774405462450249
+      },
+      "fingerprint": "c089bc0c646d9cb003553c9af3679d90905a531bc7d50789dc132791fc3c5bb6"
+    },
+    {
+      "seed": 1026,
+      "world": {
+        "seed": 1026,
+        "frictionScale": 0.821875058952719,
+        "massScale": 1.0338302328484132
+      },
+      "worldHash": "b9a4403b55df9f84e19045f95df637518d8ec672575352e32003195f8f35d6c1",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.482,
+      "scorecard": {
+        "height": 0.2806736044244419,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.357111186148954
+      },
+      "fingerprint": "5611cee312352d991590d769af6fe402e61d6682aceb0f440e3146c6dd80882a"
+    },
+    {
+      "seed": 1027,
+      "world": {
+        "seed": 1027,
+        "frictionScale": 0.9434738088864834,
+        "massScale": 1.1029041294474153
+      },
+      "worldHash": "483e10247dccb9a967910a61a834b04cf37e643df76b1911b333b0f383143cb2",
+      "status": "success",
+      "ticks": 400,
+      "score": 75.779,
+      "scorecard": {
+        "height": 0.28097797020077486,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.331270445616752
+      },
+      "fingerprint": "ebcecbf21fd8ab8e65f2d02e6448382cfe91ce40fd55ef3168eb729e3f8d6cd5"
+    },
+    {
+      "seed": 1028,
+      "world": {
+        "seed": 1028,
+        "frictionScale": 0.7432845996227115,
+        "massScale": 0.9021705537801608
+      },
+      "worldHash": "99549a3ed3fcb12954473267a23c5be064964daaa66678e0d1142025b1a8c11a",
+      "status": "success",
+      "ticks": 400,
+      "score": 76.872,
+      "scorecard": {
+        "height": 0.2808280729894626,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.142083494557344
+      },
+      "fingerprint": "7336dcb200e58c7d828525a68eda1d6553541919a73794d187903d4d6aebf98b"
+    },
+    {
+      "seed": 1029,
+      "world": {
+        "seed": 1029,
+        "frictionScale": 0.771682728268206,
+        "massScale": 0.9617237807950004
+      },
+      "worldHash": "1e8f87773270fcd91c97bcf9723d3717562b14671503af01c0fc3f50bbceb0d4",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.504,
+      "scorecard": {
+        "height": 0.2809435507247914,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.383622591753113
+      },
+      "fingerprint": "5e32dc9d877b61c5c6f617759c7de66c757dd969f5accc4a122705b987d35393"
+    },
+    {
+      "seed": 1030,
+      "world": {
+        "seed": 1030,
+        "frictionScale": 1.0927651904989033,
+        "massScale": 0.9284046651562675
+      },
+      "worldHash": "19c551e268a1a1125f84d300154f0bc9ea42eb34bec619ffa2901e089f86d622",
+      "status": "success",
+      "ticks": 400,
+      "score": 85.445,
+      "scorecard": {
+        "height": 0.2811313928518896,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.98131651413649
+      },
+      "fingerprint": "30ecf7da3a7f6e65c31dcbae2717c9823ee085b369a0360f9ee443d8a3f6d6c0"
+    },
+    {
+      "seed": 1031,
+      "world": {
+        "seed": 1031,
+        "frictionScale": 1.2549081544857472,
+        "massScale": 1.0941651430912316
+      },
+      "worldHash": "9f25004d71b34e94019729886136a00fa3913bed8fb581dec01863c6090cd7c1",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.351,
+      "scorecard": {
+        "height": 0.27950867929273016,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.559650111998678
+      },
+      "fingerprint": "9ca2db8205c6a664aa7b438ddf8b6443d38f43d3d51bfdbbdd8dcec6db76bc62"
+    },
+    {
+      "seed": 1032,
+      "world": {
+        "seed": 1032,
+        "frictionScale": 1.1581176267936826,
+        "massScale": 1.0259197315433992
+      },
+      "worldHash": "eaeb207eae4a787a694ba35b05e7c2dacaede7406891cc815121b5622c085ec7",
+      "status": "success",
+      "ticks": 400,
+      "score": 82.366,
+      "scorecard": {
+        "height": 0.280965157752158,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.75761113624486
+      },
+      "fingerprint": "2e7f4fb702b5f525d9360de1933d869a09b985df127f4098b3039ff9adb53d8e"
+    },
+    {
+      "seed": 1033,
+      "world": {
+        "seed": 1033,
+        "frictionScale": 1.1338501561898737,
+        "massScale": 1.088481595693156
+      },
+      "worldHash": "158ca710be9a5f1309183bf6c774a1b55e94a4ec08da2d4d1a621ea06b30b821",
+      "status": "success",
+      "ticks": 400,
+      "score": 78.114,
+      "scorecard": {
+        "height": 0.2807452056273334,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.55082617640879
+      },
+      "fingerprint": "e6ab5cae380bc9678555cb136483febab69604ca135db317b36b5e3039d7442f"
+    },
+    {
+      "seed": 1034,
+      "world": {
+        "seed": 1034,
+        "frictionScale": 1.16155637325719,
+        "massScale": 1.0780312038725242
+      },
+      "worldHash": "f7faa07becef9d32cc6dbb90d28aee043248682482fd15ea819349193d2e02b6",
+      "status": "success",
+      "ticks": 400,
+      "score": 76.902,
+      "scorecard": {
+        "height": 0.28035828040575883,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.56578791204238
+      },
+      "fingerprint": "11ad7be440717d0a0eb17c0f96c89ba4017b592a41b43100ff73efa022199f05"
+    },
+    {
+      "seed": 1035,
+      "world": {
+        "seed": 1035,
+        "frictionScale": 1.0632263193372637,
+        "massScale": 1.145577428350225
+      },
+      "worldHash": "6df9bb565ab6dfcfe343c0ea358ec37c44004e26eb5749826acc8b64283ddadc",
+      "status": "success",
+      "ticks": 400,
+      "score": 77.317,
+      "scorecard": {
+        "height": 0.2802722575124568,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.372535442387207
+      },
+      "fingerprint": "0caa83b51c294dea41090fec6dd1b9dd14e23b6411320b797811a23faaf6afe8"
+    },
+    {
+      "seed": 1036,
+      "world": {
+        "seed": 1036,
+        "frictionScale": 1.247578828362748,
+        "massScale": 1.1083647590829058
+      },
+      "worldHash": "4672f1fac2ca4a276615cea2d187d0fba713b824e68cc6d58a5487d5200ed6b9",
+      "status": "success",
+      "ticks": 400,
+      "score": 78.233,
+      "scorecard": {
+        "height": 0.2799805757019135,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.526812554515423
+      },
+      "fingerprint": "0c736634b6cadec5f7f0f96ba3cb36b970dbe1a067c1b487b18fe0a0b7173bb4"
+    },
+    {
+      "seed": 1037,
+      "world": {
+        "seed": 1037,
+        "frictionScale": 1.039129875600338,
+        "massScale": 0.9697212235303595
+      },
+      "worldHash": "715207390d7499ebe6d7a9e2a8c930f86aac5917e742be87422755d12f6f7de7",
+      "status": "success",
+      "ticks": 400,
+      "score": 83.401,
+      "scorecard": {
+        "height": 0.281735929209293,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.825765450453016
+      },
+      "fingerprint": "b7d9e947148db96eb3cf49aabcc5393196a436d72235b17e0d0cf4b7eaf29add"
+    },
+    {
+      "seed": 1038,
+      "world": {
+        "seed": 1038,
+        "frictionScale": 0.7023332537617534,
+        "massScale": 1.0232798841083421
+      },
+      "worldHash": "cb2812ba1789154e3a995107a932b1ad508860b0ea79a4405a563904b8b6c363",
+      "status": "success",
+      "ticks": 400,
+      "score": 76.717,
+      "scorecard": {
+        "height": 0.2808563370336691,
+        "upright": true,
+        "collisions": 0,
+        "distance": 7.8906301383571185
+      },
+      "fingerprint": "fba752362e4fb57d6144a0be691dc720f2c54f54eb7c0b73e6e457187bdc2a82"
+    },
+    {
+      "seed": 1039,
+      "world": {
+        "seed": 1039,
+        "frictionScale": 1.0396105285733939,
+        "massScale": 0.9940572351915762
+      },
+      "worldHash": "63e89fbb05138f03cd703962aed4771c2ea1c0470c21c7056c86591bf07d1ca7",
+      "status": "success",
+      "ticks": 400,
+      "score": 83.83,
+      "scorecard": {
+        "height": 0.2806729178079625,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.785158544432559
+      },
+      "fingerprint": "73449bb2b830caa8017d1c8a99f84b5caf3fddc3e906a5837bb40dd55fa60cb2"
+    },
+    {
+      "seed": 1040,
+      "world": {
+        "seed": 1040,
+        "frictionScale": 0.7731933862436562,
+        "massScale": 1.0445690245833248
+      },
+      "worldHash": "31aee7b76a1edd7f331fb8f5315d6e46b1a09a7866b54b6d60010f103cacc134",
+      "status": "success",
+      "ticks": 400,
+      "score": 78.358,
+      "scorecard": {
+        "height": 0.28066286147351416,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.215767150064599
+      },
+      "fingerprint": "9f02d0e15a90e9ef0b79d1eaf6fe7121f58a3508208dbd2a71ae367fcb277256"
+    },
+    {
+      "seed": 1041,
+      "world": {
+        "seed": 1041,
+        "frictionScale": 0.9720170683693141,
+        "massScale": 0.9641297170426696
+      },
+      "worldHash": "94046ded9f5270efbd1aeb0a422d85438fda3b74f7d6e691220c7ed422253b18",
+      "status": "success",
+      "ticks": 400,
+      "score": 82.847,
+      "scorecard": {
+        "height": 0.2816763288336474,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.771426028580642
+      },
+      "fingerprint": "e317453ff4ab6efb756f27f3d67307fd162d3c073d820d985e8efbdff85c7157"
+    },
+    {
+      "seed": 1042,
+      "world": {
+        "seed": 1042,
+        "frictionScale": 0.8752013330813497,
+        "massScale": 0.9825594214722514
+      },
+      "worldHash": "edff52df9f7c21c8b03ae4fa5bdb53c9cbbe5d75085a57692e392c64f73e63c7",
+      "status": "success",
+      "ticks": 400,
+      "score": 81.785,
+      "scorecard": {
+        "height": 0.28075774071381804,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.597066402171693
+      },
+      "fingerprint": "2581b3b938107171c4e71c4e769fb332796e679818ab94857da17147221c141c"
+    },
+    {
+      "seed": 1043,
+      "world": {
+        "seed": 1043,
+        "frictionScale": 0.9387475650757551,
+        "massScale": 1.030590610508807
+      },
+      "worldHash": "e57b576703c7e1d21e8b211aefd9f636f8c000985a430d8796a5011bdb7597c1",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.738,
+      "scorecard": {
+        "height": 0.2813431892398298,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.579143585970446
+      },
+      "fingerprint": "70b060df2ded1bd497eb9acf9ce4aa2bb2ffdb21f61d59e368ead827e8d3d584"
+    },
+    {
+      "seed": 1044,
+      "world": {
+        "seed": 1044,
+        "frictionScale": 0.8953791390173137,
+        "massScale": 0.8950384035473689
+      },
+      "worldHash": "0478a74525d6065733b449e06a3cb9ac3c6b178e4eb1605be3acb9135367848c",
+      "status": "success",
+      "ticks": 400,
+      "score": 79.452,
+      "scorecard": {
+        "height": 0.28225430217110825,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.570551852340188
+      },
+      "fingerprint": "4e18f5dcfd5c40f3e7fdc5faeb71fd1d2413d49a0e2f245a372a66e09e5001e9"
+    },
+    {
+      "seed": 1045,
+      "world": {
+        "seed": 1045,
+        "frictionScale": 0.9684939204715193,
+        "massScale": 0.9111279186792671
+      },
+      "worldHash": "68d02ad28c4175acda283b8f1bfa945422794dc85d1294c1d6efb594b55b72f3",
+      "status": "success",
+      "ticks": 400,
+      "score": 84.909,
+      "scorecard": {
+        "height": 0.2812562990950523,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.89249707067382
+      },
+      "fingerprint": "998e8e0f55aef97de2b5061f7536c340fe2dd6993ac59a416d01d3038b0780a6"
+    },
+    {
+      "seed": 1046,
+      "world": {
+        "seed": 1046,
+        "frictionScale": 1.075811573304236,
+        "massScale": 0.9249049516627564
+      },
+      "worldHash": "f7910f01c5743b8b6a48f3ba04585580c3f7554f8dd89ecdcfe672d4c4caee7e",
+      "status": "success",
+      "ticks": 400,
+      "score": 85.417,
+      "scorecard": {
+        "height": 0.2826447176145115,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.972294755631731
+      },
+      "fingerprint": "70fad5701bc544ad0ef09a45473244bc8c7c57cce859fc876aeccd03b8552959"
+    },
+    {
+      "seed": 1047,
+      "world": {
+        "seed": 1047,
+        "frictionScale": 1.029273185506463,
+        "massScale": 1.0857946835225447
+      },
+      "worldHash": "6df3a4bf0e3ad4b325502e1f62bc835635a3b647d58449d8334d96e61075fdf5",
+      "status": "success",
+      "ticks": 400,
+      "score": 80.446,
+      "scorecard": {
+        "height": 0.2806611320651302,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.540970277751423
+      },
+      "fingerprint": "267e0d5eecbdb2223d66bfdd11ca82527d6d5724bfb3ad356048f451d42f8c88"
+    },
+    {
+      "seed": 1048,
+      "world": {
+        "seed": 1048,
+        "frictionScale": 0.8581389750819652,
+        "massScale": 1.0284561454551293
+      },
+      "worldHash": "81e19ea2efc25cadd2867c35e87b82db11bf441ff7161b3209758a7518599b30",
+      "status": "success",
+      "ticks": 400,
+      "score": 79.477,
+      "scorecard": {
+        "height": 0.28057873061893696,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.444258578122271
+      },
+      "fingerprint": "d41f2de86c3171651572658942d492bf691f19828d98a7f7aac8b5ba351c0927"
+    },
+    {
+      "seed": 1049,
+      "world": {
+        "seed": 1049,
+        "frictionScale": 1.250013310648501,
+        "massScale": 1.1106062739621847
+      },
+      "worldHash": "fb0126aac9ef8e6d33f3470dbfba854680a8fed357653dfae452a19d955b3384",
+      "status": "success",
+      "ticks": 400,
+      "score": 78.187,
+      "scorecard": {
+        "height": 0.2802323310312364,
+        "upright": true,
+        "collisions": 0,
+        "distance": 8.526069369476318
+      },
+      "fingerprint": "8ebacac06159307fd820d573d3b15b97610463109cc705e56f79efedf81adb62"
+    }
+  ],
+  "summary": {
+    "n": 50,
+    "successes": 50,
+    "successRate": 1,
+    "ci95": [
+      0.9287,
+      1
+    ],
+    "meanScore": 80.014
+  },
+  "createdAt": "2026-11-03T02:40:50.299Z",
+  "approval": {
+    "by": "Ossilic examples",
+    "at": "2026-11-03T02:40:50.301Z"
+  }
+}

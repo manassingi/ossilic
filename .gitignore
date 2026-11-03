@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+dist/
+__pycache__/
+*.log
+.DS_Store
+*.ossilic.json
+*.tsbuildinfo
+# local evidence runs; only the accepted baseline (evidence/<suite>.json) is committed
+**/evidence/*.latest.json

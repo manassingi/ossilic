@@ -1,0 +1,9 @@
+{
+  "name": "@ossilic/preview",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,26 @@
+{
+  "ossilic": "1",
+  "kind": "suite",
+  "schema": 2,
+  "name": "walk",
+  "version": "1.0.0",
+  "description": "walk on physics, randomized worlds",
+  "task": "walk",
+  "target": "physics",
+  "episodes": 50,
+  "seed": 1000,
+  "randomize": true,
+  "cases": {
+    "kind": "seeded-public",
+    "generator": "ossilic-randomize 1"
+  },
+  "primary": {
+    "metric": "success",
+    "direction": "higher",
+    "margin": 0.1
+  },
+  "guardrails": [],
+  "alpha": 0.05,
+  "maxInvalidRate": 0.05,
+  "tolerance": {}
+}
