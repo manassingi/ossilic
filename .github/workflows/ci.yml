@@ -19,6 +19,8 @@ jobs:
           node-version: 24
       - run: npm ci --no-audit --no-fund
       - run: npm test
+      - name: Test the robot agent
+        run: cd agent && python3 -m unittest discover -s tests
 
   # The examples are golden machines: every change must keep their evidence.
   release-check:

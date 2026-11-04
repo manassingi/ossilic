@@ -20,6 +20,21 @@ inputs:
   physics:
     description: Install MuJoCo for physics targets
     default: "false"
+  hub:
+    description: Hub address. With fleet, component and version, the result becomes that version's release check on the fleet
+    default: ""
+  hub-token:
+    description: Your Hub publish token (pass a secret)
+    default: ""
+  fleet:
+    description: Fleet name on the Hub
+    default: ""
+  component:
+    description: The fleet component this machine is, e.g. navigator
+    default: ""
+  version:
+    description: The version being checked, e.g. a tag or the commit
+    default: ""
 
 outputs:
   report:
@@ -84,6 +99,22 @@ runs:
         id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" --paginate --jq ".[] | select(.body | startswith(\"$marker\")) | .id" | tail -1)
         if [ -n "$id" ]; then gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -f body="$body" > /dev/null
         else gh pr comment "$PR" --body "$body"; fi
+    - name: Record the release check on the Hub
+      if: always() && inputs.hub != '' && inputs.fleet != ''
+      continue-on-error: true # the verdict below still decides the job
+      shell: bash
+      env:
+        OSSILIC_TOKEN: ${{ inputs.hub-token }}
+        HUB: ${{ inputs.hub }}
+        FLEET: ${{ inputs.fleet }}
+        COMPONENT: ${{ inputs.component }}
+        VERSION: ${{ inputs.version }}
+        MACHINE: ${{ inputs.machine }}
+        SUITE: ${{ inputs.suite }}
+      run: |
+        args=("$MACHINE" --hub "$HUB" --fleet "$FLEET" --component "$COMPONENT" --version "$VERSION")
+        [ -n "$SUITE" ] && args+=(--suite "$SUITE")
+        node "$GITHUB_ACTION_PATH/packages/cli/src/main.ts" release "${args[@]}"
     - name: Verdict
       shell: bash
       run: exit ${{ steps.test.outputs.code }}

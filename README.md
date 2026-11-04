@@ -1,6 +1,26 @@
 # Ossilic
 
-**Know what changed before you ship.** Ossilic is the release check for robot policies.
+**The flight recorder for robot software.** Every update, on every robot: recorded, checked and proven.
+
+- **Logbook** (`agent/`): a tamper-evident record on each robot of what software it runs, every change, and every intervention. Python, no dependencies.
+- **Release Check** (this engine and the GitHub Action): is the new version of a robot policy worse than the old one, on the same test worlds?
+- **Fleet rollouts and evidence packs** run on an Ossilic Hub: a new version on a few robots per site first, compared live with the rest, then promoted or rolled back.
+
+## The logbook on every robot
+
+```bash
+pip install "git+https://github.com/manassingi/ossilic#subdirectory=agent"
+ossilic init --robot R-17 --site site-b --component picker=/opt/picker
+ossilic install picker 2.3.0      # after every deploy
+ossilic watch                     # identifies the software continuously; records changes nobody declared
+ossilic export                    # a readable report for an auditor; `--format jsonl` gives the verifiable chain
+```
+
+Every entry carries the hash of the one before it, so `ossilic verify` detects any edited, removed or reordered entry. See [agent/README.md](agent/README.md).
+
+## The release check
+
+**Know what changed before you ship.**
 
 It runs two versions of a robot's brain through the same seeded worlds and accounts for every world. It compares them world by world against a margin you declared in advance, and blocks the release when the new version may be meaningfully worse. Every result is evidence that anyone can re-run.
 

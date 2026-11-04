@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { recordRun, verifyRun } from "@ossilic/runtime";
 import { createDefaultRegistry } from "@ossilic/skills";
@@ -31,6 +31,8 @@ const USAGE = `ossilic ${ENGINE_VERSION} — build intelligent physical products
   ossilic pack <machine.json>                write a .ossilic package next to the manifest
   ossilic login <hub-url> <token>            remember a Hub and your publish token
   ossilic publish <machine.json> [--hub url] publish the machine and its run records to the Hub
+  ossilic release <machine.json> --fleet f --component c --version v [--suite s] [--hub url]
+                                             record the latest test result as that version's release check on a fleet
 `;
 
 const flag = (args: string[], name: string) => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : undefined; };
@@ -135,6 +137,24 @@ const commands: Record<string, (args: string[]) => Promise<number> | number> = {
     for (const r of body.runs ?? []) console.log(`  run ${r.target}: ${r.stale ? "stale: recorded for another version ✗" : r.verified === true ? "verified by the Hub ✓" : r.verified === false ? "did NOT reproduce ✗" : "attested by author"}`);
     const said: Record<string, string> = { verified: "re-run by the Hub and reproduced ✓", attested: "attested by author (physics)", failed: "did NOT reproduce on the Hub ✗", stale: "stale: recorded for another version or test ✗" };
     for (const e of body.evidence ?? []) console.log(`  evidence ${e.suite}: ${said[e.status] ?? e.status}`);
+    return 0;
+  },
+  /** The latest `ossilic test` result against the committed baseline, as the release record of one fleet version. The Hub recomputes the verdict. */
+  async release(args) {
+    const cfg = readHubConfig(), env = process.env;
+    const hub = (flag(args, "hub") ?? env.OSSILIC_HUB ?? cfg?.hub)?.replace(/\/$/, ""), token = env.OSSILIC_TOKEN ?? cfg?.token;
+    if (!hub || !token) throw new Error("give --hub and set OSSILIC_TOKEN, or run `ossilic login <hub-url> <token>` first");
+    const dir = join(dirname(need(args[0], "manifest path")), "evidence");
+    const suites = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".latest.json")).map((f) => f.slice(0, -".latest.json".length)) : [];
+    const suite = flag(args, "suite") ?? (suites.length === 1 ? suites[0] : undefined);
+    if (!suite || !existsSync(join(dir, `${suite}.latest.json`))) throw new Error(suites.length > 1 ? `several suites ran (${suites.join(", ")}): pick one with --suite` : "no test result yet: run `ossilic test` first");
+    const read = (f: string) => (existsSync(join(dir, f)) ? JSON.parse(readFileSync(join(dir, f), "utf8")) : undefined);
+    const source = flag(args, "source") ?? (env.GITHUB_RUN_ID ? `${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}` : undefined);
+    const body = { fleet: need(flag(args, "fleet"), "--fleet"), component: need(flag(args, "component"), "--component"), version: need(flag(args, "version"), "--version"), evidence: read(`${suite}.latest.json`), baseline: read(`${suite}.json`), source };
+    const res = await fetch(`${hub}/api/fleet/releases`, { method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, body: JSON.stringify(body) });
+    const r = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(`${hub} replied ${res.status}: ${r.error ?? "unknown error"}`);
+    console.log(`recorded ${r.component} ${r.version} on ${hub}: ${String(r.verdict).replaceAll("_", " ")}${r.gate === null ? "" : r.gate ? ", passed the gate" : ", blocked"}`);
     return 0;
   },
   init(args) {

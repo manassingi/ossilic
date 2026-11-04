@@ -5,3 +5,4 @@ export * from "./stats.ts";
 export * from "./compare.ts";
 export * from "./run.ts";
 export * from "./report.ts";
+export * from "./fleet.ts";

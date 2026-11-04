@@ -119,6 +119,56 @@ Replication on fresh cases is specified for step I5 and is not part of this rele
 - Every computation that shapes a world or a score uses deterministic math (`dmath`: fdlibm ports built only from +, −, ×, ÷ and sqrt, which IEEE 754 fixes bit for bit). JavaScript's own Math.sin, Math.exp and the like are compiled C, and they differed in the last bit between ARM64 Macs and x64 Linux. That made 59 of 200 rover worlds fail to reproduce in CI before the change. Golden bit patterns and fingerprints recorded on one platform are checked on the other in CI (AT1.5, AT1.6).
 - Kinematic simulation is therefore bit-exact across platforms. Physics (MuJoCo, a compiled C library) is bit-exact on the same platform and kernel version (AT1.2), and is compared by outcome elsewhere.
 
+## Fleet rollouts
+
+*Code: `packages/evidence/src/fleet.ts`. Tests: `packages/evidence/test/fleet.test.ts`.*
+
+**Setting.** Version B runs on a canary: robots the Hub picks uniformly at random among each site's robots on version A. The other robots keep A over the same hours. Each metric is a ratio of two counters summed per robot: interventions per hour, failures per task. The team declares in advance whether lower or higher is better and a relative margin m. For example, m = 0.1 tolerates a rate up to 10% worse.
+
+**Estimate: indirect standardisation.**
+- O is the canary's events.
+- E is the events the control rate at each site predicts for the canary's exposure at that site, summed over sites.
+- The estimate is ρ = O/E.
+- Sites without robots on both versions are left out, so a canary placed at a busy site is never called worse for being there.
+
+**Variance.** Robots differ more than a Poisson count allows. Each robot's count gets negative-binomial variance μ(1 + μ/k).
+- 1/k is estimated by moments from the control robots, as Σ[(y − μ)² − μ] / Σμ², floored at 0.
+- The variance of E comes from the control counts.
+
+**Interval.** Each bound is the wider of two bounds:
+- a Wald bound on log ρ;
+- a score bound: the ρ at which O sits z standard deviations from ρE, with the variance taken at ρ.
+
+With few canary robots, the score bound keeps the upper end honest when they happen to have a quiet day, and the Wald bound does the same for the lower end.
+
+**Measured coverage (AT-F1).** Nominal 95%, 4,000 simulated fleets per cell. Robot rates are gamma-distributed (shape k), and counts are Poisson.
+
+| Fleet | True ratio 1.0 | True ratio 1.5 | Upper bound below the truth |
+|---|---|---|---|
+| 3 sites × 20 robots, 2 canary per site, k = 4, 8 h | 95.2% | 95.6% | 1.6–1.8% |
+| 1 site × 40 robots, 3 canary, k = 4, 8 h | 97.1% | 97.2% | 1.0–1.1% |
+| 2 sites × 25 robots, 3 canary, k = 1.5 (robots very different), 16 h | 96.6% | 96.1% | 0.8–0.9% |
+| 2 sites × 30 robots, 3 canary, rare events (0.05–0.1 per hour), 24 h | 96.3% | 95.9% | 1.2–1.5% |
+| 2 sites × 40 robots, 8 canary, k = 4, 24 h | 95.7% | 95.4% | 1.7–1.9% |
+
+The test requires at least 93% coverage. It also requires the upper bound to fall below the truth at most 3% of the time, because that side is the one that would let a harmful version through.
+
+**Decisions.** At each planned look:
+- **Levels.** Fleet-wide intervals use α/K, where K is the number of looks planned in advance (Bonferroni). Per-site intervals use α/(K·S) and can only block.
+- **Roll back** when any metric's fleet interval, or any site's interval, lies wholly beyond the margin.
+- **Promote** when every metric's fleet interval lies wholly within the margin.
+- **Otherwise** keep going; after the last look, a person decides, and the decision is recorded with their name and reason.
+- **When looks happen.** Looks are planned by the canary's exposure on the first metric: look j comes at j/K of the planned total.
+- **Measured (AT-F2).** A version exactly as good as the old one was rolled back in at most 5% of 1,000 four-look rollouts.
+
+**Limits.**
+- Canary robots must be comparable with their site's other robots. The random choice within each site is what makes them comparable.
+- A robot that changed version during the rollout contributes to both arms, as two rows.
+- Correlation within a robot beyond negative-binomial variation is not modelled.
+- Time effects are controlled only by running both versions at the same time.
+- The per-site check catches strong harm at one site, not weak harm.
+- Rare events need large fleets. A doubling of a 1-in-50,000 event needs on the order of a thousand canary robot-hours.
+
 ## What this does not establish
 
 - Results hold under the conditions the suite names, not beyond them.
@@ -131,3 +181,4 @@ Replication on fresh cases is specified for step I5 and is not part of this rele
 2. Is the expanded percentile bootstrap acceptable for bounded metrics from n = 30, and what would you recommend for heavy-tailed metrics?
 3. Is Bonferroni across suites acceptable, given that the gate works on intervals?
 4. Is the non-inferiority framing of the release gate sound as stated?
+5. For fleet rollouts, is the wider of the Wald and score bounds acceptable? Or would a profile-likelihood negative-binomial interval, or a mixed model with a robot random effect, be preferable at three to ten canary robots?

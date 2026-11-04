@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ossilic"
+version = "0.1.0"
+description = "The Ossilic logbook: a tamper-evident record of what runs on a robot, every change and every intervention."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = []
+classifiers = ["Operating System :: POSIX", "Topic :: Scientific/Engineering :: Artificial Intelligence"]
+
+[project.scripts]
+ossilic = "ossilic.cli:main"
+
+[tool.setuptools]
+packages = ["ossilic"]

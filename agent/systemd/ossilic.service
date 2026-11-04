@@ -1,0 +1,14 @@
+# The Ossilic logbook agent. Install: copy to /etc/systemd/system/, then `systemctl enable --now ossilic`.
+[Unit]
+Description=Ossilic logbook: identifies the robot's software, records changes and syncs to the Hub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment=OSSILIC_HOME=/var/lib/ossilic
+ExecStart=/usr/bin/env ossilic watch
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
