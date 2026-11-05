@@ -17,6 +17,7 @@ import hashlib
 import json
 import os
 import time
+import uuid
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -277,20 +278,24 @@ class Logbook:
             bucket[name] = bucket.get(name, 0) + value
             self._write("counters.json", buckets)
 
-    def take_counters(self) -> dict:
+    def pending_counters(self) -> dict | None:
+        """The batch of counters to send next, with a fixed id. A batch stays pending, unchanged, until the Hub
+        confirms it, so a retry after a lost reply sends the same id and is never counted twice."""
         with self._lock():
-            buckets = self._read("counters.json", {})
-            self._write("counters.json", {})
-        return buckets
+            pending = self._read("pending.json", None)
+            if pending is None:
+                buckets = self._read("counters.json", {})
+                if not buckets:
+                    return None
+                pending = {"id": uuid.uuid4().hex, "buckets": buckets}
+                self._write("pending.json", pending)
+                self._write("counters.json", {})
+        return pending
 
-    def put_back_counters(self, buckets: dict) -> None:
-        """Return counters that could not be sent, adding to anything counted meanwhile."""
+    def clear_pending(self, batch: str) -> None:
         with self._lock():
-            now = self._read("counters.json", {})
-            for key, bucket in buckets.items():
-                for name, v in bucket.items():
-                    now.setdefault(key, {})[name] = now.get(key, {}).get(name, 0) + v
-            self._write("counters.json", now)
+            if (self._read("pending.json", None) or {}).get("id") == batch:
+                (self.home / "pending.json").unlink()
 
     def mark_synced(self, seq: int, assigned: dict) -> None:
         with self._lock():

@@ -69,10 +69,14 @@ class LogbookTest(Base):
         self.lb.count("tasks")
         self.lb.count("tasks")
         self.lb.count("failures", 0)
-        [(key, bucket)] = self.lb.take_counters().items()
+        batch = self.lb.pending_counters()
+        [(key, bucket)] = batch["buckets"].items()
         self.assertEqual(json.loads(key.split("|", 1)[1]), {"picker": "2.3.0"})
         self.assertEqual(bucket, {"tasks": 2, "failures": 0})
-        self.assertEqual(self.lb.take_counters(), {})
+        self.lb.count("tasks")
+        self.assertEqual(self.lb.pending_counters(), batch, "a pending batch stays unchanged until the Hub confirms it")
+        self.lb.clear_pending(batch["id"])
+        self.assertEqual(self.lb.pending_counters()["buckets"][key], {"tasks": 1}, "counts made meanwhile go in the next batch")
 
     def test_export_and_cli(self):
         self.lb.install("picker", "2.3.0", by="ci", source="https://ci/run/1")
@@ -97,6 +101,8 @@ class FakeHub(BaseHTTPRequestHandler):
     """Accepts batches that continue its chain; answers 409 with its head otherwise."""
     head = {"seq": 0, "hash": GENESIS}
     counters: list = []
+    batches: set = set()
+    drop_reply = False
 
     def do_POST(self):
         body = json.loads(self.rfile.read(int(self.headers["content-length"])))
@@ -106,7 +112,12 @@ class FakeHub(BaseHTTPRequestHandler):
             return self._send(409, {"error": "does not continue the chain.", "head": self.head})
         if lines:
             FakeHub.head = {"seq": first["seq"] + len(lines) - 1, "hash": lines[-1].split("\t", 1)[0]}
-        FakeHub.counters += body["counters"]
+        if body["batch"] not in FakeHub.batches:
+            FakeHub.batches.add(body["batch"])
+            FakeHub.counters += body["counters"]
+        if FakeHub.drop_reply:  # the Hub stored everything, but the reply never arrives
+            FakeHub.drop_reply = False
+            raise ConnectionResetError("reply lost")
         self._send(200, {"head": self.head, "assigned": {"picker": "2.3.0"}})
 
     def _send(self, code, body):
@@ -124,7 +135,7 @@ class FakeHub(BaseHTTPRequestHandler):
 class SyncTest(Base):
     def setUp(self):
         super().setUp()
-        FakeHub.head, FakeHub.counters = {"seq": 0, "hash": GENESIS}, []
+        FakeHub.head, FakeHub.counters, FakeHub.batches, FakeHub.drop_reply = {"seq": 0, "hash": GENESIS}, [], set(), False
         self.server = HTTPServer(("127.0.0.1", 0), FakeHub)
         threading.Thread(target=self.server.serve_forever, daemon=True).start()
         self.lb.init("R-17", hub=f"http://127.0.0.1:{self.server.server_port}", token="flt_test")
@@ -158,7 +169,17 @@ class SyncTest(Base):
         self.lb.count("tasks")
         with self.assertRaisesRegex(RuntimeError, "chain conflict"):
             hub.sync(self.lb)
-        self.assertEqual(sum(b["tasks"] for b in self.lb.take_counters().values()), 1)
+        self.assertEqual(sum(b["tasks"] for b in self.lb.pending_counters()["buckets"].values()), 1)
+
+    def test_a_lost_reply_is_retried_without_counting_twice(self):
+        self.lb.count("tasks", 5)
+        FakeHub.drop_reply = True
+        with self.assertRaises(Exception):
+            hub.sync(self.lb)
+        self.lb.count("tasks", 2)
+        hub.sync(self.lb)
+        hub.sync(self.lb)
+        self.assertEqual(sum(c["value"] for c in FakeHub.counters), 7, "the resent batch kept its id, so the Hub took it once")
 
 
 if __name__ == "__main__":

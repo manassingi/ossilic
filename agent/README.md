@@ -60,6 +60,11 @@ Counters drive live rollouts on the Hub: a new version runs on a few robots per 
 
 Copy `systemd/ossilic.service` to `/etc/systemd/system/`, then `systemctl enable --now ossilic`. It keeps the logbook in `/var/lib/ossilic`; run `init` and `install` with `OSSILIC_HOME=/var/lib/ossilic`.
 
+## Troubleshooting
+
+- **`CERTIFICATE_VERIFY_FAILED` on a Mac.** Python from python.org ships without trusted certificates. Run its installer once: `"/Applications/Python 3.x/Install Certificates.command"`. On Linux the system certificates are used.
+- **`chain conflict` on sync.** The Hub holds a different history for this robot than the logbook on disk: the logbook was replaced or rewritten. The Hub keeps its copy and flags the robot; find out who changed the logbook before going further.
+
 ## ROS 2
 
 Add the topics to `config.json` and run `ossilic ros` in a sourced ROS 2 shell. Each topic logs one entry when it turns true:
