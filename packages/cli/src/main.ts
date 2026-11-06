@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { createHash, createPublicKey, verify } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { recordRun, verifyRun } from "@ossilic/runtime";
@@ -33,6 +34,7 @@ const USAGE = `ossilic ${ENGINE_VERSION} — build intelligent physical products
   ossilic publish <machine.json> [--hub url] publish the machine and its run records to the Hub
   ossilic release <machine.json> --fleet f --component c --version v [--suite s] [--hub url]
                                              record the latest test result as that version's release check on a fleet
+  ossilic verify-pack <pack.json> --hub <url>   check an evidence pack's digest and the Hub's signature
 `;
 
 const flag = (args: string[], name: string) => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : undefined; };
@@ -156,6 +158,18 @@ const commands: Record<string, (args: string[]) => Promise<number> | number> = {
     if (!res.ok) throw new Error(`${hub} replied ${res.status}: ${r.error ?? "unknown error"}`);
     console.log(`recorded ${r.component} ${r.version} on ${hub}: ${String(r.verdict).replaceAll("_", " ")}${r.gate === null ? "" : r.gate ? ", passed the gate" : ", blocked"}`);
     return 0;
+  },
+  /** Check an evidence pack: its digest matches its content, and the Hub's key signed that digest. */
+  async "verify-pack"(args) {
+    const { digest, signature, ...body } = JSON.parse(readFileSync(need(args[0], "pack file"), "utf8"));
+    const hub = (flag(args, "hub") ?? process.env.OSSILIC_HUB ?? readHubConfig()?.hub)?.replace(/\/$/, "");
+    if (!hub) throw new Error("give the Hub that issued the pack: --hub <url>");
+    const intact = createHash("sha256").update(JSON.stringify(body)).digest("hex") === digest;
+    const pem = await fetch(`${hub}/api/pack-key`).then((r) => (r.ok ? r.text() : Promise.reject(new Error(`${hub} has no pack key (${r.status})`))));
+    const signed = !!signature?.value && verify(null, Buffer.from(String(digest), "hex"), createPublicKey(pem), Buffer.from(signature.value, "base64"));
+    console.log(`${intact ? "✓" : "✗"} content matches its digest${intact ? "" : ": the pack was changed after it was issued"}`);
+    console.log(`${signed ? "✓" : "✗"} signed by ${hub} (key ${signature?.key ?? "none"})`);
+    return intact && signed ? 0 : 1;
   },
   init(args) {
     const dir = need(args[0], "directory");

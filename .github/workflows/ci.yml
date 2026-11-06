@@ -22,6 +22,16 @@ jobs:
       - name: Test the robot agent
         run: cd agent && python3 -m unittest discover -s tests
 
+  # The agent's ROS 2 bridge against a real ROS 2 install.
+  ros2:
+    runs-on: ubuntu-latest
+    container: ros:jazzy-ros-base
+    steps:
+      - uses: actions/checkout@v4
+      - name: Interventions from ROS 2 topics reach the logbook
+        shell: bash
+        run: agent/tests/ros_smoke.sh
+
   # The examples are golden machines: every change must keep their evidence.
   release-check:
     runs-on: ubuntu-latest
